@@ -1,0 +1,6 @@
+brand_id,brand_name,category_id,category_name,family_id,model_name,model_code,variant_id,attr:screenSizeInches,attr:modelYear,attr:panelType,sku_id,merchant_sku,gtin,status,alias_th,alias_en,alias_verified
+brand_syn_demo,DemoVision (synthetic),cat_tv,Televisions (synthetic),fam_syn_ax25,"DemoVision AX 2025, QLED (synthetic)",SYN-AX25,var_syn_ax25_55,55,2025,QLED,sku_syn_ax25_55,SYN-AX25-55,,active,เดโมวิชั่น เอเอ็กซ์ 55 นิ้ว,DemoVision AX 55in,false
+brand_syn_demo,DemoVision (synthetic),cat_tv,Televisions (synthetic),fam_syn_ax25,"DemoVision AX 2025, QLED (synthetic)",SYN-AX25,var_syn_ax25_65,65,2025,QLED,sku_syn_ax25_65,SYN-AX25-65,,active,เดโมวิชั่น เอเอ็กซ์ 65 นิ้ว,,false
+brand_syn_demo,DemoVision (synthetic),cat_tv,Televisions (synthetic),fam_syn_ax26,"DemoVision AX 2026, QLED (synthetic)",SYN-AX26,var_syn_ax26_55,55,2026,QLED,sku_syn_ax26_55,SYN-AX26-55,,active,,DemoVision AX 2026 55in,false
+brand_syn_bright,BrightLab (synthetic),cat_tv,Televisions (synthetic),fam_syn_bz,BrightLab BZ (synthetic),SYN-BZ,var_syn_bz_50,50,2026,LED,sku_syn_bz_50,SYN-BZ-50,,active,ไบรท์แล็บ บีแซด 50 นิ้ว,,false
+brand_syn_bright,BrightLab (synthetic),cat_tv,Televisions (synthetic),fam_syn_bz,BrightLab BZ (synthetic),SYN-BZ,var_syn_bz_55,55,2026,LED,sku_syn_bz_55,SYN-BZ-55,,discontinued,,,

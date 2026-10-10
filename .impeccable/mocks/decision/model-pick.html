@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Sarabun:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1440px;height:900px;overflow:hidden;background:#F4F6F8;color:#17202A;font:14px/1.45 Sarabun,sans-serif;display:grid;grid-template-rows:64px 1fr}
+header{background:#3D6FB6;color:#fff;display:flex;align-items:center;gap:28px;padding:0 28px;font:600 14px 'Bai Jamjuree'}
+header .q{font:700 18px 'Bai Jamjuree';flex:1}
+header span.on{border-bottom:3px solid #D9B45A;padding-bottom:4px}
+.wrap{display:grid;grid-template-columns:330px 1fr;gap:0}
+.index{padding:22px 0 0 22px;display:flex;flex-direction:column;gap:8px}
+.tab{background:#fff;border:1px solid #C5D2E6;border-left:8px solid #D9B45A;padding:12px 14px;font:600 15px 'Bai Jamjuree';display:flex;justify-content:space-between}
+.tab small{display:block;font:400 12px Sarabun;color:#56657A}
+.tab.on{border-left-color:#3D6FB6;transform:translateX(14px);box-shadow:0 2px 0 #C5D2E6}
+.tab .st{font:700 12px 'Bai Jamjuree';color:#2E7D4F}
+.tab .st.bk{color:#B3261E}
+.card{margin:22px 28px 22px 40px;background:#fff;border:1px solid #9DB5DA;display:flex;flex-direction:column}
+.card .hd{display:flex;justify-content:space-between;padding:18px 24px;border-bottom:2px solid #3D6FB6}
+.card h1{font:700 30px 'Bai Jamjuree'}.card .sub{font:400 13px Sarabun;color:#56657A}
+.stamp{border:3px solid #2E7D4F;color:#2E7D4F;font:700 18px 'Bai Jamjuree';padding:6px 14px;transform:rotate(-4deg);align-self:center}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th{background:#EAF0F9;font:600 12px 'Bai Jamjuree';color:#3D6FB6;text-align:left;padding:8px 24px;border-bottom:1px solid #9DB5DA}
+td{padding:10px 24px;border-bottom:1px solid #DCE5F2;font:500 15px 'Bai Jamjuree'}
+td.n{text-align:right}td.src{font:400 12px Sarabun;color:#56657A}
+tr.bal td{border-top:2px solid #3D6FB6;font-weight:700;background:#F7F9FD}
+.rules{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid #9DB5DA}
+.rules div{padding:14px 24px;border-right:1px solid #DCE5F2;font:500 13px Sarabun}.rules b{display:block;font:700 14px 'Bai Jamjuree';color:#2E7D4F}
+.act{margin-top:auto;display:flex;gap:10px;padding:16px 24px;border-top:1px solid #9DB5DA}
+.act span{padding:11px 22px;font:700 14px 'Bai Jamjuree';border:2px solid #3D6FB6;color:#3D6FB6}.act .pri{background:#3D6FB6;color:#fff}
+.syn{background:#D9B45A;color:#17202A;font:700 11px 'Bai Jamjuree';padding:3px 8px}
+</style></head><body>
+<header><span class="q">ทีวีรุ่นไหนในสต็อกที่ควรทำโปรโมชั่นในเดือนนี้ และควรใช้โปรโมชั่นแบบใด?</span><span class="on">บัตรสินค้า</span><span>สุขภาพข้อมูล</span><span>ประวัติ</span><span class="syn">ข้อมูลสังเคราะห์</span><span>TH | EN</span></header>
+<div class="wrap">
+ <div class="index">
+  <div class="tab on"><div>SYN-AX26-55<small>โฆษณาอย่างเดียว · อันดับ 1</small></div><span class="st">แนะนำ</span></div>
+  <div class="tab"><div>SYN-BZ-50<small>โฆษณาอย่างเดียว · อันดับ 2</small></div><span class="st">แนะนำ</span></div>
+  <div class="tab"><div>SYN-AX25-55<small>โฆษณาอย่างเดียว · อันดับ 3</small></div><span class="st">แนะนำ</span></div>
+  <div class="tab"><div>SYN-AX25-65<small>ทุก action ถูกกฎกัน → คงไว้</small></div><span class="st bk">คงไว้</span></div>
+ </div>
+ <div class="card">
+  <div class="hd"><div><h1>SYN-AX26-55</h1><div class="sub">DemoVision AX 2026 · 55" · ก.ย. 2026 · ข้อมูลภายในเท่านั้น</div></div><div class="stamp">แนะนำ · โฆษณาอย่างเดียว</div></div>
+  <table>
+   <tr><th>บรรทัด</th><th>รายการ</th><th style="text-align:right">ค่า</th><th>ที่มา / ณ เวลา</th></tr>
+   <tr><td>1</td><td>ขายในเดือน</td><td class="n">1 ชิ้น</td><td class="src">sales.csv · ERP (สังเคราะห์) · 12 ก.ย.</td></tr>
+   <tr><td>2</td><td>สต็อกพร้อมขาย</td><td class="n">8 ชิ้น</td><td class="src">inventory.csv · 30 ก.ย. 22:00</td></tr>
+   <tr><td>3</td><td>อัตราขายต่อวัน (1 ÷ 30)</td><td class="n">0.033</td><td class="src">สูตร stock_cover_days v1</td></tr>
+   <tr><td>4</td><td>รองรับได้ (8 ÷ 0.033)</td><td class="n">240 วัน</td><td class="src">ยกยอดจากบรรทัด 2–3</td></tr>
+   <tr><td>5</td><td>มาร์จิ้นจริง (purchase)</td><td class="n">30.0%</td><td class="src">costs.csv · realized_gross_margin_ratio v1</td></tr>
+   <tr class="bal"><td>6</td><td>ผลตรวจกฎ</td><td class="n">3 / 3 ผ่าน</td><td class="src">policy_SYNTHETIC_sample v1</td></tr>
+  </table>
+  <div class="rules"><div><b>ลดราคา</b>ต้องทบทวน — มาร์จิ้นหลังลดราคาไม่ทราบ</div><div><b>บันเดิล</b>ต้องทบทวน — มาร์จิ้นหลังรวมไม่ทราบ</div><div><b>คงไว้</b>ผ่าน (ไม่จำกัด)</div></div>
+  <div class="act"><span class="pri">อนุมัติ</span><span>ปฏิเสธ</span><span>ขอข้อมูลเพิ่ม</span></div>
+ </div>
+</div>
+</body></html>

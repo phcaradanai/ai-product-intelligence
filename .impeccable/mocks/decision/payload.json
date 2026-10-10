@@ -1,0 +1,133 @@
+{
+  "title": "Advisor Workspace — choose the visual world",
+  "question": "The roll assigned the Market Page direction. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Market Page",
+      "kicker": "THE ROLL",
+      "lineage": "Thai business-daily stock listing pages",
+      "thesis": "The shortlist read like a market listing: dense tabular figures, sector bars, and a footnote mark on every number.",
+      "palette": ["#1D2B36", "#F1F1EE", "#141414", "#13824B", "#C42B1C", "#B7791F"],
+      "materials": ["newsprint-gray ground", "reverse slate sector bars", "tabular figures"],
+      "viewport": "Slate rail; the Thai north-star question as headline; listing grouped by action under reverse bars; SKU sheet on the right.",
+      "risk": "If the density is set timidly, it collapses into a generic data table.",
+      "raised": [
+        { "from": "challenger-jcard", "raise": "Each action group states its count against what the policy lets through, figures right-aligned tight to the margin." },
+        { "from": "challenger-saville", "raise": "Nothing is labeled twice: a figure appears once, and the sheet links to it rather than repeating it." },
+        { "from": "challenger-staratlas", "raise": "One fixed status ramp, identical in listing, sheet and rail." },
+        { "from": "challenger-zoomap", "raise": "Colour commits at region scale: the rail and sector bars are solid slate fields, not accents." },
+        { "from": "challenger-specimen", "raise": "Hierarchy by type-scale contrast, not boxes: no card shells around groups." }
+      ],
+      "html": ".impeccable/mocks/decision/assigned.html"
+    },
+    {
+      "id": "model-pick",
+      "label": "Stock Card",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Thai warehouse stock cards (บัตรคุมสินค้า)",
+      "thesis": "Every SKU keeps its own card: each figure is derived line by line, with the balance carried down.",
+      "palette": ["#3D6FB6", "#F4F6F8", "#FFFFFF", "#B3261E", "#D9B45A"],
+      "materials": ["blue-ruled card stock", "index tabs", "rubber-stamp status"],
+      "viewport": "A card index of shortlisted SKUs on the left; the open card shows the derivation from sales to cover to verdict.",
+      "risk": "Familiar to warehouse staff more than managers, and it can tip into a paperwork costume.",
+      "html": ".impeccable/mocks/decision/model-pick.html"
+    },
+    {
+      "id": "challenger-jpdense",
+      "label": "Dense Module Grid",
+      "verdict": "competitive",
+      "lineage": "Japanese high-density commerce sites",
+      "thesis": "SKU modules packed edge to edge, each with a small utility-red tab and hairline borders.",
+      "palette": ["#FFFFFF", "#111111", "#D7262E", "#E6E6E6"],
+      "materials": ["hairline modules", "red header tabs", "compact gothic sans"],
+      "viewport": "Multi-row nav rail; a mosaic of SKU modules under action tabs; detail opens in place.",
+      "case": "Thai buyers live in dense marketplace screens, so audience fit is strong; a mosaic ranks less clearly than a listing.",
+      "risk": "Ranks read weaker in a mosaic than in rows.",
+      "hero": "https://impeccable.style/worlds/cards/japanese-high-density-web-hero.webp",
+      "html": ".impeccable/mocks/decision/challenger-jpdense.html"
+    },
+    {
+      "id": "challenger-jcard",
+      "label": "Mixtape J-Card",
+      "verdict": "declined",
+      "lineage": "hand-lettered cassette inlays",
+      "thesis": "Tracklist sides timed to fit the tape.",
+      "palette": ["#2C4FA3", "#FFFFFF", "#C8102E"],
+      "materials": ["ballpoint on lined inlay"],
+      "viewport": "Side A / side B listing.",
+      "case": "Merch managers do not identify with it, and handwriting weakens trust in figures.",
+      "risk": "Nostalgia over evidence.",
+      "kept": "Hard capacity: every group states what fits, figures right-aligned to the margin.",
+      "hero": "https://impeccable.style/worlds/cards/vernacular-ephemera-cassette-j-card-hero.webp"
+    },
+    {
+      "id": "challenger-saville",
+      "label": "Catalog Sleeve",
+      "verdict": "declined",
+      "lineage": "coded record-sleeve identity",
+      "thesis": "Everything a catalog number; labels replaced by colour codes.",
+      "palette": ["#0B0B0B", "#FFFFFF", "#E2001A"],
+      "materials": ["matte black", "white hairline plot"],
+      "viewport": "Black field, one plot, coded strip.",
+      "case": "Coded labels fight the bilingual clarity this product needs.",
+      "risk": "Unreadable without the legend.",
+      "kept": "Nothing labeled twice.",
+      "hero": "https://impeccable.style/worlds/cards/brand-identity-canon-saville-catalog-sleeve-hero.webp"
+    },
+    {
+      "id": "challenger-staratlas",
+      "label": "Star Atlas",
+      "verdict": "declined",
+      "lineage": "celestial charts",
+      "thesis": "Importance as dot magnitude on a coordinate field.",
+      "palette": ["#0E1A3A", "#F5F5F0", "#D9822B"],
+      "materials": ["navy chart ground"],
+      "viewport": "SKUs as stars on a field.",
+      "case": "A rank is not a magnitude (INV-10), so the metaphor misleads.",
+      "risk": "Implies a score.",
+      "kept": "One fixed ramp used identically everywhere.",
+      "hero": "https://impeccable.style/worlds/cards/notation-diagram-systems-star-atlas-hero.webp"
+    },
+    {
+      "id": "challenger-zoomap",
+      "label": "Guide Map",
+      "verdict": "declined",
+      "lineage": "zoo and gardens guide maps",
+      "thesis": "Areas as swelling lobes of flat colour.",
+      "palette": ["#8ED462", "#F5F1E4", "#2C2E2A", "#F5E211"],
+      "materials": ["flat colour lobes"],
+      "viewport": "One lobe per action.",
+      "case": "Playful lobes undercut a decision record.",
+      "risk": "Too light for approvals.",
+      "kept": "Colour commits at region scale.",
+      "hero": "https://impeccable.style/worlds/cards/aww2-zoo-gardens-guide-map-hero.webp"
+    },
+    {
+      "id": "challenger-specimen",
+      "label": "Type Specimen",
+      "verdict": "declined",
+      "lineage": "variable-font specimens",
+      "thesis": "Letterforms carry everything; hierarchy by scale alone.",
+      "palette": ["#FAFAF7", "#111111", "#3B5BDB"],
+      "materials": ["flat paper", "monospace readouts"],
+      "viewport": "Giant glyph with sliders.",
+      "case": "No product fact maps to font axes.",
+      "risk": "Showpiece, not workspace.",
+      "kept": "Hierarchy by type-scale contrast, not boxes.",
+      "hero": "https://impeccable.style/worlds/cards/variable-font-specimen-hero.webp"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "A clean light analytics app: left nav, filter bar, sortable table, detail drawer.",
+    "palette": ["#FFFFFF", "#0F172A", "#2563EB", "#E2E8F0"],
+    "materials": ["clean grid", "neutral surfaces"],
+    "viewport": "Filters over a sortable shortlist table, with a right drawer for SKU detail and decisions.",
+    "risk": "Indistinguishable from any BI tool by design.",
+    "html": ".impeccable/mocks/decision/canon.html"
+  },
+  "steer": true
+}

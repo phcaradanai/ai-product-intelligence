@@ -1,0 +1,670 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-10T09:04:08+00:00",
+  "title": "Design System: AI Product Intelligence Advisor",
+  "world": {
+    "name": "Market Page",
+    "seed": "6330389d",
+    "source": "apps/web/src/styles.css, apps/web/src/ui/Workspace.tsx"
+  },
+  "extensions": {
+    "colorMeta": {
+      "newsprint-ground": {
+        "role": "neutral",
+        "displayName": "Newsprint Ground",
+        "canonical": "#f1f1ee",
+        "oklch": "oklch(95.7% 0.004 106.5)",
+        "tonalRamp": [
+          "#0b0b09",
+          "#242422",
+          "#40403d",
+          "#5e5e5b",
+          "#7d7d7b",
+          "#9e9e9c",
+          "#c4c4c1",
+          "#efefec"
+        ],
+        "cssVar": "--ground"
+      },
+      "sheet-white": {
+        "role": "neutral",
+        "displayName": "Sheet White",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#7d7d7d",
+          "#9e9e9e",
+          "#c4c4c4",
+          "#eeeeee"
+        ],
+        "cssVar": "--paper"
+      },
+      "press-ink": {
+        "role": "neutral",
+        "displayName": "Press Ink",
+        "canonical": "#141414",
+        "oklch": "oklch(19.1% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#7d7d7d",
+          "#9e9e9e",
+          "#c4c4c4",
+          "#eeeeee"
+        ],
+        "cssVar": "--ink"
+      },
+      "ink-slate-2": {
+        "role": "neutral",
+        "displayName": "Ink 2",
+        "canonical": "#33404a",
+        "oklch": "oklch(36.4% 0.024 241.4)",
+        "tonalRamp": [
+          "#030c14",
+          "#19262f",
+          "#35424c",
+          "#52606a",
+          "#717f8b",
+          "#92a1ac",
+          "#b7c7d3",
+          "#e1f1fe"
+        ],
+        "cssVar": "--ink-2"
+      },
+      "ink-muted": {
+        "role": "neutral",
+        "displayName": "Ink Muted",
+        "canonical": "#56626c",
+        "oklch": "oklch(49.0% 0.022 243.3)",
+        "tonalRamp": [
+          "#040c14",
+          "#1b252e",
+          "#36414b",
+          "#535f69",
+          "#737f8a",
+          "#93a0ab",
+          "#b9c6d1",
+          "#e3f1fc"
+        ],
+        "cssVar": "--ink-3"
+      },
+      "column-rule": {
+        "role": "neutral",
+        "displayName": "Column Rule",
+        "canonical": "#c9c9c2",
+        "oklch": "oklch(83.4% 0.010 106.6)",
+        "tonalRamp": [
+          "#0c0b07",
+          "#24241f",
+          "#40403a",
+          "#5e5e58",
+          "#7e7e77",
+          "#9f9f98",
+          "#c5c5be",
+          "#efefe8"
+        ],
+        "cssVar": "--rule"
+      },
+      "hairline-rule": {
+        "role": "neutral",
+        "displayName": "Hairline Rule",
+        "canonical": "#e1e1db",
+        "oklch": "oklch(90.8% 0.008 106.6)",
+        "tonalRamp": [
+          "#0b0b08",
+          "#242420",
+          "#40403b",
+          "#5e5e59",
+          "#7e7e78",
+          "#9f9f99",
+          "#c4c4bf",
+          "#efefe9"
+        ],
+        "cssVar": "--rule-soft"
+      },
+      "slate-field": {
+        "role": "primary",
+        "displayName": "Slate Field",
+        "canonical": "#1d2b36",
+        "oklch": "oklch(28.1% 0.028 242.6)",
+        "tonalRamp": [
+          "#020c16",
+          "#182631",
+          "#33424d",
+          "#50606c",
+          "#6f808d",
+          "#90a1af",
+          "#b5c7d5",
+          "#e0f1ff"
+        ],
+        "cssVar": "--slate"
+      },
+      "slate-field-raised": {
+        "role": "primary",
+        "displayName": "Slate Field Raised",
+        "canonical": "#2b3c49",
+        "oklch": "oklch(34.7% 0.032 241.7)",
+        "tonalRamp": [
+          "#010c17",
+          "#162632",
+          "#31424f",
+          "#4e606e",
+          "#6d808f",
+          "#8ea1b1",
+          "#b3c7d7",
+          "#e1f1fe"
+        ],
+        "cssVar": "--slate-2"
+      },
+      "on-slate": {
+        "role": "primary",
+        "displayName": "Text on Slate",
+        "canonical": "#f1f1ee",
+        "oklch": "oklch(95.7% 0.004 106.5)",
+        "tonalRamp": [
+          "#0b0b09",
+          "#242422",
+          "#40403d",
+          "#5e5e5b",
+          "#7d7d7b",
+          "#9e9e9c",
+          "#c4c4c1",
+          "#efefec"
+        ],
+        "cssVar": "--on-slate"
+      },
+      "on-slate-muted": {
+        "role": "primary",
+        "displayName": "Text on Slate, Muted",
+        "canonical": "#b9c6cf",
+        "oklch": "oklch(81.9% 0.019 237.8)",
+        "tonalRamp": [
+          "#040c12",
+          "#1b262c",
+          "#374149",
+          "#545f67",
+          "#737f87",
+          "#94a0a9",
+          "#b9c6cf",
+          "#e3f1fa"
+        ],
+        "cssVar": "--on-slate-2"
+      },
+      "selection-gray": {
+        "role": "neutral",
+        "displayName": "Selection Gray",
+        "canonical": "#e3e3dc",
+        "oklch": "oklch(91.4% 0.009 106.6)",
+        "tonalRamp": [
+          "#0c0b07",
+          "#24241f",
+          "#40403a",
+          "#5e5e58",
+          "#7e7e77",
+          "#9f9f98",
+          "#c5c5be",
+          "#efefe8"
+        ],
+        "cssVar": "--select"
+      },
+      "row-hover": {
+        "role": "neutral",
+        "displayName": "Row Hover",
+        "canonical": "#e9e9e3",
+        "oklch": "oklch(93.2% 0.008 106.6)",
+        "tonalRamp": [
+          "#0b0b08",
+          "#242420",
+          "#40403b",
+          "#5e5e59",
+          "#7e7e78",
+          "#9f9f99",
+          "#c4c4bf",
+          "#efefe9"
+        ],
+        "cssVar": null,
+        "note": "Literal in styles.css, not a :root custom property."
+      },
+      "status-recommended": {
+        "role": "tertiary",
+        "displayName": "Market Green",
+        "canonical": "#13703f",
+        "oklch": "oklch(48.1% 0.114 154.1)",
+        "tonalRamp": [
+          "#001103",
+          "#002d14",
+          "#084d29",
+          "#12703f",
+          "#3d915d",
+          "#60b37e",
+          "#86daa2",
+          "#c8fed8"
+        ],
+        "cssVar": "--st-recommended"
+      },
+      "status-recommended-deep": {
+        "role": "tertiary",
+        "displayName": "Market Green Deep",
+        "canonical": "#0f5c33",
+        "oklch": "oklch(42.0% 0.098 154.1)",
+        "tonalRamp": [
+          "#001003",
+          "#002d15",
+          "#044d28",
+          "#266d43",
+          "#498e62",
+          "#6bb182",
+          "#90d7a7",
+          "#c7fed7"
+        ],
+        "cssVar": null,
+        "note": "Literal in styles.css, not a :root custom property."
+      },
+      "status-review": {
+        "role": "tertiary",
+        "displayName": "Review Amber",
+        "canonical": "#8a5a00",
+        "oklch": "oklch(50.8% 0.108 73.3)",
+        "tonalRamp": [
+          "#160700",
+          "#341f00",
+          "#583802",
+          "#7f5307",
+          "#a47228",
+          "#c7934c",
+          "#efb972",
+          "#feebd4"
+        ],
+        "cssVar": "--st-review"
+      },
+      "status-insufficient": {
+        "role": "tertiary",
+        "displayName": "Blue-Slate",
+        "canonical": "#2b5b84",
+        "oklch": "oklch(45.7% 0.085 246.8)",
+        "tonalRamp": [
+          "#000c1f",
+          "#002644",
+          "#10436a",
+          "#32618b",
+          "#5182ad",
+          "#72a4d1",
+          "#97caf9",
+          "#e2f1fe"
+        ],
+        "cssVar": "--st-insufficient"
+      },
+      "status-blocked": {
+        "role": "tertiary",
+        "displayName": "Market Red",
+        "canonical": "#b42318",
+        "oklch": "oklch(50.0% 0.182 29.5)",
+        "tonalRamp": [
+          "#220000",
+          "#4c0000",
+          "#7e0000",
+          "#ad1a10",
+          "#d44536",
+          "#fb6957",
+          "#fbada1",
+          "#ffe9e5"
+        ],
+        "cssVar": "--st-blocked"
+      },
+      "status-redacted": {
+        "role": "tertiary",
+        "displayName": "Redaction Gray",
+        "canonical": "#56626c",
+        "oklch": "oklch(49.0% 0.022 243.3)",
+        "tonalRamp": [
+          "#040c14",
+          "#1b252e",
+          "#36414b",
+          "#535f69",
+          "#737f8a",
+          "#93a0ab",
+          "#b9c6d1",
+          "#e3f1fc"
+        ],
+        "cssVar": "--st-redacted"
+      },
+      "footnote-mark": {
+        "role": "secondary",
+        "displayName": "Footnote Amber",
+        "canonical": "#8a5a00",
+        "oklch": "oklch(50.8% 0.108 73.3)",
+        "tonalRamp": [
+          "#160700",
+          "#341f00",
+          "#583802",
+          "#7f5307",
+          "#a47228",
+          "#c7934c",
+          "#efb972",
+          "#feebd4"
+        ],
+        "cssVar": "--mark"
+      },
+      "footnote-lit": {
+        "role": "secondary",
+        "displayName": "Lit Amber",
+        "canonical": "#f3d48f",
+        "oklch": "oklch(88.1% 0.094 86.3)",
+        "tonalRamp": [
+          "#130900",
+          "#302100",
+          "#513c04",
+          "#75590c",
+          "#967935",
+          "#b89a57",
+          "#dfc07c",
+          "#feedc7"
+        ],
+        "cssVar": "--mark-lit"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display (question H1)",
+        "purpose": "The fixed north-star question. 1.35 in Thai, 1.2 under html[lang=en]; 23px below 760px; max 34ch, balanced wrap."
+      },
+      "headline": {
+        "displayName": "Headline (sheet SKU code)",
+        "purpose": "SKU code atop the sheet; Latin-only, so 1.2 is allowed."
+      },
+      "rank": {
+        "displayName": "Rank",
+        "purpose": "Listing rank numeral; tie shown with a small muted '='."
+      },
+      "title": {
+        "displayName": "Title (verdict)",
+        "purpose": "Sheet verdict line: status flag plus chosen action."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "Listing cells (14px below 760px); sheet fact values use 600 14.5px."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, reasons, notes; Sarabun."
+      },
+      "body-small": {
+        "displayName": "Body Small",
+        "purpose": "Footnote text, model lines (12.5px), notes (12px)."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Block heads, sources head, controls (600 12px, ink-muted); column heads at 11.5px."
+      },
+      "mark": {
+        "displayName": "Footnote Mark",
+        "purpose": "Superscript source numerals after every figure."
+      }
+    },
+    "fonts": [
+      {
+        "family": "Anuphan",
+        "source": "@fontsource/anuphan (self-hosted)",
+        "weights": [
+          400,
+          500,
+          600,
+          700
+        ],
+        "role": "figures, headings, labels, controls"
+      },
+      {
+        "family": "Sarabun",
+        "source": "@fontsource/sarabun (self-hosted)",
+        "weights": [
+          400,
+          500,
+          600
+        ],
+        "role": "body text, reasons, footnote text, inputs"
+      }
+    ],
+    "numerals": {
+      "value": "font-variant-numeric: tabular-nums lining-nums",
+      "scope": "Figure tables: the listing and the sheet fact table."
+    },
+    "shadows": [
+      {
+        "name": "decide-scroll-seam",
+        "value": "0 -10px 12px -6px rgb(255 255 255 / 0.95), 0 -8px 12px -8px rgb(20 20 20 / 0.14)",
+        "purpose": "The only shadow: seam above the sticky decision bar at the sheet foot, signalling content scrolling beneath. Removed with stickiness at 1100px and below."
+      }
+    ],
+    "rules": [
+      {
+        "name": "rule-heavy",
+        "value": "3px solid var(--ink)",
+        "purpose": "Under the page head; top edge of the stacked sheet (<=1100px)."
+      },
+      {
+        "name": "rule-medium",
+        "value": "1.5px solid var(--ink)",
+        "purpose": "Under listing column heads; above the source strip; button and segmented outlines."
+      },
+      {
+        "name": "rule-light",
+        "value": "1px solid var(--ink)",
+        "purpose": "Sheet block heads, sheet left edge, selected row, decision bar top."
+      },
+      {
+        "name": "rule-row",
+        "value": "1px solid var(--rule)",
+        "purpose": "Between listing rows."
+      },
+      {
+        "name": "rule-hairline",
+        "value": "1px solid var(--rule-soft)",
+        "purpose": "Between sheet fact and constraint rows."
+      },
+      {
+        "name": "rule-provisional",
+        "value": "1px dashed var(--ink-3)",
+        "purpose": "Demo-controls fieldset only: marks provisional controls."
+      }
+    ],
+    "focus": {
+      "value": "outline: 2px solid var(--slate); outline-offset: 2px",
+      "purpose": "Global :focus-visible ring (offset 1px on source-strip lines)."
+    },
+    "motion": [
+      {
+        "name": "ease-out-quick",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The only easing in the system."
+      },
+      {
+        "name": "duration-state",
+        "value": "160ms",
+        "purpose": "background-color transition on footnote marks, source-strip lines, and decision buttons. Nothing else moves."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }",
+        "purpose": "Removes all transitions."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "> 1440px",
+        "purpose": "232px labelled rail | fluid main | 420px sheet; 32px gutters."
+      },
+      {
+        "name": "icon-rail",
+        "value": "1440px",
+        "purpose": "max-width: rail collapses to 64px icons (labels visually hidden); sheet 380px; 24px gutters."
+      },
+      {
+        "name": "sheet-stacks",
+        "value": "1100px",
+        "purpose": "max-width: sheet stacks under main with a 3px ink top rule; decision bar no longer sticky."
+      },
+      {
+        "name": "single-column",
+        "value": "760px",
+        "purpose": "max-width: rail becomes a horizontal top bar; one column; H1 23px; listing scrolls with right-edge fade mask."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Approve Button",
+      "kind": "button",
+      "refersTo": "button-approve",
+      "description": "Primary decision action; Market Green, enabled only for a recommended SKU and a viewer with approval permission.",
+      "html": "<button type=\"button\" class=\"ds-btn ds-btn-approve\">อนุมัติ</button> <button type=\"button\" class=\"ds-btn ds-btn-approve\" disabled>อนุมัติ</button>",
+      "css": ".ds-btn { padding: 10px 8px; min-width: 112px; border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink); font-family: var(--font-figure); font-weight: 700; font-size: 13.5px; line-height: 1.25; border-radius: 0; cursor: pointer; transition: background-color 160ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-approve { background: var(--st-recommended); border-color: var(--st-recommended); color: #fff; } .ds-btn-approve:hover:not(:disabled) { background: #0f5c33; } .ds-btn:focus-visible { outline: 2px solid var(--slate); outline-offset: 2px; } .ds-btn:disabled { opacity: 0.45; cursor: not-allowed; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Reject and Request more data: white with a 1.5px ink outline, selection-gray hover.",
+      "html": "<button type=\"button\" class=\"ds-btn\">ปฏิเสธ</button> <button type=\"button\" class=\"ds-btn\">ขอข้อมูลเพิ่ม</button>",
+      "css": ".ds-btn { padding: 10px 8px; min-width: 112px; border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink); font-family: var(--font-figure); font-weight: 700; font-size: 13.5px; line-height: 1.25; border-radius: 0; cursor: pointer; transition: background-color 160ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn:hover:not(:disabled) { background: var(--select); } .ds-btn:focus-visible { outline: 2px solid var(--slate); outline-offset: 2px; }"
+    },
+    {
+      "name": "Language Switch",
+      "kind": "chip",
+      "refersTo": "segmented-on",
+      "description": "TH/EN segmented control: square ink frame, pressed segment filled ink.",
+      "html": "<div class=\"ds-seg\" role=\"group\" aria-label=\"Language\"><button type=\"button\" aria-pressed=\"true\">TH</button><button type=\"button\" aria-pressed=\"false\">EN</button></div>",
+      "css": ".ds-seg { display: inline-flex; border: 1.5px solid var(--ink); } .ds-seg button { border: 0; background: transparent; color: var(--ink); padding: 5px 12px; font-family: var(--font-figure); font-weight: 600; font-size: 12px; line-height: 1.2; cursor: pointer; } .ds-seg button[aria-pressed=\"true\"] { background: var(--ink); color: var(--ground); } .ds-seg button[aria-pressed=\"false\"]:hover { background: var(--select); } .ds-seg button:focus-visible { outline: 2px solid var(--slate); outline-offset: 2px; }"
+    },
+    {
+      "name": "Navigation Rail",
+      "kind": "nav",
+      "refersTo": "rail",
+      "description": "Solid slate field; active item raised slate, unbuilt surfaces shown disabled with a sublabel.",
+      "html": "<nav class=\"ds-rail\"><a class=\"ds-nav ds-on\" href=\"#\" aria-current=\"page\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z\"/><path d=\"M7 11h10\"/><path d=\"M7 15h6\"/><path d=\"M7 7h8\"/></svg><span>ถามคำถาม</span></a><span class=\"ds-nav ds-off\" aria-disabled=\"true\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z\"/><path d=\"M7 11h10\"/><path d=\"M7 15h6\"/><path d=\"M7 7h8\"/></svg><span>ประวัติการตัดสินใจ</span><small>ยังไม่เปิดใช้</small></span></nav>",
+      "css": ".ds-rail { background: var(--slate); color: var(--on-slate-2); padding: 24px 12px; width: 232px; display: flex; flex-direction: column; gap: 2px; } .ds-nav { display: grid; grid-template-columns: 18px 1fr; column-gap: 12px; align-items: center; padding: 9px 12px; font-family: var(--font-figure); font-weight: 500; font-size: 14px; line-height: 1.35; color: var(--on-slate-2); text-decoration: none; border-radius: 4px; } .ds-nav small { grid-column: 2; font-family: var(--font-body); font-size: 11.5px; line-height: 1.3; color: #93a3ae; } .ds-nav.ds-on { background: var(--slate-2); color: var(--on-slate); font-weight: 600; } .ds-nav:not(.ds-off):hover { background: var(--slate-2); color: var(--on-slate); } .ds-nav.ds-off { opacity: 0.85; cursor: not-allowed; } .ds-nav.ds-off svg { opacity: 0.45; } .ds-nav:focus-visible { outline: 2px solid var(--slate); outline-offset: 2px; }"
+    },
+    {
+      "name": "Status Flag",
+      "kind": "custom",
+      "refersTo": "status-recommended",
+      "description": "The one fixed status ramp: icon plus word in the status hue, identical in listing, sheet and rules. Redaction always carries the lock.",
+      "html": "<div class=\"ds-flags\"><span class=\"ds-flag ds-st-rec\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m16 9-5.5 5.5L8 12\"/></svg>แนะนำ</span><span class=\"ds-flag ds-st-rev\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3\"/><path d=\"M12 9v4\"/><path d=\"M12 17h.01\"/></svg>ต้องทบทวน</span><span class=\"ds-flag ds-st-ins\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3\"/><path d=\"M12 17h.01\"/></svg>ข้อมูลไม่พอ</span><span class=\"ds-flag ds-st-blk\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M4.929 4.929 19.07 19.071\"/></svg>ถูกกฎกัน</span><span class=\"ds-flag ds-st-red\"><svg width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect width=\"18\" height=\"11\" x=\"3\" y=\"11\" rx=\"2\" ry=\"2\"/><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"/></svg>ปิดบัง</span></div>",
+      "css": ".ds-flags { display: flex; flex-wrap: wrap; gap: 16px; } .ds-flag { display: inline-flex; align-items: center; gap: 5px; font-family: var(--font-figure); font-weight: 600; font-size: 12.5px; line-height: 1.35; white-space: nowrap; } .ds-st-rec { color: var(--st-recommended); } .ds-st-rev { color: var(--st-review); } .ds-st-ins { color: var(--st-insufficient); } .ds-st-blk { color: var(--st-blocked); } .ds-st-red { color: var(--st-redacted); }"
+    },
+    {
+      "name": "Sector Bar + Listing Rows",
+      "kind": "custom",
+      "refersTo": "sector-bar",
+      "description": "Reverse slate sector bar heading an action group, over dense tabular rows; hover and selected row states. Figures are placeholders.",
+      "html": "<table class=\"ds-listing\"><thead><tr><th>อันดับ</th><th>สินค้า / SKU</th><th>สถานะ</th><th class=\"ds-num\">ตัวเลข</th></tr></thead><tbody><tr class=\"ds-sector\"><th colspan=\"4\"><span>ชื่อกลุ่ม</span><span class=\"ds-fit\">ผ่านเกณฑ์ n จาก m</span></th></tr><tr class=\"ds-sel\"><td><span class=\"ds-rank\">1</span></td><td><b class=\"ds-sku\">SYN-0000</b><span class=\"ds-model\">Synthetic · Model</span></td><td><span class=\"ds-flag ds-st-rec\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m16 9-5.5 5.5L8 12\"/></svg>แนะนำ</span></td><td class=\"ds-num\">000<a class=\"ds-mark\" href=\"#\">1</a></td></tr><tr><td><span class=\"ds-rank\">2</span></td><td><b class=\"ds-sku\">SYN-0001</b><span class=\"ds-model\">Synthetic · Model</span></td><td><span class=\"ds-flag ds-st-rev\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3\"/><path d=\"M12 9v4\"/><path d=\"M12 17h.01\"/></svg>ต้องทบทวน</span></td><td class=\"ds-num\">000<a class=\"ds-mark\" href=\"#\">2</a></td></tr></tbody></table>",
+      "css": ".ds-listing { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums lining-nums; background: var(--ground); } .ds-listing thead th { font-family: var(--font-figure); font-weight: 600; font-size: 11.5px; line-height: 1.35; color: var(--ink-3); text-align: left; padding: 8px; border-bottom: 1.5px solid var(--ink); } .ds-listing td { padding: 9px 8px; border-bottom: 1px solid var(--rule); font-family: var(--font-figure); font-weight: 500; font-size: 15px; line-height: 1.35; } .ds-listing tbody tr:not(.ds-sector) { cursor: pointer; } .ds-listing tbody tr:not(.ds-sector):hover td { background: #e9e9e3; } .ds-listing tr.ds-sel td { background: var(--select); border-bottom-color: var(--ink); } .ds-num { text-align: right !important; white-space: nowrap; } .ds-sector th { background: var(--slate); color: var(--on-slate); text-align: left; padding: 7px 8px; font-family: var(--font-figure); font-weight: 700; font-size: 13px; line-height: 1.4; } .ds-sector th > span { margin-right: 16px; } .ds-fit { font-weight: 500; color: var(--on-slate-2); } .ds-rank { font-family: var(--font-figure); font-weight: 700; font-size: 22px; line-height: 1; } .ds-sku { display: block; font-family: var(--font-figure); font-weight: 700; font-size: 15px; line-height: 1.3; } .ds-model { display: block; font-family: var(--font-body); font-size: 12.5px; line-height: 1.4; color: var(--ink-3); } .ds-flag { display: inline-flex; align-items: center; gap: 5px; font-weight: 600; font-size: 12.5px; } .ds-st-rec { color: var(--st-recommended); } .ds-st-rev { color: var(--st-review); } .ds-mark { display: inline-block; min-width: 1.15em; margin-left: 2px; padding: 0 2px; vertical-align: super; font-weight: 700; font-size: 10px; line-height: 1; color: var(--mark); text-decoration: none; border-radius: 2px; transition: background-color 160ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-mark:hover, .ds-mark:focus-visible { background: var(--mark-lit); color: var(--ink); outline: none; }"
+    },
+    {
+      "name": "Footnote Mark + Source Strip",
+      "kind": "custom",
+      "refersTo": "footnote-mark",
+      "description": "Signature move: every figure carries an amber mark linked to a numbered source line; mark and line light together on hover/focus, both directions (shown here with the .ds-lit state on source 1). Values are placeholders.",
+      "html": "<div class=\"ds-fn-demo\"><p class=\"ds-figline\"><span class=\"ds-fig\">000<a class=\"ds-mark ds-lit\" href=\"#ds-fn-1\">1</a><a class=\"ds-mark\" href=\"#ds-fn-2\">2</a></span></p><section class=\"ds-footnotes\"><h2>แหล่งข้อมูล</h2><ol><li id=\"ds-fn-1\" class=\"ds-lit\" tabindex=\"0\"><span class=\"ds-fn-n\">1</span><span>Synthetic source · file.csv · n lines · ingested time</span></li><li id=\"ds-fn-2\" tabindex=\"0\"><span class=\"ds-fn-n\">2</span><span>Synthetic source · file.csv · n lines · ingested time</span></li></ol></section></div>",
+      "css": ".ds-fn-demo { background: var(--ground); padding: 16px; } .ds-fig { font-family: var(--font-figure); font-weight: 500; font-size: 15px; font-variant-numeric: tabular-nums lining-nums; white-space: nowrap; } .ds-mark { display: inline-block; min-width: 1.15em; margin-left: 2px; padding: 0 2px; vertical-align: super; font-family: var(--font-figure); font-weight: 700; font-size: 10px; line-height: 1; color: var(--mark); text-decoration: none; border-radius: 2px; transition: background-color 160ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-mark:hover, .ds-mark.ds-lit, .ds-mark:focus-visible { background: var(--mark-lit); color: var(--ink); } .ds-footnotes { border-top: 1.5px solid var(--ink); padding-top: 24px; margin-top: 16px; } .ds-footnotes h2 { margin: 0 0 8px; font-family: var(--font-figure); font-weight: 600; font-size: 12px; line-height: 1.35; color: var(--ink-3); } .ds-footnotes ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; } .ds-footnotes li { display: flex; gap: 8px; font-family: var(--font-body); font-size: 12.5px; line-height: 1.5; color: var(--ink-2); padding: 1px 4px; border-radius: 2px; transition: background-color 160ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-footnotes li.ds-lit, .ds-footnotes li:hover, .ds-footnotes li:target { background: var(--mark-lit); color: var(--ink); } .ds-footnotes li:focus-visible { outline: 2px solid var(--slate); outline-offset: 1px; } .ds-fn-n { font-family: var(--font-figure); font-weight: 700; font-size: 11px; line-height: 1.6; color: var(--mark); min-width: 1.2em; }"
+    },
+    {
+      "name": "Sheet Fact Block",
+      "kind": "card",
+      "refersTo": "sku-sheet",
+      "description": "No card shell: a white sheet block headed by a muted label over a 1px ink rule; tabular facts with marks and as-of notes on hairline rows. Values are placeholders.",
+      "html": "<div class=\"ds-sheet\"><section><h3>ข้อเท็จจริง</h3><table class=\"ds-facts\"><tbody><tr><th>ตัวชี้วัด</th><td class=\"ds-num\">000<a class=\"ds-mark\" href=\"#\">1</a></td><td class=\"ds-asof\">ณ วันที่ · สูตร v1</td></tr><tr><th>ตัวชี้วัด</th><td class=\"ds-num\">000<a class=\"ds-mark\" href=\"#\">2</a></td><td class=\"ds-asof\">ณ วันที่ · สูตร v1</td></tr></tbody></table></section></div>",
+      "css": ".ds-sheet { background: var(--paper); border-left: 1px solid var(--ink); padding: 32px 24px; max-width: 420px; } .ds-sheet h3 { margin: 0 0 8px; font-family: var(--font-figure); font-weight: 600; font-size: 12px; line-height: 1.35; color: var(--ink-3); padding-bottom: 4px; border-bottom: 1px solid var(--ink); } .ds-facts { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums lining-nums; } .ds-facts th { text-align: left; font-family: var(--font-body); font-weight: 400; font-size: 13px; line-height: 1.4; color: var(--ink-2); padding: 6px 0; border-bottom: 1px solid var(--rule-soft); } .ds-facts td { padding: 6px 0 6px 12px; border-bottom: 1px solid var(--rule-soft); font-family: var(--font-figure); font-weight: 600; font-size: 14.5px; line-height: 1.35; } .ds-num { text-align: right; white-space: nowrap; } .ds-asof { font-family: var(--font-body); font-weight: 400 !important; font-size: 11.5px !important; color: var(--ink-3); white-space: nowrap; } .ds-mark { display: inline-block; min-width: 1.15em; margin-left: 2px; padding: 0 2px; vertical-align: super; font-weight: 700; font-size: 10px; line-height: 1; color: var(--mark); text-decoration: none; border-radius: 2px; transition: background-color 160ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-mark:hover, .ds-mark:focus-visible { background: var(--mark-lit); color: var(--ink); outline: none; }"
+    },
+    {
+      "name": "Rationale Field",
+      "kind": "input",
+      "refersTo": "textarea",
+      "description": "Decision rationale textarea: white, 1px ink-muted outline, 2px corners, slate focus ring.",
+      "html": "<label class=\"ds-rationale\">เหตุผล (จำเป็น)<textarea rows=\"3\" placeholder=\"เช่น สอดคล้องกับแผนการตลาดเดือนนี้\"></textarea></label>",
+      "css": ".ds-rationale { display: grid; gap: 4px; font-family: var(--font-figure); font-weight: 600; font-size: 12px; line-height: 1.35; color: var(--ink-2); max-width: 360px; } .ds-rationale textarea { resize: vertical; min-height: 52px; padding: 8px; border: 1px solid var(--ink-3); border-radius: 2px; background: var(--paper); color: var(--ink); caret-color: var(--slate); font-family: var(--font-body); font-weight: 400; font-size: 14px; line-height: 1.5; } .ds-rationale textarea::placeholder { color: #6b7680; } .ds-rationale textarea:focus-visible { outline: 2px solid var(--slate); outline-offset: 2px; }"
+    },
+    {
+      "name": "Synthetic Data Label",
+      "kind": "chip",
+      "refersTo": "synthetic-label",
+      "description": "Provenance statement under the header metadata: a small slate block declaring the data synthetic.",
+      "html": "<p class=\"ds-synthetic\">ข้อมูลสังเคราะห์ — ไม่ใช่ข้อมูลจริง</p>",
+      "css": ".ds-synthetic { display: inline-block; margin: 0; padding: 2px 8px; background: var(--slate); color: var(--on-slate); font-family: var(--font-figure); font-weight: 600; font-size: 12px; line-height: 1.5; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Market Page",
+    "overview": "The workspace reads like the market-listing page of a Thai business daily. Dense tabular figures sit on a cool newsprint-gray ground, grouped under solid slate sector bars. Every figure carries a small amber footnote mark that points to a numbered source strip below the table. The page answers one fixed question. It shows which SKUs are recommended for which promotion action and why, and what is blocked, unknown or redacted. A white SKU sheet on the right is where the decision gets recorded. The page sits in the evidence-first tradition of print finance listings. It rejects the dark KPI-card dashboard with a chat sidebar.\n\nThe page is dense and calm. It does not use cards, score tiles, gradients, illustrations or decorative imagery. Hierarchy comes from type-scale contrast (a 28px question over 15px figures over 11.5px column heads) and from a ladder of ink rules of different weights. Colour works at two scales only. Slate fills whole regions: the rail and the sector bars. The status hues appear only at word scale, on a flag, a verdict or a rule outcome. Thai is the primary language and English is switchable, so the line-heights leave room for Thai stacked vowel and tone marks.\n\nAll data in the built workspace is synthetic and labelled as synthetic on the page. This document describes the visual system only. No figure seen in the build is a business fact.",
+    "keyCharacteristics": [
+      "Newsprint-gray ground, a white decision sheet, press-black ink.",
+      "Slate as region-scale colour: the rail and the reverse sector bars.",
+      "One fixed five-step status ramp, the same in the listing, the sheet and the rules.",
+      "A footnote mark on every figure, linked both ways to a numbered source strip.",
+      "No cards and no KPI tiles. Hierarchy comes from type scale and ink-rule weight.",
+      "Tabular lining numerals in every figure table.",
+      "Almost no motion: a 160ms background change on marks, footnotes and buttons."
+    ],
+    "rules": [
+      {
+        "name": "The Region-Scale Rule",
+        "body": "Slate is laid down only as a whole field: the rail, a full-width sector bar, or a label block. It is never a thin accent, a border tint, or a background behind a single figure.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Ramp Rule",
+        "body": "The five status hues mean the same thing in the listing, the sheet, and the rule lines. They are used only for status words, status icons, rule outcomes, and the Approve action that a recommended status enables. They are never decoration, and they never fill a region.",
+        "section": "colors"
+      },
+      {
+        "name": "The Lock Rule",
+        "body": "Redaction is always shown as Redaction Gray plus a lock icon, with the word \"redacted\" or an aria-label. When every cell in a column is redacted, the column head says so once and the cells show only the lock (nothing labelled twice).",
+        "section": "colors"
+      },
+      {
+        "name": "The Stacked-Vowel Rule",
+        "body": "Thai text uses a line-height of at least 1.35 so that stacked vowel and tone marks never collide or clip. Only Latin-only settings go tighter: the English H1 at 1.2 and the SKU title at 1.2.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Figure Rule",
+        "body": "Every figure table (the listing and the sheet's fact table) sets `font-variant-numeric: tabular-nums lining-nums`. Figures are right-aligned and do not wrap.",
+        "section": "typography"
+      },
+      {
+        "name": "The Scale-Contrast Rule",
+        "body": "Hierarchy comes from size and weight steps and from ink rules. It never comes from boxes, tinted panels or decorative colour.",
+        "section": "typography"
+      },
+      {
+        "name": "The Ink-Rule Ladder",
+        "body": "Structure is drawn with rules of fixed weights, from heaviest to lightest:\n- **3px ink** under the page head, and as the top edge of the stacked sheet.\n- **1.5px ink** under the listing column heads and above the source strip.\n- **1px ink** under sheet block heads, on the sheet's left edge, under the selected row, and above the decision bar.\n- **1px column-rule** between listing rows.\n- **1px hairline** between rows inside the sheet.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** put a footnote mark on every figure and link it to a numbered source line. Light the mark and its line together on hover and focus, in both directions.",
+      "**Do** use the fixed five-step status ramp, with the same hue and icon for the same status on every surface. Pair redaction with a lock icon every time.",
+      "**Do** lay slate down as a whole region (rail, sector bar). Use the status hues only at word scale.",
+      "**Do** build hierarchy from type-scale contrast and the ink-rule ladder (3px, 1.5px, 1px ink; 1px column-rule and hairline).",
+      "**Do** keep Thai line-height at 1.35 or more. Tighten only Latin-only settings.",
+      "**Do** set every figure table in Anuphan with tabular lining numerals, right-aligned and not wrapping.",
+      "**Do** keep motion to the 160ms background-color transition on marks, source lines and buttons. Remove it under `prefers-reduced-motion`.",
+      "**Do** label synthetic data and provisional demo controls on the page."
+    ],
+    "donts": [
+      "**Don't** wrap content in cards, tinted panels or drop-shadowed containers. The scroll seam on the sticky decision bar is the only shadow.",
+      "**Don't** show score tiles, KPI blocks, success probabilities or \"top/potential\" badges. A rank is an order, not a score.",
+      "**Don't** use status hues for decoration, region fills or brand accents.",
+      "**Don't** let a figure appear without its source mark, or let missing, stale or redacted evidence disappear from view.",
+      "**Don't** label the same thing twice. A fully redacted column says \"redacted\" once, in its head.",
+      "**Don't** add Sarabun at 700. It is not loaded."
+    ]
+  }
+}

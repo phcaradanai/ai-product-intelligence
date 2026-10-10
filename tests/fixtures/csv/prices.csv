@@ -1,0 +1,5 @@
+merchant_sku,channel_code,price_type,unit_price,currency,observed_at
+SYN-AX25-55,SYN-STORE,selling,"24,000.00",THB,2026-09-30T22:00:00+07:00
+SYN-AX25-65,SYN-STORE,selling,"35,000.00",THB,2026-09-30T22:00:00+07:00
+SYN-AX26-55,SYN-STORE,selling,"27,000.00",THB,2026-09-30T22:00:00+07:00
+SYN-BZ-50,SYN-STORE,selling,"13,000.00",THB,2026-09-30T22:00:00+07:00

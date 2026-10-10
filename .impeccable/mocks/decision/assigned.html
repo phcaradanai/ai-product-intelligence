@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;500;600;700&family=Sarabun:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1440px;height:900px;overflow:hidden;background:#F1F1EE;color:#141414;font:14px/1.45 Sarabun,system-ui,sans-serif;display:grid;grid-template-columns:76px 1fr 440px}
+.rail{background:#1D2B36;color:#C9D3DA;display:flex;flex-direction:column;align-items:center;padding:18px 0;gap:22px;font:600 11px Anuphan}
+.rail .mark{width:40px;height:40px;border:2px solid #F1F1EE;color:#F1F1EE;display:grid;place-items:center;font:700 15px Anuphan}
+.rail a{writing-mode:vertical-rl;transform:rotate(180deg);letter-spacing:.04em;opacity:.7}
+.rail a.on{opacity:1;color:#fff;border-left:3px solid #B7791F;padding-left:6px}
+main{padding:26px 34px 0;display:flex;flex-direction:column;min-width:0}
+.top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:3px solid #141414;padding-bottom:10px}
+.kick{font:600 12px Anuphan;letter-spacing:.08em;color:#5A6670}
+h1{font:700 34px/1.15 Anuphan;margin-top:6px;max-width:820px}
+.meta{display:flex;gap:16px;font:500 12px Anuphan;color:#3A4650;margin-top:10px}
+.meta b{color:#141414}
+.tog{display:flex;gap:6px}.tog span{border:1px solid #141414;padding:4px 9px;font:600 12px Anuphan}.tog .on{background:#141414;color:#F1F1EE}
+.syn{background:#B7791F;color:#fff;font:700 11px Anuphan;padding:3px 7px;letter-spacing:.06em}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:14px}
+th{font:600 11px Anuphan;text-align:right;color:#5A6670;padding:6px 8px;border-bottom:1px solid #141414;letter-spacing:.04em}
+th:nth-child(-n+3){text-align:left}
+td{padding:8px;border-bottom:1px solid #C9C9C2;text-align:right;font:500 15px Anuphan}
+td:nth-child(-n+3){text-align:left}
+.bar td{background:#1D2B36;color:#fff;font:700 13px Anuphan;letter-spacing:.05em;padding:7px 8px;text-align:left}
+.bar .fit{float:right;font-weight:500;opacity:.8}
+.rk{font:700 22px Anuphan;width:44px}
+.sku{font:700 15px Anuphan}.sku small{display:block;font:400 12px Sarabun;color:#5A6670}
+sup{font:600 9px Anuphan;color:#B7791F;margin-left:1px}
+.flag{display:inline-block;border:1.5px solid currentColor;font:700 11px Anuphan;padding:1px 5px;letter-spacing:.05em}
+.ok{color:#13824B}.rv{color:#B7791F}.bk{color:#C42B1C}
+tr.sel td{background:#E4E4DE}
+.foot{margin-top:auto;border-top:1px solid #141414;padding:9px 0 14px;font:400 11.5px Sarabun;color:#3A4650;display:flex;gap:22px}
+aside{background:#fff;border-left:3px solid #141414;padding:26px 28px;display:flex;flex-direction:column;gap:14px}
+aside h2{font:700 26px Anuphan}aside .k{font:600 12px Anuphan;color:#5A6670;letter-spacing:.06em}
+.verdict{display:flex;align-items:center;gap:10px;font:700 18px Anuphan}
+.facts div{display:flex;justify-content:space-between;border-bottom:1px solid #E1E1DB;padding:6px 0;font:500 14px Anuphan;font-variant-numeric:tabular-nums}
+.facts span:first-child{font:400 13px Sarabun;color:#3A4650}
+.rules div{font:500 13px Sarabun;display:flex;gap:8px}
+.btns{display:flex;gap:8px;margin-top:auto}.btns span{flex:1;text-align:center;padding:11px;font:700 14px Anuphan;border:2px solid #141414}
+.btns .pri{background:#13824B;border-color:#13824B;color:#fff}
+</style></head><body>
+<nav class="rail"><div class="mark">AI</div><a class="on">ถามที่ปรึกษา</a><a>สำรวจสินค้า</a><a>สุขภาพข้อมูล</a><a>ประวัติการตัดสินใจ</a></nav>
+<main>
+ <div class="top"><div><div class="kick">ที่ปรึกษาโปรโมชั่น · คำถามประจำเดือน <span class="syn">ข้อมูลสังเคราะห์</span></div>
+ <h1>ทีวีรุ่นไหนในสต็อกที่ควรทำโปรโมชั่นในเดือนนี้ และควรใช้โปรโมชั่นแบบใด?</h1>
+ <div class="meta"><span>ช่วงข้อมูล <b>1–30 ก.ย. 2026</b></span><span>ประเมิน <b>10 ต.ค. 10:00 ICT</b></span><span>หลักฐาน <b>ข้อมูลภายในเท่านั้น</b></span><span>สิทธิ์ <b>confidential</b></span></div></div>
+ <div class="tog"><span class="on">TH</span><span>EN</span></div></div>
+ <table>
+  <tr><th>อันดับ</th><th>สินค้า / SKU</th><th>สถานะ</th><th>ขาย (ชิ้น)</th><th>สต็อกพร้อมขาย</th><th>รองรับ (วัน)</th><th>มาร์จิ้นจริง</th><th>กฎ</th></tr>
+  <tr class="bar"><td colspan="8">โฆษณาอย่างเดียว · advertise_only <span class="fit">3 ผ่านเกณฑ์จาก 4 · เรียงตาม รองรับ↓ มาร์จิ้น↓</span></td></tr>
+  <tr class="sel"><td class="rk">1</td><td class="sku">SYN-AX26-55<small>DemoVision AX 2026 · 55"</small></td><td><span class="flag ok">แนะนำ</span></td><td>1<sup>1</sup></td><td>8<sup>2</sup></td><td>240</td><td>30.0%<sup>3</sup></td><td class="ok">3/3</td></tr>
+  <tr><td class="rk">2</td><td class="sku">SYN-BZ-50<small>BrightLab BZ · 50"</small></td><td><span class="flag ok">แนะนำ</span></td><td>3<sup>1</sup></td><td>17<sup>2</sup></td><td>170</td><td>30.0%<sup>3</sup></td><td class="ok">3/3</td></tr>
+  <tr><td class="rk">3</td><td class="sku">SYN-AX25-55<small>DemoVision AX 2025 · 55"</small></td><td><span class="flag ok">แนะนำ</span></td><td>4<sup>1</sup></td><td>10<sup>2</sup></td><td>75</td><td>30.0%<sup>3</sup></td><td class="ok">3/3</td></tr>
+  <tr class="bar"><td colspan="8">ลดราคา · discount <span class="fit">0 ผ่านเกณฑ์ · มาร์จิ้นหลังลดราคายังประเมินไม่ได้</span></td></tr>
+  <tr><td class="rk">—</td><td class="sku">2 SKU · 2 ถูกกัน<small>รอเจ้าของกำหนดสมมติฐานส่วนลด</small></td><td><span class="flag rv">ต้องทบทวน</span></td><td colspan="4" style="text-align:left;font:400 13px Sarabun;color:#5A6670">post_action_unknown — ไม่ใช่ข้อมูลขาด</td><td class="rv">?</td></tr>
+  <tr class="bar"><td colspan="8">คงไว้ · hold <span class="fit">1 SKU</span></td></tr>
+  <tr><td class="rk">—</td><td class="sku">SYN-AX25-65<small>DemoVision AX 2025 · 65"</small></td><td><span class="flag bk">ถูกกฎกัน</span></td><td>2<sup>1</sup></td><td>4<sup>2</sup></td><td>60</td><td>30.0%<sup>3</sup></td><td class="bk">สต็อก &lt; ขั้นต่ำ</td></tr>
+ </table>
+ <div class="foot"><span><b>1</b> ERP export (สังเคราะห์) · sales.csv · 1–30 ก.ย.</span><span><b>2</b> inventory.csv · ณ 30 ก.ย. 22:00</span><span><b>3</b> ต้นทุน purchase · costs.csv · สูตร v1</span><span>นโยบาย: promotion v1 · ranking v1 · preference v1 (สังเคราะห์)</span></div>
+</main>
+<aside>
+ <div class="k">SKU ที่เลือก · อันดับ 1 ในโฆษณาอย่างเดียว</div>
+ <h2>SYN-AX26-55</h2>
+ <div class="verdict ok"><span class="flag ok">แนะนำ</span> โฆษณาอย่างเดียว (advertise_only)</div>
+ <div class="facts"><div><span>ขาย ก.ย. (units_sold v1)</span><span>1 ชิ้น<sup>1</sup></span></div><div><span>ยอดขายรวม (gross_revenue v1)</span><span>฿27,000<sup>1</sup></span></div><div><span>สต็อกพร้อมขาย</span><span>8 ชิ้น<sup>2</sup></span></div><div><span>รองรับได้</span><span>240 วัน</span></div><div><span>มาร์จิ้นจริง (purchase)</span><span>30.0%<sup>3</sup></span></div></div>
+ <div class="k">ผลการตรวจกฎ</div>
+ <div class="rules"><div class="ok">✓ มาร์จิ้นปัจจุบัน ≥ เกณฑ์</div><div class="ok">✓ สต็อก ≥ ขั้นต่ำ</div><div class="ok">✓ สถานะ SKU active</div></div>
+ <div class="k">ทางเลือกอื่น</div>
+ <div class="rules"><div class="rv">ลดราคา — ต้องทบทวน</div><div class="rv">บันเดิล — ต้องทบทวน</div><div class="ok">คงไว้ — ผ่าน</div></div>
+ <div class="k">ความมั่นใจ (แยกมิติ)</div>
+ <div class="rules"><div>ตัวตน: canonical ภายใน · การค้นหา: ไม่เกี่ยว · โมเดล: rule-based · คุณภาพข้อมูล: ยังไม่คำนวณ</div></div>
+ <div class="btns"><span class="pri">อนุมัติ</span><span>ปฏิเสธ</span><span>ขอข้อมูลเพิ่ม</span></div>
+</aside>
+</body></html>

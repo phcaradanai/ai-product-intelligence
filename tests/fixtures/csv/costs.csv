@@ -1,0 +1,5 @@
+merchant_sku,cost_type,unit_cost,currency,effective_from,effective_to
+SYN-AX25-55,purchase,"16,800.00",THB,2026-09-01T00:00:00+07:00,
+SYN-AX25-65,purchase,"24,500.00",THB,2026-09-01T00:00:00+07:00,
+SYN-AX26-55,purchase,"18,900.00",THB,2026-09-01T00:00:00+07:00,
+SYN-BZ-50,purchase,"9,100.00",THB,2026-09-01T00:00:00+07:00,2026-12-31T23:59:59+07:00

@@ -1,0 +1,17 @@
+{
+  "id": "policy_SYNTHETIC_sample",
+  "version": 1,
+  "status": "approved",
+  "approvedBy": "synthetic_owner",
+  "approvedAt": "2026-08-31T09:00:00+07:00",
+  "effectiveFrom": "2026-09-01T00:00:00+07:00",
+  "effectiveTo": null,
+  "costType": "purchase",
+  "unrestrictedActions": ["hold"],
+  "rules": [
+    { "id": "r_margin", "kind": "metric_threshold", "appliesTo": ["discount", "bundle", "advertise_only"], "metric": "realized_gross_margin_ratio", "comparator": "gte", "threshold": 0.25, "unit": "ratio" },
+    { "id": "r_stock", "kind": "metric_threshold", "appliesTo": ["discount", "bundle", "advertise_only"], "metric": "available_stock", "comparator": "gte", "threshold": 5, "unit": "units" },
+    { "id": "r_status", "kind": "allowed_sku_status", "appliesTo": ["discount", "bundle", "advertise_only"], "statuses": ["active"] },
+    { "id": "r_vendor", "kind": "exclusion", "appliesTo": ["discount"], "scope": "brand", "ids": ["brand_syn_bright"] }
+  ]
+}

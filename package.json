@@ -1,0 +1,43 @@
+{
+  "name": "ai-product-intelligence-advisor",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "AI Product Intelligence Advisor — domain contracts, CSV import, deterministic metrics, policy evaluation, ranking, recommendations and decision records (candidate)",
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "typecheck:domain": "tsc --noEmit -p tsconfig.domain.json",
+    "test": "node --experimental-strip-types --test tests/domain.test.ts tests/contracts.test.ts tests/ingestion.test.ts tests/metrics.test.ts tests/rules.test.ts tests/ranking.test.ts tests/recommendation.test.ts tests/web.test.ts",
+    "test:domain": "node --experimental-strip-types --test tests/domain.test.ts",
+    "import:sample": "node --experimental-strip-types scripts/import-sample.ts",
+    "metrics:sample": "node --experimental-strip-types scripts/metrics-sample.ts",
+    "rules:sample": "node --experimental-strip-types scripts/rules-sample.ts",
+    "ranking:sample": "node --experimental-strip-types scripts/ranking-sample.ts",
+    "recommend:sample": "node --experimental-strip-types scripts/recommend-sample.ts",
+    "dev:web": "vite dev apps/web",
+    "build:web": "vite build apps/web",
+    "typecheck:web": "tsc --noEmit -p apps/web/tsconfig.json",
+    "check:web-bundle": "node --experimental-strip-types scripts/check-client-bundle.ts"
+  },
+  "engines": {
+    "node": ">=22.10.0"
+  },
+  "dependencies": {
+    "@fontsource/anuphan": "^5.3.0",
+    "@fontsource/sarabun": "^5.3.0",
+    "@tanstack/react-router": "^1.170.42",
+    "@tanstack/react-start": "^1.168.61",
+    "lucide-react": "^1.55.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "typescript": "^5.0.0",
+    "vite": "^8.3.4"
+  }
+}
