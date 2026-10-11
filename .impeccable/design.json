@@ -667,6 +667,29 @@
     "scrollbar": {
       "value": "scrollbar-width: thin; scrollbar-color: rgba(60, 60, 67, 0.3) transparent",
       "purpose": "All scrolling regions."
+    },
+    "darkTheme": {
+      "mechanism": "CSS light-dark() on every colour token; color-scheme: light dark; [data-theme] pins light or dark; toolbar toggle System/Light/Dark saved in localStorage \"advisor-theme\"; pre-paint head script",
+      "colors": {
+        "wallpaper": "#0e0f12",
+        "surface": "#1c1c1e",
+        "text": "#f5f5f7",
+        "text-2": "#d1d1d6",
+        "text-3": "#a1a1a8",
+        "accent": "#5aa9ff",
+        "accent-fill": "#1a6fd6",
+        "accent-deep": "#1662c0",
+        "st-recommended": "#3ad16a",
+        "st-review": "#ffa53a",
+        "st-insufficient": "#a5a3ff",
+        "st-blocked": "#ff6f66",
+        "st-redacted": "#a1a1a8",
+        "glass-bg": "rgba(40, 40, 44, 0.58)",
+        "glass-solid": "#232326",
+        "control-on": "#636366",
+        "tv-screen-a": "#141518",
+        "tv-screen-b": "#2b2e35"
+      }
     }
   },
   "components": [

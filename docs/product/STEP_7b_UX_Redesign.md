@@ -128,3 +128,27 @@ Also taken from the reviewer's optional list: screen tone varies with screen siz
 - **Fresh finish reviewer:** disposition `fix` with 8 items, all applied.
   - It also found that the earlier blocked and review captures were identical, because `?sku=` takes the SKU id (`sku_syn_e3`), not the merchant SKU.
   - Those captures were retaken with the correct id.
+
+## 6. Dark mode (11 Oct 2026)
+
+**Request:** the user asked to add dark mode.
+
+- **Tokens:** every colour token now holds its light and dark value via CSS `light-dark()` (`apps/web/src/styles.css`). Hard-coded colours were turned into tokens: scrollbar, glass fallback, selected segment, filter count, and the TV bezel, stand and screen.
+- **Accent:** splits into `accent` (text/icons) and `accent-fill` (backgrounds under white labels), so both themes hold 4.5:1.
+- **Contrast:** all dark text tokens were checked against the surface, the wallpaper, the fill and the glass. The lowest is 5.1:1 (blocked red on fill).
+- **Default and toggle:**
+  - The default follows the system.
+  - A toolbar button (`ThemeButton` in `ui/Shell.tsx`) cycles System → Light → Dark.
+  - The choice is saved per viewer in `localStorage` (`advisor-theme`). This is a convenience only; it renders correctly without storage.
+  - A script in the root route's `head().scripts` applies the saved theme before first paint.
+- **Decision S7b-DEC-08 (proposed):** theme is a viewer preference, not part of the URL search. It is never sent to the server and never affects the recommendation data.
+
+**Verify:**
+- `typecheck`: exit 0.
+- `test`: 151 pass, 0 fail.
+- `typecheck:web`: exit 0.
+- `build:web`: exit 0.
+- `check:web-bundle`: OK.
+- `impeccable detect`: 0 findings.
+- **In-app browser:** the toggle moves System → Light → Dark → System, and `data-theme`, `localStorage` and the body background change to match. The saved theme survives a reload. A fresh tab has no console errors.
+- **Dark captures:** `.impeccable/review/dark-*.png`.

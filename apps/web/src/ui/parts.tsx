@@ -139,8 +139,8 @@ export function TvIllustration({ inches, lang, maxInches = 65, maxWidth, caption
         {!decorative && <title>{label}</title>}
         <defs>
           <linearGradient id={`tv-screen-${size}`} x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stopColor="#2c2f36" />
-            <stop offset="1" stopColor="#4a505b" />
+            <stop offset="0" style={{ stopColor: "var(--tv-screen-a)" }} />
+            <stop offset="1" style={{ stopColor: "var(--tv-screen-b)" }} />
           </linearGradient>
           <linearGradient id={`tv-sheen-${size}`} x1="0" y1="0" x2="0" y2="1">
             <stop offset="0" stopColor="#ffffff" stopOpacity="0.28" />
@@ -148,10 +148,10 @@ export function TvIllustration({ inches, lang, maxInches = 65, maxWidth, caption
           </linearGradient>
         </defs>
         <g transform={`translate(${align === "start" ? 0 : (maxWidth - w) / 2} 0)`}>
-          <rect x="0" y="0" width={w} height={h + bezel * 2} rx={Math.max(3, w * 0.012)} fill="#1d1d1f" />
+          <rect x="0" y="0" width={w} height={h + bezel * 2} rx={Math.max(3, w * 0.012)} style={{ fill: "var(--tv-bezel)", stroke: "var(--tv-edge)" }} strokeWidth="1" />
           <rect x={bezel} y={bezel} width={w - bezel * 2} height={h} rx={Math.max(2, w * 0.006)} fill={`url(#tv-screen-${size})`} />
           <rect x={bezel} y={bezel} width={w - bezel * 2} height={h} rx={Math.max(2, w * 0.006)} fill={`url(#tv-sheen-${size})`} />
-          <path d={`M${bezel * 2 + w * 0.06} ${h + bezel * 2} l${-w * 0.03} ${foot} M${w - bezel * 2 - w * 0.06} ${h + bezel * 2} l${w * 0.03} ${foot}`} stroke="#2c2c2e" strokeWidth={Math.max(2, w * 0.018)} strokeLinecap="round" />
+          <path d={`M${bezel * 2 + w * 0.06} ${h + bezel * 2} l${-w * 0.03} ${foot} M${w - bezel * 2 - w * 0.06} ${h + bezel * 2} l${w * 0.03} ${foot}`} style={{ stroke: "var(--tv-stand)" }} strokeWidth={Math.max(2, w * 0.018)} strokeLinecap="round" />
         </g>
       </svg>
       {caption && <figcaption>{fmt.int(lang, size)}″ · {t(lang, UI.synthetic).split(" — ")[0]}</figcaption>}

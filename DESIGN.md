@@ -324,6 +324,32 @@ The palette is a daylight neutral set with one system-blue accent and an iOS sta
 
 **The Blue Means Act Rule.** System Blue marks what is selected, what can be done next, and where a figure came from. It never encodes a status.
 
+### Dark theme
+
+Every colour token carries both values through CSS `light-dark()`. The page follows the system scheme by default. The toolbar theme button cycles System → Light → Dark, writes `data-theme` on `<html>` and saves the choice per viewer (`localStorage` key `advisor-theme`). A small script in the route head applies the saved choice before first paint, so the page never flashes.
+
+- **Ground and surfaces:**
+  - Wallpaper `#0e0f12`.
+  - Surface `#1c1c1e`.
+  - Dark surfaces separate by a 1px white hairline at 6%, not by shadow.
+- **Ink:** `#f5f5f7` / `#d1d1d6` / `#a1a1a8`. Ink 3 is still the lightest text allowed (6.6:1 on the surface).
+- **Accent:** splits into two tokens.
+  - `accent` `#5aa9ff` for blue text and icons.
+  - `accent-fill` `#1a6fd6` (hover `#1662c0`) for blue backgrounds that carry white labels (primary button, question bubble, brand mark), at 4.9:1 or more.
+  - In light both are `#0062cc`.
+- **Status text:**
+  - green `#3ad16a`, orange `#ffa53a`, indigo `#a5a3ff`, red `#ff6f66`.
+  - Each is at least 6.3:1 on the surface and 5.3:1 on its own tint.
+  - Tints are 13–18% alpha.
+- **Glass:**
+  - `rgba(40, 40, 44, 0.58)` with a 10% white stroke and a deep black drop shadow.
+  - The reduced-transparency solid is `#232326`.
+- **Selected segment and tab:** `control-on` `#636366`.
+- **TV illustration:**
+  - The SVG reads `--tv-bezel`, `--tv-edge`, `--tv-stand`, `--tv-screen-a` and `--tv-screen-b`.
+  - In dark, the bezel gains a 22% white edge so it does not vanish into the surface, and the screen goes near-black, like a panel that is off.
+- **Rule:** never write a literal colour outside the token block. A new colour is a new token with both values.
+
 ## Typography
 
 **Font stack:** the system UI face (`-apple-system`, `SF Pro Text`, `Segoe UI`, `Roboto`), then **Noto Sans Thai Variable**, self-hosted through `@fontsource-variable/noto-sans-thai`, for Thai on every OS. Anuphan and Sarabun are no longer used. The variable font allows the 650 weight used for titles.

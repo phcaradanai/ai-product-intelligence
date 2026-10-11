@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import { Link, useNavigate } from "@tanstack/react-router";
-import { Activity, History, LayoutDashboard, Lock, MessageSquareText, Search as SearchIcon, SlidersHorizontal, Tv } from "lucide-react";
+import { Activity, History, LayoutDashboard, Lock, MessageSquareText, Monitor, Moon, Search as SearchIcon, SlidersHorizontal, Sun, Tv } from "lucide-react";
 import type { WorkspaceView } from "../server/pipeline.ts";
 import { fmt, t, UI } from "../i18n.ts";
 import type { Lang } from "../i18n.ts";
@@ -110,6 +110,7 @@ function Toolbar({ lang, search, toolbarSearch, windowLabel }: {
           <button key={l} type="button" aria-pressed={lang === l} onClick={() => set({ lang: l })}>{l.toUpperCase()}</button>
         ))}
       </div>
+      <ThemeButton lang={lang} />
       <div className="demo" ref={ref}>
         <button type="button" className="tool-btn" aria-expanded={demoOpen} aria-haspopup="dialog" onClick={() => setDemoOpen((o) => !o)}>
           <SlidersHorizontal aria-hidden size={16} /><span>{t(lang, UI.demo)}</span>
@@ -136,5 +137,36 @@ function Toolbar({ lang, search, toolbarSearch, windowLabel }: {
       </div>
     </div>
     </div>
+  );
+}
+
+/** Per-viewer theme preference. The key must match the pre-paint script in routes/__root.tsx. */
+export const THEME_KEY = "advisor-theme";
+type Theme = "system" | "light" | "dark";
+const THEME_NEXT: Record<Theme, Theme> = { system: "light", light: "dark", dark: "system" };
+const THEME_ICON = { system: Monitor, light: Sun, dark: Moon } as const;
+const THEME_LABEL = { system: UI.themeSystem, light: UI.themeLight, dark: UI.themeDark } as const;
+
+function ThemeButton({ lang }: { lang: Lang }) {
+  const [theme, setTheme] = useState<Theme>("system");
+  useEffect(() => {
+    const t = document.documentElement.dataset.theme;
+    if (t === "light" || t === "dark") setTheme(t);
+  }, []);
+  const choose = (next: Theme) => {
+    setTheme(next);
+    if (next === "system") delete document.documentElement.dataset.theme;
+    else document.documentElement.dataset.theme = next;
+    try {
+      if (next === "system") localStorage.removeItem(THEME_KEY);
+      else localStorage.setItem(THEME_KEY, next);
+    } catch { /* storage blocked: the choice lasts for this page only */ }
+  };
+  const Icon = THEME_ICON[theme];
+  const label = `${t(lang, UI.theme)}: ${t(lang, THEME_LABEL[theme])}`;
+  return (
+    <button type="button" className="tool-btn icon-only" aria-label={label} title={label} onClick={() => choose(THEME_NEXT[theme])}>
+      <Icon aria-hidden size={16} />
+    </button>
   );
 }
