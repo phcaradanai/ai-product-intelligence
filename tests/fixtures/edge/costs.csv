@@ -1,0 +1,5 @@
+merchant_sku,cost_type,unit_cost,currency,effective_from,effective_to
+SYN-E1-50,purchase,"14,000.00",THB,2026-09-01T00:00:00+07:00,
+SYN-E3-65,purchase,"21,000.00",THB,2026-09-01T00:00:00+07:00,
+SYN-E4-43,purchase,"10,000.00",THB,2026-09-01T00:00:00+07:00,
+SYN-E5-58,purchase,"14,000.00",THB,2026-09-01T00:00:00+07:00,

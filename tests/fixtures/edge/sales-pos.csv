@@ -1,0 +1,2 @@
+transaction_id,line_no,merchant_sku,event_at,quantity,gross_revenue,currency
+SYN-POS-01,1,SYN-E4-43,2026-09-12T15:00:00+07:00,1,15000.00,THB

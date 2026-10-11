@@ -2,7 +2,7 @@
 
 **Project:** AI Product Intelligence Advisor  
 **Date:** 10 October 2026  
-**Status:** **IMPLEMENTED AND VERIFIED ON SYNTHETIC DATA. Finish review: two rounds, last disposition `fix`; three regressions fixed afterwards without a third review (§6).**  
+**Status:** **IMPLEMENTED AND VERIFIED ON SYNTHETIC DATA.** Finish review: three rounds; the last disposition was `fix`, its 7 items were applied in one batch and recaptured, and no further review was run (see §6 and `REVIEW_STEP_0-7.md`).  
 **Assumption:** The user asked to "continue with STEP 7" without choosing between the two candidates offered. STEP 7 is taken to be the Advisor Workspace UI (blueprint §11.1, PRODUCT.md), which was option 1, as in the previous steps. The user then confirmed the scope (one Workspace page), the scene (office desktop, daylight) and the visual direction ("Market Page") through the design flow.  
 **Basis:** `STEP_0_Product_Blueprint.md` §5.2, §6, §11 (11.1–11.5, CI-1…CI-12), §15.2; `PRODUCT.md`; STEP 2–6 records; surface brief `.impeccable/surfaces/apps-web-src-routes-index-tsx.md` (direction contract, seed 6330389d)  
 **Prompt standard:** Context → Goal → Constraints → Output → Verify
@@ -54,6 +54,8 @@ The UI is bilingual Thai/English and switchable. It runs on the synthetic STEP 2
 | S7-DEC-06 | Fonts are self-hosted through Fontsource (Anuphan, Sarabun) | No third-party font host at runtime |
 | S7-DEC-07 | `generatedAt` is the fixed sample evaluation time, not the server start time | Content-hash ids stay stable across reloads and restarts. A dev-server reload changed the ids and refused a decision with `unknown_recommendation`; this fixed it |
 | S7-DEC-08 | ≤ 1440 px uses a 64 px icon rail (labels kept for screen readers and tooltips); labels show above 1440 px. Disabled surfaces are dimmed | Keeps the three work areas, including the decision foot, in the first viewport at 1280–1440. This deviates from the contract's "icon + label" rail at exactly 1440 |
+| S7-DEC-10 | Demo `scenario` selector: `sample` (STEP 2 fixtures) or `edge` (`tests/fixtures/edge/`), chosen on the server | The sample never produces a non-recommended SKU; the edge set makes every §11.3 status and fact state reachable and testable |
+| S7-DEC-11 | Fact cells and unknown rule outcomes are coloured by the reason class used for the SKU status (`packages/recommendation/src/classes.ts`). Conflicting data has its own word | One status ramp, and colour is never the only cue (WCAG 1.4.1) |
 | S7-DEC-09 | A metric column that is fully redacted says "Redacted" once in its header; its cells show a lock icon with an accessible label | "Nothing labeled twice"; the listing fits at 1440 |
 
 ## 5. Output files
@@ -110,3 +112,40 @@ Environment: Node 22.23.1, React 19.3.0, @tanstack/react-start 1.168.61, Vite 8.
   All three were fixed afterwards (dimmed disabled icons, fade above the decision block, single-line mobile headers) and recaptured. **They were not re-reviewed**, because the two-round budget was spent.
 
 Screenshots: `.impeccable/review/` (desktop 1440, 1600, 1280; internal English; tall; mobile first viewport and sheet).
+
+### Review round 3 (11 October 2026, after `REVIEW_STEP_0-7.md`)
+
+**Before this round:**
+- Edge scenario added.
+- Code aligned to DESIGN.md:
+  - Thai line-height floor 1.35;
+  - footnote marks moved off the status amber;
+  - reason-class colours for fact cells;
+  - colours turned into tokens;
+  - ramp font size.
+- Detector `[]`, with one narrow ignore: `#000` in a mask gradient.
+
+**Fresh reviewer, disposition `fix`, 7 items:**
+
+1. one word in two colours (conflicting vs missing data);
+2. unknown rule outcome not coloured by reason class;
+3. the sticky decision fade still sliced glyphs;
+4. the source strip is off-screen when a mark lights;
+5. blocked SKUs framed as "missing data", without the failing rule;
+6. mobile demo controls take half the first viewport, and stray column ticks between groups;
+7. the mobile scroll mask never clears.
+
+**Applied in one batch:**
+
+1. a "Conflicting data" word;
+2. a `u-insufficient` class;
+3. an opaque gradient above the decision block;
+4. a mark tooltip with its source;
+5. a "Why it is blocked" block, with failing rule names in the sheet and the listing;
+6. a `<details>` for the demo controls on phones, and spacer rows;
+7. an `at-end` mask removal.
+
+Recaptured: desktop, edge, mobile. Detector `[]`. Checked in the browser: tooltip text, mask removal, demo collapsed on phones, no overflow at 375 px.
+
+**Not re-reviewed:** stopping here is deliberate, to avoid an open-ended review loop. The user decides whether to fund another round.
+

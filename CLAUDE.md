@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository state
 
-Early-stage repo for the *AI Product Intelligence Advisor* — an evidence-first AI product/promotion decision-intelligence platform (Thai-first, TV/electronics pilot proposed). STEP 0 (blueprint) and STEP 1 (data domain foundation) were declared complete by the user on 10 Oct 2026. STEP 2 (in-memory internal CSV import and data-quality report) STEP 3 (versioned deterministic metrics, MET-01) STEP 4 (business-rule policy evaluator, DEC-01) STEP 5 (rule-based opportunity ranking, DEC-02) STEP 6 (recommendation builder and decision record) and STEP 7 (Advisor Workspace web app in `apps/web`, TanStack Start) are implemented. There is no separate API service, database, lint config or CI yet, and it is not a git repository. `alternative/ai-product-intelligence-step1/` is the original STEP 1 candidate kept locally for reference (git-ignored) — do not edit it; the live code is at the root.
+Early-stage repo for the *AI Product Intelligence Advisor* — an evidence-first AI product/promotion decision-intelligence platform (Thai-first, TV/electronics pilot proposed). STEP 0 (blueprint) and STEP 1 (data domain foundation) were declared complete by the user on 10 Oct 2026. STEP 2 (in-memory internal CSV import and data-quality report) STEP 3 (versioned deterministic metrics, MET-01) STEP 4 (business-rule policy evaluator, DEC-01) STEP 5 (rule-based opportunity ranking, DEC-02) STEP 6 (recommendation builder and decision record) and STEP 7 (Advisor Workspace web app in `apps/web`, TanStack Start) are implemented. There is no separate API service, database, lint config or CI yet. It is a git repository with a GitHub remote (`origin`); never commit or push without the user's explicit request. `alternative/ai-product-intelligence-step1/` is the original STEP 1 candidate kept locally for reference (git-ignored) — do not edit it; the live code is at the root.
 
 ## Commands
 
@@ -60,9 +60,11 @@ Imports use explicit `.ts` extensions (`allowImportingTsExtensions`, `verbatimMo
   - The whole pipeline runs only in server functions (`src/server/functions.ts` → `pipeline.ts`). Only `redactForViewer()` output reaches the browser.
   - Client code imports package **types** only. Never import `pipeline.ts`/`sample.ts` or package runtime code into UI files; `check:web-bundle` enforces this.
   - Decisions go to the server by recommendation id, and the server stamps `decidedAt`.
-  - Demo clearance defaults to `internal` and approval to off.
+  - Demo clearance defaults to `internal` and approval to off. A demo `scenario` (`sample` | `edge`) selects synthetic inputs on the server; `tests/fixtures/edge/` reaches every SKU status and fact state the sample never shows (do not change `tests/fixtures/csv/`, whose counts are pinned by tests).
+  - The UI may import runtime code only from `packages/recommendation/src/classes.ts` (pure tables); everything else from packages is type-only.
   - Copy lives in `src/i18n.ts` as exhaustive `{th, en}` Records. A new code must be added there, or the typecheck fails.
-  - Visual system: `DESIGN.md` plus the surface brief `.impeccable/surfaces/apps-web-src-routes-index-tsx.md` (direction "Market Page"). The impeccable design hook runs on UI edits.
+  - Two pages: Chat & Advisor (`/`, `ui/Chat.tsx`) and Product dashboard (`/dashboard`, `ui/Dashboard.tsx`), sharing `ui/Shell.tsx` (glass sidebar + toolbar), `ui/model.ts`, `ui/parts.tsx` and `src/search.ts`. The chat has no free-text input (no LLM); follow-ups are preset intents answered from the redacted set.
+  - Visual system: light Liquid Glass (STEP 7b, `docs/product/STEP_7b_UX_Redesign.md`). Glass only on sidebar, toolbar, chat composer and decision bar; content on solid surfaces; no glass on glass. `DESIGN.md` plus the surface brief `.impeccable/surfaces/apps-web-src-routes-index-tsx.md`.
 - `tests/fixtures/synthetic.ts` is the domain fixture; fictional `SYN-` data covering all match review states, authorized vs unverified sources, and a stale article. Tests mutate `structuredClone` copies. `tests/fixtures/csv/` holds the sample exports and source registry for import tests.
 - Contract decisions S1-DEC-01…14 are in `docs/product/STEP_1_Data_Domain_Foundation.md`; record new ones there, and update its §7 verify table only with output you actually ran.
 
@@ -70,7 +72,9 @@ Much of the research material is written in Thai. The north-star user question i
 
 ## Document map and precedence
 
-- `PRODUCT.md` holds the product context for UI and design work (`/impeccable`). It records users (analyst prepares, manager decides), the stack (TanStack Start + React), a bilingual Thai/English UI, and evidence that must not be fabricated. There is no DESIGN.md yet.
+- `PRODUCT.md` holds the product context for UI and design work (`/impeccable`). It records users (analyst prepares, manager decides), the stack (TanStack Start + React), a bilingual Thai/English UI, and evidence that must not be fabricated. `DESIGN.md` + `.impeccable/design.json` document the built visual system; the design detector checks UI code against them.
+- `docs/product/STEP_7b_UX_Redesign.md`: Liquid Glass redesign and the chat/dashboard split (supersedes the STEP 7 "Market Page" visuals).
+- `docs/product/REVIEW_STEP_0-7.md`: review of STEP 0–7 against the blueprint.
 - `docs/product/STEP_7_Advisor_Workspace.md`: STEP 7 record (server boundary, S7-DEC, verify and finish-review results).
 - `docs/product/STEP_6_Recommendation_and_Decision.md`: STEP 6 record (preference walk, status mapping, redaction, decision log, S6-DEC).
 - `docs/product/STEP_5_Opportunity_Ranking.md`: STEP 5 record (ranking policy shape, S5-DEC, owner inputs).
@@ -78,7 +82,7 @@ Much of the research material is written in Thai. The north-star user question i
 - `docs/product/STEP_3_Metric_Definitions.md`: STEP 3 record (shared metric rules, v1 definitions, verify results).
 - `docs/product/STEP_2_Internal_CSV_Import.md`: STEP 2 record (file formats, failure levels, S2-DEC, verify results).
 - `docs/product/STEP_1_Data_Domain_Foundation.md` — STEP 1 record: constraints applied, contract decisions, verify results. (`STEP_1_Prompt_01.md` is superseded.)
-- `docs/product/STEP_0_Product_Blueprint.md` — **the primary reference.** Synthesizes everything else into product charter, first vertical slice, invariants, domain ontology, reference architecture, evaluation gates, decision register, and the hand-off contract for coding tasks. Status: DRAFT, approval pending.
+- `docs/product/STEP_0_Product_Blueprint.md` — **the primary reference.** Synthesizes everything else into product charter, first vertical slice, invariants, domain ontology, reference architecture, evaluation gates, decision register, and the hand-off contract for coding tasks. Status: declared complete by the user (10 Oct 2026); owner decisions DEC-001…016 remain open.
 - `docs/research/research-draft_v2.md` — v0.2 architecture/implementation plan: modules MOD-01..10, proposed monorepo layout (§7), backlog, milestones M0–M4, POC experiments EXP-01..04, ADR-001..012 (§14).
 - `docs/research/AI_Product_Intelligence_Advisor_Architecture.md` — v0.1 architecture draft (superseded by v0.2 where they conflict).
 - `docs/research/AI_Product_Intelligence_Competitive_Research.md`, `deep-research-report.md` — OSS/commercial case studies (Onyx, Splink/Zingg, Hindsight, Jev, Medusa, Saleor, DataWeave, etc.). Snapshots dated 9 Oct 2026, not live vendor facts.

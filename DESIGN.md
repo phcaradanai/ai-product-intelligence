@@ -1,345 +1,467 @@
 ---
 name: AI Product Intelligence Advisor
-description: "Market Page: an evidence-first decision workspace set like a Thai business-daily market listing."
+description: "Daylight Glass: a light Liquid Glass control layer floating over solid white content, for an evidence-first promotion advisor."
 colors:
-  newsprint-ground: "#f1f1ee"
-  sheet-white: "#ffffff"
-  press-ink: "#141414"
-  ink-slate-2: "#33404a"
-  ink-muted: "#56626c"
-  column-rule: "#c9c9c2"
-  hairline-rule: "#e1e1db"
-  slate-field: "#1d2b36"
-  slate-field-raised: "#2b3c49"
-  on-slate: "#f1f1ee"
-  on-slate-muted: "#b9c6cf"
-  selection-gray: "#e3e3dc"
-  row-hover: "#e9e9e3"
-  status-recommended: "#13703f"
-  status-recommended-deep: "#0f5c33"
-  status-review: "#8a5a00"
-  status-insufficient: "#2b5b84"
-  status-blocked: "#b42318"
-  status-redacted: "#56626c"
-  footnote-mark: "#8a5a00"
-  footnote-lit: "#f3d48f"
+  wallpaper: "#eef1f6"
+  glass-solid: "#f6f7f9"
+  surface: "#ffffff"
+  text: "#1d1d1f"
+  text-2: "#424247"
+  text-3: "#5d5d63"
+  hairline: "rgba(29, 29, 31, 0.1)"
+  fill: "rgba(118, 118, 128, 0.12)"
+  fill-strong: "rgba(118, 118, 128, 0.2)"
+  accent: "#0062cc"
+  accent-deep: "#0052ad"
+  accent-tint: "rgba(0, 113, 227, 0.12)"
+  on-accent: "#ffffff"
+  status-recommended: "#1d7a38"
+  status-recommended-tint: "rgba(52, 199, 89, 0.15)"
+  status-review: "#a3500a"
+  status-review-tint: "rgba(255, 149, 0, 0.16)"
+  status-insufficient: "#4644b0"
+  status-insufficient-tint: "rgba(88, 86, 214, 0.13)"
+  status-blocked: "#c0161c"
+  status-blocked-tint: "rgba(255, 59, 48, 0.12)"
+  status-redacted: "#6a6a70"
+  live: "#34c759"
+  idle: "rgba(118, 118, 128, 0.45)"
+  tooltip: "rgba(29, 29, 31, 0.92)"
+  glass-bg: "rgba(255, 255, 255, 0.58)"
+  glass-stroke: "rgba(255, 255, 255, 0.72)"
 typography:
   display:
-    fontFamily: "Anuphan, Sarabun, system-ui, sans-serif"
-    fontSize: "28px"
-    fontWeight: 700
-    lineHeight: 1.35
-    letterSpacing: "-0.01em"
-  headline:
-    fontFamily: "Anuphan, Sarabun, system-ui, sans-serif"
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", Roboto, \"Noto Sans Thai Variable\", \"Noto Sans Thai\", sans-serif"
     fontSize: "28px"
     fontWeight: 700
     lineHeight: 1.2
+    letterSpacing: "-0.015em"
+  headline:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", Roboto, \"Noto Sans Thai Variable\", \"Noto Sans Thai\", sans-serif"
+    fontSize: "24px"
+    fontWeight: 650
+    lineHeight: 1.4
     letterSpacing: "-0.01em"
+  key-figure:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", Roboto, \"Noto Sans Thai Variable\", \"Noto Sans Thai\", sans-serif"
+    fontSize: "20px"
+    fontWeight: 650
+    lineHeight: 1.4
+    fontFeature: "\"tnum\""
   rank:
-    fontFamily: "Anuphan, Sarabun, system-ui, sans-serif"
-    fontSize: "22px"
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", Roboto, \"Noto Sans Thai Variable\", \"Noto Sans Thai\", sans-serif"
+    fontSize: "20px"
     fontWeight: 700
     lineHeight: 1
-    fontFeature: "\"tnum\", \"lnum\""
+    fontFeature: "\"tnum\""
   title:
-    fontFamily: "Anuphan, Sarabun, system-ui, sans-serif"
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", Roboto, \"Noto Sans Thai Variable\", \"Noto Sans Thai\", sans-serif"
     fontSize: "17px"
-    fontWeight: 700
-    lineHeight: 1.35
-  figure:
-    fontFamily: "Anuphan, Sarabun, system-ui, sans-serif"
+    fontWeight: 650
+    lineHeight: 1.4
+  card-title:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", Roboto, \"Noto Sans Thai Variable\", \"Noto Sans Thai\", sans-serif"
     fontSize: "15px"
-    fontWeight: 500
-    lineHeight: 1.35
-    fontFeature: "\"tnum\", \"lnum\""
+    fontWeight: 650
+    lineHeight: 1.4
+  answer:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", Roboto, \"Noto Sans Thai Variable\", \"Noto Sans Thai\", sans-serif"
+    fontSize: "15px"
+    fontWeight: 400
+    lineHeight: 1.55
   body:
-    fontFamily: "Sarabun, Anuphan, system-ui, sans-serif"
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", Roboto, \"Noto Sans Thai Variable\", \"Noto Sans Thai\", sans-serif"
     fontSize: "14px"
     fontWeight: 400
-    lineHeight: 1.6
+    lineHeight: 1.5
+  control:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", Roboto, \"Noto Sans Thai Variable\", \"Noto Sans Thai\", sans-serif"
+    fontSize: "13px"
+    fontWeight: 500
+    lineHeight: 1.4
   body-small:
-    fontFamily: "Sarabun, Anuphan, system-ui, sans-serif"
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", Roboto, \"Noto Sans Thai Variable\", \"Noto Sans Thai\", sans-serif"
     fontSize: "12.5px"
     fontWeight: 400
-    lineHeight: 1.5
+    lineHeight: 1.45
   label:
-    fontFamily: "Anuphan, Sarabun, system-ui, sans-serif"
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", Roboto, \"Noto Sans Thai Variable\", \"Noto Sans Thai\", sans-serif"
     fontSize: "12px"
     fontWeight: 600
-    lineHeight: 1.35
+    lineHeight: 1.4
+  caption:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", Roboto, \"Noto Sans Thai Variable\", \"Noto Sans Thai\", sans-serif"
+    fontSize: "11.5px"
+    fontWeight: 400
+    lineHeight: 1.4
   mark:
-    fontFamily: "Anuphan, Sarabun, system-ui, sans-serif"
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", Roboto, \"Noto Sans Thai Variable\", \"Noto Sans Thai\", sans-serif"
     fontSize: "10px"
     fontWeight: 700
     lineHeight: 1
 rounded:
-  none: "0px"
-  mark: "2px"
-  nav: "4px"
+  glass: "22px"
+  bubble: "20px"
+  surface: "18px"
+  popover: "16px"
+  tile: "14px"
+  control: "12px"
+  field: "10px"
+  segment: "9px"
+  tooltip: "8px"
+  mark: "5px"
+  pill: "999px"
 spacing:
-  "1": "4px"
-  "2": "8px"
-  "3": "12px"
-  "4": "16px"
-  "5": "24px"
-  "6": "32px"
+  xs: "4px"
+  sm: "8px"
+  md: "12px"
+  lg: "16px"
+  xl: "18px"
+  2xl: "24px"
 components:
-  button-approve:
-    backgroundColor: "{colors.status-recommended}"
-    textColor: "{colors.sheet-white}"
-    rounded: "{rounded.none}"
-    padding: "10px 8px"
-  button-approve-hover:
-    backgroundColor: "{colors.status-recommended-deep}"
+  button-primary:
+    backgroundColor: "{colors.accent}"
+    textColor: "{colors.on-accent}"
+    typography: "{typography.body}"
+    rounded: "{rounded.control}"
+    padding: "0 16px"
+    height: "40px"
+  button-primary-hover:
+    backgroundColor: "{colors.accent-deep}"
   button-secondary:
-    backgroundColor: "{colors.sheet-white}"
-    textColor: "{colors.press-ink}"
-    rounded: "{rounded.none}"
-    padding: "10px 8px"
+    backgroundColor: "{colors.fill}"
+    textColor: "{colors.text}"
+    rounded: "{rounded.control}"
+    padding: "0 16px"
+    height: "40px"
   button-secondary-hover:
-    backgroundColor: "{colors.selection-gray}"
+    backgroundColor: "{colors.fill-strong}"
+  glass-bar:
+    backgroundColor: "{colors.glass-bg}"
+    rounded: "{rounded.glass}"
+    padding: "8px"
+  nav-item:
+    textColor: "{colors.text-2}"
+    rounded: "{rounded.control}"
+    padding: "9px 10px"
+  nav-item-on:
+    backgroundColor: "{colors.accent-tint}"
+    textColor: "{colors.accent}"
+  searchbox:
+    backgroundColor: "{colors.fill}"
+    textColor: "{colors.text-3}"
+    rounded: "{rounded.control}"
+    padding: "0 12px"
+    height: "38px"
+  segmented:
+    backgroundColor: "{colors.fill}"
+    textColor: "{colors.text-2}"
+    rounded: "{rounded.control}"
+    padding: "3px"
   segmented-on:
-    backgroundColor: "{colors.press-ink}"
-    textColor: "{colors.newsprint-ground}"
-    rounded: "{rounded.none}"
-    padding: "5px 12px"
-  segmented-off-hover:
-    backgroundColor: "{colors.selection-gray}"
-  rail:
-    backgroundColor: "{colors.slate-field}"
-    textColor: "{colors.on-slate-muted}"
-    width: "232px"
-  rail-nav-on:
-    backgroundColor: "{colors.slate-field-raised}"
-    textColor: "{colors.on-slate}"
-    rounded: "{rounded.nav}"
-    padding: "9px 12px"
-  sector-bar:
-    backgroundColor: "{colors.slate-field}"
-    textColor: "{colors.on-slate}"
-    padding: "7px 8px"
-  sector-bar-none:
-    backgroundColor: "{colors.slate-field-raised}"
-    textColor: "{colors.on-slate}"
-  listing-row-hover:
-    backgroundColor: "{colors.row-hover}"
-  listing-row-selected:
-    backgroundColor: "{colors.selection-gray}"
-  footnote-mark:
-    textColor: "{colors.footnote-mark}"
+    backgroundColor: "{colors.surface}"
+    textColor: "{colors.text}"
+    rounded: "{rounded.segment}"
+    padding: "0 12px"
+    height: "32px"
+  filter:
+    backgroundColor: "{colors.surface}"
+    textColor: "{colors.text-2}"
+    typography: "{typography.control}"
+    rounded: "{rounded.pill}"
+    padding: "0 14px"
+    height: "34px"
+  filter-on:
+    backgroundColor: "{colors.text}"
+    textColor: "{colors.surface}"
+  status-chip-recommended:
+    backgroundColor: "{colors.status-recommended-tint}"
+    textColor: "{colors.status-recommended}"
+    rounded: "{rounded.pill}"
+    padding: "0 11px"
+    height: "28px"
+  status-chip-review:
+    backgroundColor: "{colors.status-review-tint}"
+    textColor: "{colors.status-review}"
+    rounded: "{rounded.pill}"
+    padding: "0 11px"
+    height: "28px"
+  status-chip-insufficient:
+    backgroundColor: "{colors.status-insufficient-tint}"
+    textColor: "{colors.status-insufficient}"
+    rounded: "{rounded.pill}"
+    padding: "0 11px"
+    height: "28px"
+  status-chip-blocked:
+    backgroundColor: "{colors.status-blocked-tint}"
+    textColor: "{colors.status-blocked}"
+    rounded: "{rounded.pill}"
+    padding: "0 11px"
+    height: "28px"
+  badge:
+    backgroundColor: "{colors.accent-tint}"
+    textColor: "{colors.accent}"
+    typography: "{typography.label}"
+    rounded: "{rounded.pill}"
+    padding: "0 9px"
+    height: "24px"
+  badge-quiet:
+    backgroundColor: "{colors.fill}"
+    textColor: "{colors.text-2}"
+  product-card:
+    backgroundColor: "{colors.surface}"
+    rounded: "{rounded.surface}"
+    padding: "12px 14px 14px"
+  focus-panel:
+    backgroundColor: "{colors.surface}"
+    rounded: "{rounded.surface}"
+    padding: "24px"
+  key-fact-tile:
+    backgroundColor: "{colors.fill}"
+    typography: "{typography.key-figure}"
+    rounded: "{rounded.control}"
+    padding: "10px 12px"
+  tabs:
+    backgroundColor: "{colors.fill}"
+    rounded: "{rounded.control}"
+    padding: "3px"
+  tab-on:
+    backgroundColor: "{colors.surface}"
+    textColor: "{colors.text}"
+    rounded: "{rounded.segment}"
+    padding: "0 14px"
+    height: "32px"
+  provenance-mark:
+    backgroundColor: "{colors.accent-tint}"
+    textColor: "{colors.accent}"
     typography: "{typography.mark}"
     rounded: "{rounded.mark}"
-    padding: "0 2px"
-  footnote-mark-lit:
-    backgroundColor: "{colors.footnote-lit}"
-    textColor: "{colors.press-ink}"
-  sku-sheet:
-    backgroundColor: "{colors.sheet-white}"
-    padding: "32px 24px"
-    width: "420px"
-  synthetic-label:
-    backgroundColor: "{colors.slate-field}"
-    textColor: "{colors.on-slate}"
-    padding: "2px 8px"
-  textarea:
-    backgroundColor: "{colors.sheet-white}"
-    rounded: "{rounded.mark}"
-    padding: "8px"
+    padding: "0 3px"
+    height: "15px"
+  provenance-mark-hover:
+    backgroundColor: "{colors.accent}"
+    textColor: "{colors.on-accent}"
+  source-tooltip:
+    backgroundColor: "{colors.tooltip}"
+    textColor: "{colors.on-accent}"
+    rounded: "{rounded.tooltip}"
+    padding: "5px 9px"
+  bubble-question:
+    backgroundColor: "{colors.accent}"
+    textColor: "{colors.on-accent}"
+    typography: "{typography.answer}"
+    padding: "12px 16px"
+  bubble-answer:
+    backgroundColor: "{colors.surface}"
+    textColor: "{colors.text}"
+    typography: "{typography.answer}"
+    rounded: "{rounded.bubble}"
+    padding: "16px 24px 16px 56px"
+  follow-up-chip:
+    backgroundColor: "{colors.surface}"
+    textColor: "{colors.accent}"
+    rounded: "{rounded.pill}"
+    padding: "0 15px"
+    height: "36px"
+  follow-up-chip-hover:
+    backgroundColor: "{colors.accent-tint}"
+  popover:
+    backgroundColor: "{colors.surface}"
+    rounded: "{rounded.popover}"
+    padding: "16px"
+  rationale-field:
+    backgroundColor: "{colors.fill}"
+    typography: "{typography.body}"
+    rounded: "{rounded.control}"
+    padding: "10px 12px"
 ---
 
 # Design System: AI Product Intelligence Advisor
 
 ## Overview
 
-**Creative North Star: "The Market Page"**
+**Creative North Star: "Daylight Glass"**
 
-The workspace reads like the market-listing page of a Thai business daily. Dense tabular figures sit on a cool newsprint-gray ground, grouped under solid slate sector bars. Every figure carries a small amber footnote mark that points to a numbered source strip below the table. The page answers one fixed question. It shows which SKUs are recommended for which promotion action and why, and what is blocked, unknown or redacted. A white SKU sheet on the right is where the decision gets recorded. The page sits in the evidence-first tradition of print finance listings. It rejects the dark KPI-card dashboard with a chat sidebar.
+A calm, light workspace in Apple's Liquid Glass idiom. One flat, cool daylight ground (Wallpaper) sits behind everything: gutters, page and scroll-edge fades are the same colour, so no band or seam ever shows. Frosted glass carries only the controls and navigation (the sidebar, the toolbar, the chat composer and the floating decision bar). The content sits on solid white surfaces below that layer, so the product and its verdict lead and the evidence waits one click away. The world rejects two things. One is the dense ledger table of the superseded "Market Page" direction. The other is the dark KPI-tile dashboard full of invented numbers.
 
-The page is dense and calm. It does not use cards, score tiles, gradients, illustrations or decorative imagery. Hierarchy comes from type-scale contrast (a 28px question over 15px figures over 11.5px column heads) and from a ladder of ink rules of different weights. Colour works at two scales only. Slate fills whole regions: the rail and the sector bars. The status hues appear only at word scale, on a flag, a verdict or a rule outcome. Thai is the primary language and English is switchable, so the line-heights leave room for Thai stacked vowel and tone marks.
+Two pages share one shell. **Chat & Advisor** (`/`) is a centred conversation. The fixed north-star question appears as a blue bubble. The answer is a white bubble holding one composed sentence, the ranking basis and ranked rows with a small TV thumbnail. A glass composer offers preset follow-up chips, and there is no free-text input because no LLM exists. **Product dashboard** (`/dashboard`) has a title and meta line, status filters with counts, a horizontal rail of product cards, a focus panel for the selected SKU, and a floating glass decision bar.
 
-All data in the built workspace is synthetic and labelled as synthetic on the page. This document describes the visual system only. No figure seen in the build is a business fact.
+Thai is the primary language and English is switchable. The system UI typeface carries Latin, and self-hosted Noto Sans Thai carries Thai. Line-heights leave room for stacked Thai vowel and tone marks. All data is synthetic and says so on the page.
 
 **Key Characteristics:**
-- Newsprint-gray ground, a white decision sheet, press-black ink.
-- Slate as region-scale colour: the rail and the reverse sector bars.
-- One fixed five-step status ramp, the same in the listing, the sheet and the rules.
-- A footnote mark on every figure, linked both ways to a numbered source strip.
-- No cards and no KPI tiles. Hierarchy comes from type scale and ink-rule weight.
-- Tabular lining numerals in every figure table.
-- Almost no motion: a 160ms background change on marks, footnotes and buttons.
+- Liquid Glass control layer floating over solid white content; never glass on glass.
+- Size-true synthetic TV illustrations: plain SVG geometry scaled from the real screen diagonal.
+- Progressive disclosure: verdict and four key facts first; rules, alternatives and evidence behind one-click tabs.
+- iOS status hues used only for status, always with the same icon on every surface.
+- Status counts are the only aggregate figures; there is no score and no KPI tile.
+- Redaction is always visible as a lock, never as a silent gap.
+
+**The Control Layer Rule.** Glass is reserved for the sidebar, the toolbar, the chat composer and the decision bar. Every piece of content (cards, the focus panel, answer bubbles, popovers) sits on a solid surface.
 
 ## Colors
 
-The palette is restrained and print-derived: cool neutrals, one committed slate for regions, and a market status ramp used only at word scale.
+The palette is a daylight neutral set with one system-blue accent and an iOS status ramp. Colour carries meaning, never decoration.
 
 ### Primary
-- **Slate Field** (slate-field): fills the navigation rail, the reverse sector bars that head each action group in the listing, and the "synthetic data" label. It is also the focus-ring, caret, checkbox-accent and text-selection colour. Its raised step (slate-field-raised) marks the active or hovered rail item and the "no action" sector bar.
-- **Text on slate** (on-slate, on-slate-muted): light text for slate regions. The muted step is used for inactive nav items and for the secondary text in sector bars (counts and sort criteria).
+- **System Blue** (`accent`) is used for the current navigation item, the selected card ring, the primary action (Approve, Confirm), the question bubble, the advisor avatar, provenance marks, follow-up chips, links and next-step guidance. **Pressed Blue** (`accent-deep`) is its hover state. **Blue Wash** (`accent-tint`) is the selected fill for the current nav item, the "Internal data only" badge, a resting provenance mark, the chosen alternative and a lit source line.
 
-### Secondary
-- **Footnote Amber** (footnote-mark): the colour of the superscript footnote marks and the numbers in the source strip.
-- **Lit Amber** (footnote-lit): a pale highlight laid behind a mark and its matching source line together, on hover or focus.
-
-### Tertiary: the status ramp
-This one ramp is fixed and appears with the same meaning everywhere it is used.
-- **Market Green** (status-recommended): recommended / eligible / pass. It is also the fill of the Approve button, the only action a recommended status unlocks. The deep step (status-recommended-deep) is used only as that button's hover fill.
-- **Review Amber** (status-review): review required / unknown rule outcome.
-- **Blue-Slate** (status-insufficient): insufficient data, no data, and next-step guidance.
-- **Market Red** (status-blocked): blocked / fail / error messages.
-- **Redaction Gray** (status-redacted): redacted values and rules. It always comes with a lock icon and never stands as colour alone.
+### Status ramp
+- **Recommended Green**, **Review Orange**, **Insufficient Indigo** and **Blocked Red** each have a text hue and a pale tint. The token comment states that each text hue meets 4.5:1 on white. Tints are backgrounds only.
+- **Redacted Gray** (`status-redacted`) marks redacted values and the withheld-rank lock.
+- **Live Green** (`live`) and **Idle Gray** (`idle`) are the 8px source dots: connected internal source vs. "external sources not connected".
 
 ### Neutral
-- **Newsprint Ground** (newsprint-ground): the page background behind the listing.
-- **Sheet White** (sheet-white): the SKU sheet, form fields and secondary buttons.
-- **Press Ink** (press-ink): body text, figures, and the heavy structural rules.
-- **Ink 2 / Ink Muted** (ink-slate-2, ink-muted): secondary text, metadata labels, column heads, and as-of notes.
-- **Column Rule** (column-rule): the 1px divider between listing rows.
-- **Hairline Rule** (hairline-rule): the 1px divider between rows in the sheet's fact table and constraint lists.
-- **Selection Gray / Row Hover** (selection-gray, row-hover): the selected listing row, button hover, and segmented hover; row-hover is a lighter tint for pointer hover on a listing row.
+- **Daylight Wallpaper** (`wallpaper`) is the single flat page ground. There are no gradient light fields: pastel blobs read as decoration and made the gutters and fades visibly uneven.
+- **Glass Solid** (`glass-solid`) is the opaque glass under `prefers-reduced-transparency`.
+- **Surface White** (`surface`) is the solid ground for all content.
+- **Ink** (`text`), **Ink 2** (`text-2`) and **Ink 3** (`text-3`) form the text ladder. Ink 3 (#5d5d63) is the lightest text allowed: it holds the muted labels, captions, placeholders and meta lines.
+- **Hairline** (`hairline`) divides the card facts from the card head, separates the freshness block and rules the fact table rows.
+- **Fill** (`fill`) and **Fill Strong** (`fill-strong`) are translucent gray fills for controls (search, segmented controls, tabs, secondary buttons, key-fact tiles, alternatives, confidence pills) and their hover or pressed states.
+- **Glass** (`glass-bg`, `glass-stroke`) is the frosted material and its inner stroke.
+- **Tooltip Ink** (`tooltip`) is the background of the in-place source tooltip.
 
-### Named Rules
-**The Region-Scale Rule.** Slate is laid down only as a whole field: the rail, a full-width sector bar, or a label block. It is never a thin accent, a border tint, or a background behind a single figure.
+**The One Ramp Rule.** A status hue means the same thing on every surface: chip, filter, callout, rule outcome, verdict tag and data state. Hues colour text and icons only. A tint appears only as the background of a status chip or a callout. Status colour never marks a region, a brand element or a provenance mark.
 
-**The One Ramp Rule.** The five status hues mean the same thing in the listing, the sheet, and the rule lines. They are used only for status words, status icons, rule outcomes, and the Approve action that a recommended status enables. They are never decoration, and they never fill a region.
-
-**The Lock Rule.** Redaction is always shown as Redaction Gray plus a lock icon, with the word "redacted" or an aria-label. When every cell in a column is redacted, the column head says so once and the cells show only the lock (nothing labelled twice).
+**The Blue Means Act Rule.** System Blue marks what is selected, what can be done next, and where a figure came from. It never encodes a status.
 
 ## Typography
 
-**Display Font:** Anuphan (with Sarabun, system-ui, sans-serif). Used for figures, headings, labels, and controls.
-**Body Font:** Sarabun (with Anuphan, system-ui, sans-serif). Used for running text, model lines, reasons, footnote text, and form input.
+**Font stack:** the system UI face (`-apple-system`, `SF Pro Text`, `Segoe UI`, `Roboto`), then **Noto Sans Thai Variable**, self-hosted through `@fontsource-variable/noto-sans-thai`, for Thai on every OS. Anuphan and Sarabun are no longer used. The variable font allows the 650 weight used for titles.
 
-Both fonts are self-hosted through Fontsource and loaded in the root route. Anuphan is loaded at 400, 500, 600 and 700. Sarabun is loaded at 400, 500 and 600 only.
-
-**Character:** Anuphan is a compact, loopless Thai/Latin grotesque. It gives the figures and headings the clipped authority of a market table. Sarabun is a quieter text face for reading the reasons behind each number.
+**Character:** native-app and quiet. Hierarchy comes from size and weight steps, not from colour or rules.
 
 ### Hierarchy
-- **Display:** the north-star question as the H1. 700 at 28px with a 1.35 line-height in Thai, tightened to 1.2 when the page is in English. Measure capped at 34ch, balanced wrap. Drops to 23px below 760px.
-- **Headline:** the SKU code at the top of the sheet. 700 at 28px with a 1.2 line-height (SKU codes are Latin).
-- **Rank:** the rank number in the listing. 700 at 22px with a 1.0 line-height. A tie shows a small "=" in muted ink.
-- **Title:** the sheet verdict line (status flag plus the chosen action). 700 at 17px.
-- **Figure:** listing cells at 500 15px/1.35 (14px below 760px). SKU codes in the listing at 700 15px. Sheet fact values at 600 14.5px/1.35.
-- **Body:** 400 14px/1.6 Sarabun. Smaller body steps (13px, 12.5px, 12px) are used for model lines, reasons, footnote text and notes.
-- **Label:** column heads 600 11.5px; sheet block heads and the sources head 600 12px in ink-muted; status flags 600 12.5px.
-- **Mark:** footnote superscripts at 700 10px.
+- **Display** (700, 28px, 1.2, -0.015em): the SKU code at the top of the focus panel. The code is Latin, so the tighter line-height is allowed.
+- **Headline** (650, 24px, 1.4, -0.01em): the dashboard title. Balanced wrap, max 36ch; 1.25 under `html[lang="en"]`, 20px below 760px.
+- **Key figure** (650, 20px, 1.4, tabular): values in the four key-fact tiles.
+- **Rank** (700, 20px, 1, tabular): the rank numeral on a card, with a small "=" for ties. The chat row rank is 16px.
+- **Title** (650, 17px, 1.4): the verdict action next to the status chip.
+- **Card title** (650, 15px, 1.4): the SKU code on a card.
+- **Answer** (400, 15px, 1.55): the chat bubbles.
+- **Body** (400, 14px, 1.5): the default text, inputs and buttons (buttons at 600).
+- **Control** (500, 13px, 1.4): filters, the window chip, the demo button and tool buttons.
+- **Body small** (400, 12.5px, 1.45): reasons, meta, the basis line and hints.
+- **Label** (600, 12px, 1.4): badges, small chips, the freshness heading and fact-tile labels (at 400).
+- **Caption** (400, 11.5px, 1.4): nav sub-labels, card fact labels and the TV caption.
+- **Mark** (700, 10px, 1): provenance-mark numerals.
 
-### Named Rules
-**The Stacked-Vowel Rule.** Thai text uses a line-height of at least 1.35 so that stacked vowel and tone marks never collide or clip. Only Latin-only settings go tighter: the English H1 at 1.2 and the SKU title at 1.2.
+**The Thai Headroom Rule.** Anything that can carry Thai keeps a line-height of 1.4 or more. Only digit-only or Latin-only elements go tighter: the rank, the mark, the SKU code display, and the English headline.
 
-**The Tabular Figure Rule.** Every figure table (the listing and the sheet's fact table) sets `font-variant-numeric: tabular-nums lining-nums`. Figures are right-aligned and do not wrap.
-
-**The Scale-Contrast Rule.** Hierarchy comes from size and weight steps and from ink rules. It never comes from boxes, tinted panels or decorative colour.
+**The Tabular Figures Rule.** Every figure, rank, count and key fact uses `font-variant-numeric: tabular-nums`. Figures do not wrap.
 
 ## Layout
 
-The page is a full-height, three-column grid: a 232px slate rail, a fluid main column, and a 420px white SKU sheet. The main column and the sheet scroll independently.
+- **Shell:** a two-column grid, with a 232px glass sidebar and a fluid main column. Gap and outer padding are both the gutter (16px). The sidebar is sticky, full height minus two gutters. The main column stacks with 16px gaps.
+- **Sidebar:** a brand mark (a 32px blue tile), then the pages (Chat, Dashboard, and two disabled future surfaces marked "not built yet"), then **data freshness** at its foot: one live dot per connected source with its ingested time, and an idle dot for "external sources not connected".
+- **Toolbar:** sticky at the top. It holds the search field on the dashboard or the "Advisor" title on the chat, the window chip, the TH/EN segmented control, and the demo-controls button, which shows a lock at internal clearance.
+- **Chat:** a centred column, max 860px. Answer bubbles are at most 720px; question bubbles at most 80%, aligned right. The composer is sticky at the bottom.
+- **Dashboard:** the title and meta line, then the filters, then a horizontal snap-scrolling **rail** of cards (176–186px columns, 14px gap), so the focus panel stays in the first viewport. Below it is the focus panel: a 300px TV column beside the head (28px gap), then the tabs. The decision dock floats at the bottom.
+- **Spacing** values are literals in the stylesheet, not custom properties. The reused steps are 4, 8, 12, 16 and 24px.
+- **Breakpoints:**
+  - **≤ 1360px:** the sidebar collapses to a 76px icon rail (labels visually hidden), freshness is hidden, and the focus TV is 240px.
+  - **≤ 1100px:** the focus hero stacks, with the TV centred.
+  - **≤ 760px:** the sidebar becomes a glass bottom tab bar fixed 12px from the edges. The toolbar wraps, with search on its own row and the demo label visually hidden. Rail cards are 160px and key facts sit in 2 columns. The decision dock and composer rise to 84px above the tab bar, and the decision bar shows only its three buttons.
 
-The main column reads top to bottom:
-1. The header: the question, a metadata list (window, evaluated-at, evidence basis, objective), the synthetic-data label, and on the right the TH/EN switch and the dashed demo-controls fieldset.
-2. The listing table, grouped by action. Groups are separated by a 16px band of ground colour above each sector bar.
-3. The numbered source strip, pushed to the bottom of the column.
-
-Spacing follows a 4px-based scale (4, 8, 12, 16, 24, 32). Column gutters are 32px at full width. Table cells are dense, with roughly 9px of vertical padding.
-
-**Responsive behaviour:**
-- **1440px and below:** the rail collapses to a 64px icon rail; labels are kept for screen readers only. The sheet narrows to 380px and gutters drop to 24px.
-- **1100px and below:** the sheet stacks under the main column. It keeps the icon rail, takes a 3px ink top rule in place of its left edge, and the decision bar stops being sticky.
-- **760px and below:** the rail becomes a horizontal top bar and everything is one column. The header controls stack. The listing scrolls horizontally with an 85% fade mask at the right edge.
+**The One-Click Evidence Rule.** The first view shows the verdict and four key facts. Rules, alternatives and evidence sit one tab away, and they are never two clicks deep.
 
 ## Elevation & Depth
 
-The system is flat. Depth comes from tone (ground against white sheet against slate field) and from rule weight, not from shadows. There is exactly one shadow: the scroll-edge seam above the sticky decision bar at the foot of the sheet. It tells the reader there is content scrolling under the bar. The exact value is recorded in the sidecar.
+Depth has two materials, plus a solid popover.
 
-### Named Rules
-**The Ink-Rule Ladder.** Structure is drawn with rules of fixed weights, from heaviest to lightest:
-- **3px ink** under the page head, and as the top edge of the stacked sheet.
-- **1.5px ink** under the listing column heads and above the source strip.
-- **1px ink** under sheet block heads, on the sheet's left edge, under the selected row, and above the decision bar.
-- **1px column-rule** between listing rows.
-- **1px hairline** between rows inside the sheet.
+- **Glass** (control layer): `glass-bg` with `blur(28px) saturate(175%)`, a 1px `glass-stroke` border, 22px radius. The shadow has a bright top specular inset, a soft bottom inset, a 12px/32px ambient drop and a 1px contact shadow.
+- **Surface** (content): solid white with a soft two-layer offset shadow (1px/2px plus 8px/24px at 6%).
+- **Popover**: solid white with a deeper two-layer shadow (2px/6px plus 24px/48px at 18%), 16px radius. Popovers hold the demo controls and the decision rationale.
+- **Scroll-edge fades:** every floating glass bar (toolbar, decision bar, chat composer) sits in a `.bar-dock` wrapper. The wrapper's backing is solid Wallpaper across the gutter and fades to transparent toward the content, so content dissolves before it passes under the glass. The backing spans only the content column, never the gutter beside the sidebar, and sits behind the bar so the glass and its shadow are never cut.
+- **Spacing:** one gutter token (`--gutter`, 16px desktop / 12px mobile) is the page padding, the sidebar–content gap and the sticky offset. Inner steps are 4 / 8 / 12 / 16 / 24 only.
+- **Card lift:** on hover a card rises 2px with a stronger shadow. The selected card takes a 2px blue ring.
+
+**The No Glass on Glass Rule.** Anything that opens from a glass bar (the demo popover, the decision popover) is a solid surface. Glass never stacks on glass.
+
+**The Solid Fallback Rule.** Without `backdrop-filter` support, glass becomes near-opaque white (rgba(250, 251, 253, 0.97)). Under `prefers-reduced-transparency: reduce` it becomes solid #f6f7f9 with no blur. The control layer must stay legible with no frost at all.
+
+**The No Refraction Rule.** There is no SVG displacement or refraction filter. The frost, the specular top edge and the inner stroke carry the material.
 
 ## Shapes
 
-Corners are square. The only rounding is small:
-- **2px** on footnote marks, source-strip lines, the select and the textarea.
-- **4px** on rail nav items.
-
-Buttons, the segmented control, sector bars and the sheet are square. Borders do the shaping. Ink outlines are 1.5px on buttons and the segmented control, and 1px on fields. The demo-controls fieldset is the only dashed border: a 1px dashed ink-muted line that marks those controls as provisional.
+The corners nest, and the radius steps down as elements get smaller: glass bars 22px, bubbles 20px (the tail corner is 5px), surfaces 18px, popovers 16px, tiles, callouts and controls 12px, select fields 10px, segment and tab pills 9px, tooltips and the focus ring 8px, provenance marks 5px. Filters, chips, badges and follow-up chips are full pills (999px). Icons are lucide line icons at 11–18px, with a heavier 2.4 stroke on status and lock icons.
 
 ## Components
 
+### Glass bars (sidebar, toolbar, composer, decision bar)
+- Glass material, 22px radius. The sidebar is a vertical column of nav items. The toolbar is a single 8px-padded row. The composer has a "follow up" label, the preset chips and a hint saying there is no LLM yet. The decision bar shows "Decide on SKU", the status or disabled reason, and three buttons.
+- **Nav item:** 14px/500 in Ink 2, 18px icon, 12px radius. The current page takes Blue Wash with blue 600 text. A disabled surface has Ink 3 text, a 55% icon and a "not built yet" sub-label.
+
 ### Buttons
-Square, outlined and plain; they sit at the foot of the sheet in a three-column grid.
-- **Shape:** square corners, 1.5px ink outline, 10px × 8px padding, 700 13.5px Anuphan.
-- **Approve (primary):** Market Green fill and border with white text. Hover changes the fill to the deep green.
-- **Reject / Request more data (secondary):** white fill with an ink outline. Hover changes the fill to selection gray.
-- **Disabled:** 45% opacity with a not-allowed cursor. Approve is enabled only when the SKU is recommended and the viewer has approval permission.
-- **Motion:** a 160ms background-color transition.
+- **Primary** (Approve, Confirm): System Blue, white 600 14px, 40px tall, 12px radius. Hover is Pressed Blue; press scales to 0.98. Disabled at 40% opacity.
+- **Secondary** (Request more data, Reject, Cancel): Fill with Ink text, Fill Strong on hover.
+- A pressed decision button shows a 2px blue ring while its rationale popover is open.
 
-### Segmented control (TH / EN)
-- A 1.5px ink frame around two square buttons at 600 12px. The pressed button is filled ink with ground-colour text. Hovering the unpressed button fills it with selection gray.
+### Toolbar controls
+- **Search field:** a Fill pill (12px radius, 38px), with a 16px search icon and an Ink 3 placeholder. Focus-within shows a 2px blue ring.
+- **Segmented control / tabs:** a Fill track with 3px padding. The active segment is a white pill (9px radius) with a small shadow and Ink text.
 
-### Navigation rail
-- A solid slate field. Each item is an 18px icon plus a 500 14px label. The active item is raised slate with on-slate text at weight 600, with 4px corners.
-- Surfaces that are not built yet appear as disabled items with a "not built yet" sublabel and a dimmed icon.
-- At 1440px the rail becomes icon-only; at 760px it becomes a horizontal top bar.
+### Status filters (dashboard)
+- White pills (34px) with a hairline shadow, the status word in its status hue, and a count bubble in Fill. The active filter inverts to Ink with white text. A filter with a count of 0 is disabled, but it stays visible so the existence of every status is never hidden.
 
-### Status flag
-- An inline 14px status icon followed by the status word, both in the status hue, at 600 12.5px:
-  - check-circle for recommended
-  - warning triangle for review required
-  - question-circle for insufficient data
-  - ban for blocked
-- Redacted values use the same pattern with a lock icon in Redaction Gray.
-- Data states inside a cell ("no data", "insufficient") are 600 11px words in their ramp colour.
+### Status chip
+- A pill in the status tint, with the status hue for the text and its fixed icon: check-circle (recommended), triangle-alert (review), circle-help (insufficient), ban (blocked). It comes in two sizes, sm (24px, 12px text) and md (28px, 13px text).
 
-### Listing table and sector bars
-- Grouped `tbody` sections. Each group opens with a full-width slate sector bar:
-  - the action name, 700 13px on-slate;
-  - then "n of m eligible" and the sort criteria in on-slate-muted.
-- The group with no action uses the raised slate bar.
-- A row has the rank, the SKU code (a button) over a truncated model line, the status flag, four figures with footnote marks, and a rule count. The rule count shows a lock with the number of hidden rules when any are redacted.
-- Hovering a row fills it with row-hover. The selected row fills with selection gray and takes an ink bottom rule.
+### Product card
+- A white surface, 18px radius, in the rail. The top row is the rank, or a withheld-rank lock tile, opposite the status chip. Then come a 104px media well with the **decorative** TV illustration, the SKU code (a button), the action or one specific reason, and two figures (stock cover, realized margin) under a hairline.
+- Hover lifts it 2px. The selected card takes a 2px blue ring.
 
-### Footnote mark and source strip (signature)
-- Every figure ends in one or more superscript marks: 700 10px amber numerals, 2px corners. Each mark is a link to its numbered line in the source strip under the table. Marks are numbered in reading order, and one source always gets the same number.
-- Hovering or focusing a mark lights it, and lights its source line, with Lit Amber. Hovering or focusing a source line lights every mark that cites it.
-- Source lines are focusable. They read: source name · file · line count · ingested-at time. A line targeted from a link also lights.
-- Transition: background-color over 160ms.
+### Focus panel
+- A white surface with 24px padding. The hero holds the large **labeled** TV illustration (caption "55″ · Synthetic data"), the SKU code, the identity line, and the verdict (status chip, action, rank).
+- A non-recommended SKU adds a tinted **callout** with its reasons and next steps (blue, arrow icon). Then come four **key-fact tiles** (Fill, 14px radius).
+- **Tabs:** Overview (fact table with provenance marks, as-of date and formula version, then the confidence pills), Rules (per action: verdict tag and pass/fail/unknown/redacted outcomes, reasons as text, never values), Alternatives (Fill rows; the chosen one in Blue Wash with a check), Evidence (numbered source lines).
 
-### SKU sheet
-- A white panel with no card shell. It is set off only by a 1px ink left edge.
-- The sheet stacks, top to bottom: SKU code headline, identity line, verdict, then blocks for missing evidence, facts, constraints and rule results, confidence dimensions, and the decision.
-- Each block head is a 600 12px muted label over a 1px ink rule.
-- The fact table puts each value with its marks, then an as-of date and formula version in small muted type.
-- Next-step guidance is in Blue-Slate with an arrow icon.
-- The decision block is sticky at the foot of the sheet. It holds the rationale textarea, the three buttons, a live status line, and a note that approval is not execution.
+### Provenance mark and source list (signature, carried forward)
+- A small superscript blue numeral appears on figures **in the Overview fact table only**. Cards, key facts and chat rows omit marks on purpose to stay quiet. One source always gets the same number.
+- On hover or focus, the mark fills with System Blue and shows the source in place, in a Tooltip Ink bubble above it. Clicking it opens the Evidence tab, where the matching source line lights in Blue Wash.
 
-### Inputs / Fields
-- **Textarea and select:** white fill, 1px ink-muted outline, 2px corners, 14px Sarabun.
-- **Focus:** the global focus ring, a 2px slate outline at a 2px offset, on every focusable element.
-- **Checkbox:** accent colour is slate.
+### Chat bubbles and answer rows
+- **Question:** a System Blue bubble with white 15px text, right-aligned, with a 5px tail corner at the bottom right.
+- **Answer:** a white surface bubble with a 28px blue avatar tile in its inset. It holds the sentence, the ranking basis, ranked rows, the status breakdown, and the "Internal data only" badge.
+- **Answer row:** rank, a 56px decorative TV thumbnail, the SKU and its action or next step, a stock-cover figure, and a chevron. The whole row links to the dashboard on that SKU, with a Fill hover.
+- **Status ask:** a Fill pill per non-recommended status (chip plus count), which asks the matching follow-up.
+- **Follow-up chip:** a white pill with blue text and a Blue Wash hover.
 
-### Synthetic-data label
-- A small slate block with 600 12px on-slate text. It sits under the header metadata and states that the data is synthetic. It is a provenance statement, not decoration.
+### Synthetic TV illustration
+- Plain SVG geometry: a near-black bezel, a neutral graphite 16:9 screen (a powered-off panel, the same for every SKU), a soft sheen and two splayed feet. No coloured or purple screen gradients. The width is scaled from the variant's real screen diagonal against a 65″ maximum. There is no brand mark and no photo realism.
+
+### Badges and source dots
+- **Internal data only:** a Blue Wash pill with a database icon, on the dashboard meta and on every chat answer.
+- **Synthetic data:** a quiet Fill pill.
+- **Source dots:** 8px, Live Green for connected and Idle Gray for not connected.
+
+### Inputs
+- **Select, textarea:** a Fill background, no border, 10–12px radius, 14px body. The placeholder is Ink 3. **Checkbox** accent colour is System Blue.
+- **Focus:** every focusable element gets a global 2px System Blue outline at a 2px offset with a 6px radius.
+
+**The Size-True Rule.** A TV illustration's width always comes from its real screen size, so a 65″ set reads as larger than a 43″ set. It is decorative (`aria-hidden`) in cards and chat rows. It is labeled as synthetic, with a caption, on the focus panel. It must never look like a product photo.
+
+**The Lock Rule.** Every redaction shows a lock: a redacted value is a lock plus "Redacted" (lock alone in compact cells), a withheld rank is a lock tile, a redacted rule outcome carries a lock, and the demo button shows a lock at internal clearance. Redaction is never an empty cell.
+
+**The Counts-Only Rule.** Status counts (on the filters and in the chat breakdown) are the only aggregate figures on any page. Per-SKU key facts are shown, but there are no aggregate KPI tiles, no score, no "potential" label and no discount percentage.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** put a footnote mark on every figure and link it to a numbered source line. Light the mark and its line together on hover and focus, in both directions.
-- **Do** use the fixed five-step status ramp, with the same hue and icon for the same status on every surface. Pair redaction with a lock icon every time.
-- **Do** lay slate down as a whole region (rail, sector bar). Use the status hues only at word scale.
-- **Do** build hierarchy from type-scale contrast and the ink-rule ladder (3px, 1.5px, 1px ink; 1px column-rule and hairline).
-- **Do** keep Thai line-height at 1.35 or more. Tighten only Latin-only settings.
-- **Do** set every figure table in Anuphan with tabular lining numerals, right-aligned and not wrapping.
-- **Do** keep motion to the 160ms background-color transition on marks, source lines and buttons. Remove it under `prefers-reduced-motion`.
-- **Do** label synthetic data and provisional demo controls on the page.
+- **Do** keep glass on the control layer only (the sidebar, toolbar, composer and decision bar), and keep every popover and piece of content solid.
+- **Do** ship both glass fallbacks: `@supports not (backdrop-filter)` and `prefers-reduced-transparency`.
+- **Do** use the four status hues with their fixed icons on every surface, with tints only behind chips and callouts.
+- **Do** show every status as a filter with its count, even when the count is 0, and show "Internal data only" on every answer.
+- **Do** show a lock wherever something is redacted.
+- **Do** scale TV illustrations from the real screen size, and label the large one as synthetic.
+- **Do** keep line-height at 1.4 or more on anything that can carry Thai.
+- **Do** keep motion to the shared ease (cubic-bezier(0.22, 1, 0.36, 1)): 180ms background changes, a 200ms card lift, a 120ms press. Remove all of it under `prefers-reduced-motion`.
+- **Do** keep Ink 3 as the lightest text colour.
 
 ### Don't:
-- **Don't** wrap content in cards, tinted panels or drop-shadowed containers. The scroll seam on the sticky decision bar is the only shadow.
-- **Don't** show score tiles, KPI blocks, success probabilities or "top/potential" badges. A rank is an order, not a score.
-- **Don't** use status hues for decoration, region fills or brand accents.
-- **Don't** let a figure appear without its source mark, or let missing, stale or redacted evidence disappear from view.
-- **Don't** label the same thing twice. A fully redacted column says "redacted" once, in its head.
-- **Don't** add Sarabun at 700. It is not loaded.
+- **Don't** put glass on glass, or glass behind content (cards, the focus panel, bubbles, tables).
+- **Don't** use SVG refraction or displacement filters.
+- **Don't** show aggregate KPI tiles, scores, success probabilities, "top/potential" badges, discount percentages or placeholder market signals. External sources read "not connected".
+- **Don't** use status hues for decoration, brand accents or provenance marks. Don't use System Blue to mean a status.
+- **Don't** add a free-text chat input or imply generated answers while no LLM exists.
+- **Don't** let a TV illustration look like a product photo, or carry a brand mark.
+- **Don't** hide insufficient, review or blocked SKUs behind a click, or let redacted data disappear without a lock.

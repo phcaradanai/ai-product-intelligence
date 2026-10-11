@@ -28,6 +28,9 @@ export interface SampleInputs {
 
 export const WINDOW = { start: "2026-09-01T00:00:00+07:00", end: "2026-10-01T00:00:00+07:00" } as const;
 export const VIEWER_CLEARANCES = ["internal", "confidential"] as const satisfies readonly Sensitivity[];
+/** Synthetic demo scenarios: the STEP 2 sample, and an edge set that reaches every status and fact state. */
+export const SCENARIOS = ["sample", "edge"] as const;
+export type Scenario = (typeof SCENARIOS)[number];
 export type ViewerClearance = (typeof VIEWER_CLEARANCES)[number];
 
 export interface GroupSummary {

@@ -6,3 +6,4 @@ node_modules/
 alternative/
 apps/web/dist/
 apps/web/.tanstack/
+.impeccable/tmp/

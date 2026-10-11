@@ -1,12 +1,6 @@
 import type { ReactNode } from "react";
 import { HeadContent, Outlet, Scripts, createRootRoute, useRouterState } from "@tanstack/react-router";
-import "@fontsource/anuphan/400.css";
-import "@fontsource/anuphan/500.css";
-import "@fontsource/anuphan/600.css";
-import "@fontsource/anuphan/700.css";
-import "@fontsource/sarabun/400.css";
-import "@fontsource/sarabun/500.css";
-import "@fontsource/sarabun/600.css";
+import "@fontsource-variable/noto-sans-thai";
 import "../styles.css";
 
 export const Route = createRootRoute({

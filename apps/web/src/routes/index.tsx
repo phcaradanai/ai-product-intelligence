@@ -1,25 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { z } from "zod";
 import { getWorkspace } from "../server/functions.ts";
-import { Workspace } from "../ui/Workspace.tsx";
+import { searchSchema } from "../search.ts";
+import { Chat } from "../ui/Chat.tsx";
 
-/** URL state: language, demo clearance (never defaults to full access), demo approval permission, selected SKU. */
-const search = z.object({
-  lang: z.enum(["th", "en"]).catch("th"),
-  clearance: z.enum(["internal", "confidential"]).catch("internal"),
-  approve: z.boolean().catch(false),
-  sku: z.string().max(128).optional().catch(undefined),
-});
-
+/** Chat & Advisor page: the conversation (blueprint §11.1 conversation workspace). */
 export const Route = createFileRoute("/")({
-  validateSearch: search,
-  loaderDeps: ({ search: s }) => ({ clearance: s.clearance }),
-  loader: ({ deps }) => getWorkspace({ data: { clearance: deps.clearance } }),
-  component: WorkspaceRoute,
+  validateSearch: searchSchema,
+  loaderDeps: ({ search: s }) => ({ clearance: s.clearance, scenario: s.scenario }),
+  loader: ({ deps }) => getWorkspace({ data: { clearance: deps.clearance, scenario: deps.scenario } }),
+  component: ChatRoute,
 });
 
-function WorkspaceRoute() {
-  const view = Route.useLoaderData();
-  const s = Route.useSearch();
-  return <Workspace view={view} search={s} />;
+function ChatRoute() {
+  return <Chat view={Route.useLoaderData()} search={Route.useSearch()} />;
 }

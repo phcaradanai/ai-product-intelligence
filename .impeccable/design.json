@@ -1,34 +1,35 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-10T09:04:08+00:00",
+  "generatedAt": "2026-10-11T11:26:16+00:00",
   "title": "Design System: AI Product Intelligence Advisor",
   "world": {
-    "name": "Market Page",
-    "seed": "6330389d",
-    "source": "apps/web/src/styles.css, apps/web/src/ui/Workspace.tsx"
+    "name": "Daylight Glass (light Liquid Glass)",
+    "seed": null,
+    "direction": "User-pinned (concept image layout + Apple Liquid Glass, light theme, synthetic TV illustrations), no seed roll; supersedes Market Page (seed 6330389d) on 11 Oct 2026",
+    "source": "apps/web/src/styles.css, apps/web/src/ui/{Shell,Chat,Dashboard,parts}.tsx"
   },
   "extensions": {
     "colorMeta": {
-      "newsprint-ground": {
+      "wallpaper": {
         "role": "neutral",
-        "displayName": "Newsprint Ground",
-        "canonical": "#f1f1ee",
-        "oklch": "oklch(95.7% 0.004 106.5)",
+        "displayName": "Daylight Wallpaper",
+        "canonical": "#eef1f6",
+        "oklch": "oklch(95.7% 0.007 260.7)",
         "tonalRamp": [
-          "#0b0b09",
-          "#242422",
-          "#40403d",
-          "#5e5e5b",
-          "#7d7d7b",
-          "#9e9e9c",
-          "#c4c4c1",
-          "#efefec"
+          "#090b0e",
+          "#222428",
+          "#3d4044",
+          "#5b5e62",
+          "#7b7d82",
+          "#9c9ea3",
+          "#c1c4c9",
+          "#eceff4"
         ],
-        "cssVar": "--ground"
+        "cssVar": "--wallpaper"
       },
-      "sheet-white": {
+      "surface": {
         "role": "neutral",
-        "displayName": "Sheet White",
+        "displayName": "Surface White",
         "canonical": "#ffffff",
         "oklch": "oklch(100.0% 0.000 89.9)",
         "tonalRamp": [
@@ -41,13 +42,166 @@
           "#c4c4c4",
           "#eeeeee"
         ],
-        "cssVar": "--paper"
+        "cssVar": "--surface"
       },
-      "press-ink": {
+      "text": {
         "role": "neutral",
-        "displayName": "Press Ink",
-        "canonical": "#141414",
-        "oklch": "oklch(19.1% 0.000 89.9)",
+        "displayName": "Ink",
+        "canonical": "#1d1d1f",
+        "oklch": "oklch(23.2% 0.004 286.1)",
+        "tonalRamp": [
+          "#0b0b0d",
+          "#242426",
+          "#3f3f42",
+          "#5d5d60",
+          "#7d7d7f",
+          "#9e9ea1",
+          "#c4c4c6",
+          "#eeeef1"
+        ],
+        "cssVar": "--text"
+      },
+      "text-2": {
+        "role": "neutral",
+        "displayName": "Ink 2",
+        "canonical": "#424247",
+        "oklch": "oklch(38.1% 0.008 286.0)",
+        "tonalRamp": [
+          "#0b0b0f",
+          "#232328",
+          "#3f3f44",
+          "#5d5d62",
+          "#7d7d82",
+          "#9e9ea4",
+          "#c3c3c9",
+          "#eeeef4"
+        ],
+        "cssVar": "--text-2"
+      },
+      "text-3": {
+        "role": "neutral",
+        "displayName": "Ink 3",
+        "canonical": "#5d5d63",
+        "oklch": "oklch(48.0% 0.010 286.0)",
+        "tonalRamp": [
+          "#0b0b0f",
+          "#232329",
+          "#3f3f45",
+          "#5d5d63",
+          "#7c7c83",
+          "#9e9ea4",
+          "#c3c3ca",
+          "#eeeef5"
+        ],
+        "cssVar": "--text-3"
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "rgba(29, 29, 31, 0.1)",
+        "oklch": "oklch(23.2% 0.004 286.1 / 0.1)",
+        "tonalRamp": [
+          "#0b0b0d",
+          "#242426",
+          "#3f3f42",
+          "#5d5d60",
+          "#7d7d7f",
+          "#9e9ea1",
+          "#c4c4c6",
+          "#eeeef1"
+        ],
+        "cssVar": "--hairline"
+      },
+      "fill": {
+        "role": "neutral",
+        "displayName": "Fill",
+        "canonical": "rgba(118, 118, 128, 0.12)",
+        "oklch": "oklch(56.9% 0.015 285.9 / 0.12)",
+        "tonalRamp": [
+          "#0a0a11",
+          "#23232b",
+          "#3f3f48",
+          "#5d5d66",
+          "#7c7c86",
+          "#9d9da8",
+          "#c3c3ce",
+          "#ededf9"
+        ],
+        "cssVar": "--fill"
+      },
+      "fill-strong": {
+        "role": "neutral",
+        "displayName": "Fill Strong",
+        "canonical": "rgba(118, 118, 128, 0.2)",
+        "oklch": "oklch(56.9% 0.015 285.9 / 0.2)",
+        "tonalRamp": [
+          "#0a0a11",
+          "#23232b",
+          "#3f3f48",
+          "#5d5d66",
+          "#7c7c86",
+          "#9d9da8",
+          "#c3c3ce",
+          "#ededf9"
+        ],
+        "cssVar": "--fill-strong"
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "System Blue",
+        "canonical": "#0062cc",
+        "oklch": "oklch(51.3% 0.182 257.0)",
+        "tonalRamp": [
+          "#00062c",
+          "#002250",
+          "#043d81",
+          "#0159ba",
+          "#267ae6",
+          "#5a9ffe",
+          "#a0c7fd",
+          "#e5efff"
+        ],
+        "cssVar": "--accent"
+      },
+      "accent-deep": {
+        "role": "primary",
+        "displayName": "Pressed Blue",
+        "canonical": "#0052ad",
+        "oklch": "oklch(45.4% 0.161 257.0)",
+        "tonalRamp": [
+          "#00062d",
+          "#002151",
+          "#023d82",
+          "#0e5ab6",
+          "#367cdb",
+          "#5e9ffa",
+          "#9fc7fe",
+          "#e5effe"
+        ],
+        "cssVar": "--accent-deep"
+      },
+      "accent-tint": {
+        "role": "primary",
+        "displayName": "Blue Wash",
+        "canonical": "rgba(0, 113, 227, 0.12)",
+        "oklch": "oklch(56.3% 0.193 256.2 / 0.12)",
+        "tonalRamp": [
+          "#00082a",
+          "#002250",
+          "#023d80",
+          "#0e5bb3",
+          "#147aec",
+          "#599ffd",
+          "#9fc7fc",
+          "#e5f0ff"
+        ],
+        "cssVar": "--accent-tint"
+      },
+      "on-accent": {
+        "role": "primary",
+        "displayName": "On Blue",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100.0% 0.000 89.9)",
         "tonalRamp": [
           "#0b0b0b",
           "#242424",
@@ -58,613 +212,637 @@
           "#c4c4c4",
           "#eeeeee"
         ],
-        "cssVar": "--ink"
-      },
-      "ink-slate-2": {
-        "role": "neutral",
-        "displayName": "Ink 2",
-        "canonical": "#33404a",
-        "oklch": "oklch(36.4% 0.024 241.4)",
-        "tonalRamp": [
-          "#030c14",
-          "#19262f",
-          "#35424c",
-          "#52606a",
-          "#717f8b",
-          "#92a1ac",
-          "#b7c7d3",
-          "#e1f1fe"
-        ],
-        "cssVar": "--ink-2"
-      },
-      "ink-muted": {
-        "role": "neutral",
-        "displayName": "Ink Muted",
-        "canonical": "#56626c",
-        "oklch": "oklch(49.0% 0.022 243.3)",
-        "tonalRamp": [
-          "#040c14",
-          "#1b252e",
-          "#36414b",
-          "#535f69",
-          "#737f8a",
-          "#93a0ab",
-          "#b9c6d1",
-          "#e3f1fc"
-        ],
-        "cssVar": "--ink-3"
-      },
-      "column-rule": {
-        "role": "neutral",
-        "displayName": "Column Rule",
-        "canonical": "#c9c9c2",
-        "oklch": "oklch(83.4% 0.010 106.6)",
-        "tonalRamp": [
-          "#0c0b07",
-          "#24241f",
-          "#40403a",
-          "#5e5e58",
-          "#7e7e77",
-          "#9f9f98",
-          "#c5c5be",
-          "#efefe8"
-        ],
-        "cssVar": "--rule"
-      },
-      "hairline-rule": {
-        "role": "neutral",
-        "displayName": "Hairline Rule",
-        "canonical": "#e1e1db",
-        "oklch": "oklch(90.8% 0.008 106.6)",
-        "tonalRamp": [
-          "#0b0b08",
-          "#242420",
-          "#40403b",
-          "#5e5e59",
-          "#7e7e78",
-          "#9f9f99",
-          "#c4c4bf",
-          "#efefe9"
-        ],
-        "cssVar": "--rule-soft"
-      },
-      "slate-field": {
-        "role": "primary",
-        "displayName": "Slate Field",
-        "canonical": "#1d2b36",
-        "oklch": "oklch(28.1% 0.028 242.6)",
-        "tonalRamp": [
-          "#020c16",
-          "#182631",
-          "#33424d",
-          "#50606c",
-          "#6f808d",
-          "#90a1af",
-          "#b5c7d5",
-          "#e0f1ff"
-        ],
-        "cssVar": "--slate"
-      },
-      "slate-field-raised": {
-        "role": "primary",
-        "displayName": "Slate Field Raised",
-        "canonical": "#2b3c49",
-        "oklch": "oklch(34.7% 0.032 241.7)",
-        "tonalRamp": [
-          "#010c17",
-          "#162632",
-          "#31424f",
-          "#4e606e",
-          "#6d808f",
-          "#8ea1b1",
-          "#b3c7d7",
-          "#e1f1fe"
-        ],
-        "cssVar": "--slate-2"
-      },
-      "on-slate": {
-        "role": "primary",
-        "displayName": "Text on Slate",
-        "canonical": "#f1f1ee",
-        "oklch": "oklch(95.7% 0.004 106.5)",
-        "tonalRamp": [
-          "#0b0b09",
-          "#242422",
-          "#40403d",
-          "#5e5e5b",
-          "#7d7d7b",
-          "#9e9e9c",
-          "#c4c4c1",
-          "#efefec"
-        ],
-        "cssVar": "--on-slate"
-      },
-      "on-slate-muted": {
-        "role": "primary",
-        "displayName": "Text on Slate, Muted",
-        "canonical": "#b9c6cf",
-        "oklch": "oklch(81.9% 0.019 237.8)",
-        "tonalRamp": [
-          "#040c12",
-          "#1b262c",
-          "#374149",
-          "#545f67",
-          "#737f87",
-          "#94a0a9",
-          "#b9c6cf",
-          "#e3f1fa"
-        ],
-        "cssVar": "--on-slate-2"
-      },
-      "selection-gray": {
-        "role": "neutral",
-        "displayName": "Selection Gray",
-        "canonical": "#e3e3dc",
-        "oklch": "oklch(91.4% 0.009 106.6)",
-        "tonalRamp": [
-          "#0c0b07",
-          "#24241f",
-          "#40403a",
-          "#5e5e58",
-          "#7e7e77",
-          "#9f9f98",
-          "#c5c5be",
-          "#efefe8"
-        ],
-        "cssVar": "--select"
-      },
-      "row-hover": {
-        "role": "neutral",
-        "displayName": "Row Hover",
-        "canonical": "#e9e9e3",
-        "oklch": "oklch(93.2% 0.008 106.6)",
-        "tonalRamp": [
-          "#0b0b08",
-          "#242420",
-          "#40403b",
-          "#5e5e59",
-          "#7e7e78",
-          "#9f9f99",
-          "#c4c4bf",
-          "#efefe9"
-        ],
-        "cssVar": null,
-        "note": "Literal in styles.css, not a :root custom property."
+        "cssVar": "--on-accent"
       },
       "status-recommended": {
-        "role": "tertiary",
-        "displayName": "Market Green",
-        "canonical": "#13703f",
-        "oklch": "oklch(48.1% 0.114 154.1)",
+        "role": "status",
+        "displayName": "Recommended Green",
+        "canonical": "#1d7a38",
+        "oklch": "oklch(51.1% 0.132 148.6)",
         "tonalRamp": [
-          "#001103",
-          "#002d14",
-          "#084d29",
-          "#12703f",
-          "#3d915d",
-          "#60b37e",
-          "#86daa2",
-          "#c8fed8"
+          "#001101",
+          "#002d0d",
+          "#004e1c",
+          "#0d712f",
+          "#3a924f",
+          "#5eb56f",
+          "#84dc94",
+          "#c8ffcf"
         ],
         "cssVar": "--st-recommended"
       },
-      "status-recommended-deep": {
-        "role": "tertiary",
-        "displayName": "Market Green Deep",
-        "canonical": "#0f5c33",
-        "oklch": "oklch(42.0% 0.098 154.1)",
+      "status-recommended-tint": {
+        "role": "status",
+        "displayName": "Recommended Tint",
+        "canonical": "rgba(52, 199, 89, 0.15)",
+        "oklch": "oklch(73.0% 0.194 147.4 / 0.15)",
         "tonalRamp": [
-          "#001003",
-          "#002d15",
-          "#044d28",
-          "#266d43",
-          "#498e62",
-          "#6bb182",
-          "#90d7a7",
-          "#c7fed7"
+          "#001100",
+          "#002d0b",
+          "#004e19",
+          "#0e712b",
+          "#11973b",
+          "#24bd4f",
+          "#59e576",
+          "#cbfed0"
         ],
-        "cssVar": null,
-        "note": "Literal in styles.css, not a :root custom property."
+        "cssVar": "--st-recommended-tint"
       },
       "status-review": {
-        "role": "tertiary",
-        "displayName": "Review Amber",
-        "canonical": "#8a5a00",
-        "oklch": "oklch(50.8% 0.108 73.3)",
+        "role": "status",
+        "displayName": "Review Orange",
+        "canonical": "#a3500a",
+        "oklch": "oklch(52.5% 0.131 52.1)",
         "tonalRamp": [
-          "#160700",
-          "#341f00",
-          "#583802",
-          "#7f5307",
-          "#a47228",
-          "#c7934c",
-          "#efb972",
-          "#feebd4"
+          "#1d0200",
+          "#3d1800",
+          "#662d00",
+          "#914503",
+          "#b86327",
+          "#dd854c",
+          "#ffaf7e",
+          "#ffeadd"
         ],
         "cssVar": "--st-review"
       },
-      "status-insufficient": {
-        "role": "tertiary",
-        "displayName": "Blue-Slate",
-        "canonical": "#2b5b84",
-        "oklch": "oklch(45.7% 0.085 246.8)",
+      "status-review-tint": {
+        "role": "status",
+        "displayName": "Review Tint",
+        "canonical": "rgba(255, 149, 0, 0.16)",
+        "oklch": "oklch(76.5% 0.175 62.6 / 0.16)",
         "tonalRamp": [
-          "#000c1f",
-          "#002644",
-          "#10436a",
-          "#32618b",
-          "#5182ad",
-          "#72a4d1",
-          "#97caf9",
-          "#e2f1fe"
+          "#190500",
+          "#391c00",
+          "#5e3400",
+          "#874e0a",
+          "#b3690e",
+          "#df861e",
+          "#fcb26d",
+          "#feebda"
+        ],
+        "cssVar": "--st-review-tint"
+      },
+      "status-insufficient": {
+        "role": "status",
+        "displayName": "Insufficient Indigo",
+        "canonical": "#4644b0",
+        "oklch": "oklch(45.5% 0.167 278.2)",
+        "tonalRamp": [
+          "#080034",
+          "#1d036c",
+          "#322994",
+          "#4c4cb8",
+          "#696ede",
+          "#8a92fd",
+          "#b7bffc",
+          "#eaedff"
         ],
         "cssVar": "--st-insufficient"
       },
+      "status-insufficient-tint": {
+        "role": "status",
+        "displayName": "Insufficient Tint",
+        "canonical": "rgba(88, 86, 214, 0.13)",
+        "oklch": "oklch(52.9% 0.191 278.3 / 0.13)",
+        "tonalRamp": [
+          "#080033",
+          "#1d046b",
+          "#3320a0",
+          "#4c46c5",
+          "#6869eb",
+          "#8a92fc",
+          "#b7bffc",
+          "#eaedff"
+        ],
+        "cssVar": "--st-insufficient-tint"
+      },
       "status-blocked": {
-        "role": "tertiary",
-        "displayName": "Market Red",
-        "canonical": "#b42318",
-        "oklch": "oklch(50.0% 0.182 29.5)",
+        "role": "status",
+        "displayName": "Blocked Red",
+        "canonical": "#c0161c",
+        "oklch": "oklch(51.6% 0.200 26.9)",
         "tonalRamp": [
           "#220000",
-          "#4c0000",
-          "#7e0000",
-          "#ad1a10",
-          "#d44536",
-          "#fb6957",
-          "#fbada1",
-          "#ffe9e5"
+          "#4b0104",
+          "#7c020a",
+          "#ae1319",
+          "#db3834",
+          "#fd665c",
+          "#fdaca2",
+          "#ffe9e6"
         ],
         "cssVar": "--st-blocked"
       },
-      "status-redacted": {
-        "role": "tertiary",
-        "displayName": "Redaction Gray",
-        "canonical": "#56626c",
-        "oklch": "oklch(49.0% 0.022 243.3)",
+      "status-blocked-tint": {
+        "role": "status",
+        "displayName": "Blocked Tint",
+        "canonical": "rgba(255, 59, 48, 0.12)",
+        "oklch": "oklch(65.4% 0.232 28.7 / 0.12)",
         "tonalRamp": [
-          "#040c14",
-          "#1b252e",
-          "#36414b",
-          "#535f69",
-          "#737f8a",
-          "#93a0ab",
-          "#b9c6d1",
-          "#e3f1fc"
+          "#220000",
+          "#4b0101",
+          "#7c0203",
+          "#af1310",
+          "#e71916",
+          "#fd6757",
+          "#fdaca0",
+          "#ffe9e5"
+        ],
+        "cssVar": "--st-blocked-tint"
+      },
+      "status-redacted": {
+        "role": "status",
+        "displayName": "Redacted Gray",
+        "canonical": "#6a6a70",
+        "oklch": "oklch(52.6% 0.009 286.1)",
+        "tonalRamp": [
+          "#0b0b0f",
+          "#232328",
+          "#3f3f45",
+          "#5d5d63",
+          "#7c7c83",
+          "#9e9ea4",
+          "#c3c3ca",
+          "#eeeef5"
         ],
         "cssVar": "--st-redacted"
       },
-      "footnote-mark": {
-        "role": "secondary",
-        "displayName": "Footnote Amber",
-        "canonical": "#8a5a00",
-        "oklch": "oklch(50.8% 0.108 73.3)",
+      "live": {
+        "role": "status",
+        "displayName": "Live Green",
+        "canonical": "#34c759",
+        "oklch": "oklch(73.0% 0.194 147.4)",
         "tonalRamp": [
-          "#160700",
-          "#341f00",
-          "#583802",
-          "#7f5307",
-          "#a47228",
-          "#c7934c",
-          "#efb972",
-          "#feebd4"
+          "#001100",
+          "#002d0b",
+          "#004e19",
+          "#0e712b",
+          "#11973b",
+          "#24bd4f",
+          "#59e576",
+          "#cbfed0"
         ],
-        "cssVar": "--mark"
+        "cssVar": "--live"
       },
-      "footnote-lit": {
-        "role": "secondary",
-        "displayName": "Lit Amber",
-        "canonical": "#f3d48f",
-        "oklch": "oklch(88.1% 0.094 86.3)",
+      "idle": {
+        "role": "status",
+        "displayName": "Idle Gray",
+        "canonical": "rgba(118, 118, 128, 0.45)",
+        "oklch": "oklch(56.9% 0.015 285.9 / 0.45)",
         "tonalRamp": [
-          "#130900",
-          "#302100",
-          "#513c04",
-          "#75590c",
-          "#967935",
-          "#b89a57",
-          "#dfc07c",
-          "#feedc7"
+          "#0a0a11",
+          "#23232b",
+          "#3f3f48",
+          "#5d5d66",
+          "#7c7c86",
+          "#9d9da8",
+          "#c3c3ce",
+          "#ededf9"
         ],
-        "cssVar": "--mark-lit"
+        "cssVar": "--idle"
+      },
+      "tooltip": {
+        "role": "neutral",
+        "displayName": "Tooltip Ink",
+        "canonical": "rgba(29, 29, 31, 0.92)",
+        "oklch": "oklch(23.2% 0.004 286.1 / 0.92)",
+        "tonalRamp": [
+          "#0b0b0d",
+          "#242426",
+          "#3f3f42",
+          "#5d5d60",
+          "#7d7d7f",
+          "#9e9ea1",
+          "#c4c4c6",
+          "#eeeef1"
+        ],
+        "cssVar": "--tooltip"
+      },
+      "glass-bg": {
+        "role": "material",
+        "displayName": "Glass",
+        "canonical": "rgba(255, 255, 255, 0.58)",
+        "oklch": "oklch(100.0% 0.000 89.9 / 0.58)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#7d7d7d",
+          "#9e9e9e",
+          "#c4c4c4",
+          "#eeeeee"
+        ],
+        "cssVar": "--glass-bg"
+      },
+      "glass-stroke": {
+        "role": "material",
+        "displayName": "Glass Stroke",
+        "canonical": "rgba(255, 255, 255, 0.72)",
+        "oklch": "oklch(100.0% 0.000 89.9 / 0.72)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#7d7d7d",
+          "#9e9e9e",
+          "#c4c4c4",
+          "#eeeeee"
+        ],
+        "cssVar": "--glass-stroke"
       }
     },
     "typographyMeta": {
       "display": {
-        "displayName": "Display (question H1)",
-        "purpose": "The fixed north-star question. 1.35 in Thai, 1.2 under html[lang=en]; 23px below 760px; max 34ch, balanced wrap."
+        "displayName": "Display (focus SKU code)",
+        "purpose": "SKU code atop the focus panel; Latin-only, so 1.2 is allowed."
       },
       "headline": {
-        "displayName": "Headline (sheet SKU code)",
-        "purpose": "SKU code atop the sheet; Latin-only, so 1.2 is allowed."
+        "displayName": "Headline (dashboard title)",
+        "purpose": "Dashboard title; balanced wrap, max 36ch; 1.25 under html[lang=en]; 20px below 760px."
+      },
+      "key-figure": {
+        "displayName": "Key figure",
+        "purpose": "Values in the four key-fact tiles of the focus panel."
       },
       "rank": {
         "displayName": "Rank",
-        "purpose": "Listing rank numeral; tie shown with a small muted '='."
+        "purpose": "Card rank numeral (ties add a small '='); chat rows use 16px."
       },
       "title": {
-        "displayName": "Title (verdict)",
-        "purpose": "Sheet verdict line: status flag plus chosen action."
+        "displayName": "Title (verdict action)",
+        "purpose": "The action name beside the status chip in the focus panel."
       },
-      "figure": {
-        "displayName": "Figure",
-        "purpose": "Listing cells (14px below 760px); sheet fact values use 600 14.5px."
+      "card-title": {
+        "displayName": "Card title",
+        "purpose": "SKU code on a product card."
+      },
+      "answer": {
+        "displayName": "Answer",
+        "purpose": "Chat question and answer bubbles."
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Running text, reasons, notes; Sarabun."
+        "purpose": "Default text, inputs and buttons (buttons at 600)."
+      },
+      "control": {
+        "displayName": "Control",
+        "purpose": "Filters, window chip, tool buttons."
       },
       "body-small": {
-        "displayName": "Body Small",
-        "purpose": "Footnote text, model lines (12.5px), notes (12px)."
+        "displayName": "Body small",
+        "purpose": "Reasons, meta, ranking basis, hints."
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Block heads, sources head, controls (600 12px, ink-muted); column heads at 11.5px."
+        "purpose": "Badges, small chips, freshness heading, key-fact labels (at 400)."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Nav sub-labels, card fact labels, TV caption."
       },
       "mark": {
-        "displayName": "Footnote Mark",
-        "purpose": "Superscript source numerals after every figure."
+        "displayName": "Mark",
+        "purpose": "Provenance-mark numerals."
       }
     },
     "fonts": [
       {
-        "family": "Anuphan",
-        "source": "@fontsource/anuphan (self-hosted)",
+        "family": "System UI (-apple-system, SF Pro Text, Segoe UI, Roboto)",
+        "source": "platform",
         "weights": [
           400,
           500,
           600,
+          650,
           700
         ],
-        "role": "figures, headings, labels, controls"
+        "role": "Latin text, figures, all UI"
       },
       {
-        "family": "Sarabun",
-        "source": "@fontsource/sarabun (self-hosted)",
-        "weights": [
-          400,
-          500,
-          600
-        ],
-        "role": "body text, reasons, footnote text, inputs"
+        "family": "Noto Sans Thai Variable",
+        "source": "@fontsource-variable/noto-sans-thai (self-hosted, imported in routes/__root.tsx)",
+        "weights": "variable",
+        "role": "Thai text on every OS"
       }
     ],
     "numerals": {
-      "value": "font-variant-numeric: tabular-nums lining-nums",
-      "scope": "Figure tables: the listing and the sheet fact table."
+      "value": "font-variant-numeric: tabular-nums",
+      "scope": "Figures, ranks, counts and key facts (.num, .fig, .key-facts dd, .rank, .count)."
+    },
+    "materials": [
+      {
+        "name": "glass",
+        "value": "background: var(--glass-bg); backdrop-filter: blur(28px) saturate(175%); border: 1px solid var(--glass-stroke); border-radius: 22px; box-shadow: var(--glass-shadow)",
+        "purpose": "Control layer only: sidebar, toolbar, chat composer, decision bar."
+      },
+      {
+        "name": "glass-fallback-no-backdrop",
+        "value": "@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .glass { background: rgba(250, 251, 253, 0.97); } }",
+        "purpose": "Near-opaque glass where backdrop-filter is unsupported."
+      },
+      {
+        "name": "glass-fallback-reduced-transparency",
+        "value": "@media (prefers-reduced-transparency: reduce) { .glass { background: #f6f7f9; backdrop-filter: none; } }",
+        "purpose": "Solid control layer for users who reduce transparency."
+      },
+      {
+        "name": "surface",
+        "value": "background: var(--surface); border-radius: 18px; box-shadow: var(--surface-shadow)",
+        "purpose": "All content: cards, focus panel, answer bubbles, empty state."
+      },
+      {
+        "name": "popover",
+        "value": "surface + box-shadow: var(--pop-shadow); border-radius: 16px; padding: 16px",
+        "purpose": "Demo controls and decision rationale; always solid (no glass on glass)."
+      }
+    ],
+    "wallpaper": {
+      "value": "background: #eef1f6;",
+      "purpose": "One flat daylight ground for page, gutters and scroll-edge fades; no gradient light fields."
     },
     "shadows": [
       {
-        "name": "decide-scroll-seam",
-        "value": "0 -10px 12px -6px rgb(255 255 255 / 0.95), 0 -8px 12px -8px rgb(20 20 20 / 0.14)",
-        "purpose": "The only shadow: seam above the sticky decision bar at the sheet foot, signalling content scrolling beneath. Removed with stickiness at 1100px and below."
+        "name": "glass-shadow",
+        "value": "inset 0 1px 0 rgba(255, 255, 255, 0.95), inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 12px 32px rgba(31, 45, 61, 0.12), 0 1px 2px rgba(31, 45, 61, 0.08)",
+        "purpose": "Specular top edge, soft bottom edge, ambient drop and contact shadow of glass."
+      },
+      {
+        "name": "surface-shadow",
+        "value": "0 1px 2px rgba(16, 24, 40, 0.06), 0 8px 24px rgba(16, 24, 40, 0.06)",
+        "purpose": "Solid content surfaces."
+      },
+      {
+        "name": "pop-shadow",
+        "value": "0 2px 6px rgba(16, 24, 40, 0.08), 0 24px 48px rgba(16, 24, 40, 0.18)",
+        "purpose": "Popovers."
+      },
+      {
+        "name": "card-hover",
+        "value": "0 2px 4px rgba(16, 24, 40, 0.06), 0 14px 32px rgba(16, 24, 40, 0.1)",
+        "purpose": "Product card lifted on hover (with translateY(-2px))."
+      },
+      {
+        "name": "selected-ring",
+        "value": "0 0 0 2px var(--accent), var(--surface-shadow)",
+        "purpose": "Selected product card; pressed decision button uses the bare 2px ring."
+      },
+      {
+        "name": "segment-pill",
+        "value": "0 1px 3px rgba(0, 0, 0, 0.12)",
+        "purpose": "Active segment and active tab."
+      },
+      {
+        "name": "pill-rest",
+        "value": "0 1px 2px rgba(16, 24, 40, 0.06)",
+        "purpose": "Status filters (follow-up chips use 0.08)."
       }
     ],
-    "rules": [
+    "fades": [
       {
-        "name": "rule-heavy",
-        "value": "3px solid var(--ink)",
-        "purpose": "Under the page head; top edge of the stacked sheet (<=1100px)."
+        "name": "toolbar-scroll-edge",
+        "value": "::before, linear-gradient(to bottom, rgba(238, 241, 246, 0.9) 50%, rgba(238, 241, 246, 0)), extends 16px past the bar",
+        "purpose": "Content fades before passing under the sticky toolbar."
       },
       {
-        "name": "rule-medium",
-        "value": "1.5px solid var(--ink)",
-        "purpose": "Under listing column heads; above the source strip; button and segmented outlines."
-      },
-      {
-        "name": "rule-light",
-        "value": "1px solid var(--ink)",
-        "purpose": "Sheet block heads, sheet left edge, selected row, decision bar top."
-      },
-      {
-        "name": "rule-row",
-        "value": "1px solid var(--rule)",
-        "purpose": "Between listing rows."
-      },
-      {
-        "name": "rule-hairline",
-        "value": "1px solid var(--rule-soft)",
-        "purpose": "Between sheet fact and constraint rows."
-      },
-      {
-        "name": "rule-provisional",
-        "value": "1px dashed var(--ink-3)",
-        "purpose": "Demo-controls fieldset only: marks provisional controls."
+        "name": "decision-dock-scroll-edge",
+        "value": "::before, linear-gradient(to top, rgba(238, 241, 246, 0.94) 55%, rgba(238, 241, 246, 0)), 56px taller than the dock",
+        "purpose": "Content fades before passing under the floating decision bar."
       }
     ],
     "focus": {
-      "value": "outline: 2px solid var(--slate); outline-offset: 2px",
-      "purpose": "Global :focus-visible ring (offset 1px on source-strip lines)."
+      "value": "outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px",
+      "purpose": "Global :focus-visible ring; search field shows a 2px accent box-shadow ring on focus-within."
     },
     "motion": [
       {
-        "name": "ease-out-quick",
-        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
-        "purpose": "The only easing in the system."
+        "name": "ease",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "The only easing (--ease)."
       },
       {
         "name": "duration-state",
-        "value": "160ms",
-        "purpose": "background-color transition on footnote marks, source-strip lines, and decision buttons. Nothing else moves."
+        "value": "180ms",
+        "purpose": "background-color/color on segments, tabs, filters, chips, answer rows, source lines, buttons."
+      },
+      {
+        "name": "duration-lift",
+        "value": "200ms",
+        "purpose": "Card transform and shadow on hover."
+      },
+      {
+        "name": "duration-press",
+        "value": "120ms",
+        "purpose": "Button press, transform: scale(0.98)."
       },
       {
         "name": "reduced-motion",
-        "value": "@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }",
-        "purpose": "Removes all transitions."
+        "value": "@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; } .card:hover { transform: none; } }",
+        "purpose": "Removes all motion."
       }
     ],
     "breakpoints": [
       {
         "name": "wide",
-        "value": "> 1440px",
-        "purpose": "232px labelled rail | fluid main | 420px sheet; 32px gutters."
+        "value": "> 1360px",
+        "purpose": "232px labelled glass sidebar with data freshness | fluid main; focus TV 300px."
       },
       {
         "name": "icon-rail",
-        "value": "1440px",
-        "purpose": "max-width: rail collapses to 64px icons (labels visually hidden); sheet 380px; 24px gutters."
+        "value": "1360px",
+        "purpose": "max-width: sidebar collapses to a 76px icon rail, labels visually hidden, freshness hidden; focus TV 240px."
       },
       {
-        "name": "sheet-stacks",
+        "name": "focus-stack",
         "value": "1100px",
-        "purpose": "max-width: sheet stacks under main with a 3px ink top rule; decision bar no longer sticky."
+        "purpose": "max-width: focus hero stacks, TV centred."
       },
       {
-        "name": "single-column",
+        "name": "phone",
         "value": "760px",
-        "purpose": "max-width: rail becomes a horizontal top bar; one column; H1 23px; listing scrolls with right-edge fade mask."
+        "purpose": "max-width: sidebar becomes a fixed glass bottom tab bar; toolbar wraps; rail cards 160px; key facts 2 columns; dock and composer at bottom 84px; decision bar shows buttons only."
       }
-    ]
+    ],
+    "scrollbar": {
+      "value": "scrollbar-width: thin; scrollbar-color: rgba(60, 60, 67, 0.3) transparent",
+      "purpose": "All scrolling regions."
+    }
   },
   "components": [
     {
-      "name": "Approve Button",
+      "name": "Primary and Secondary Buttons",
       "kind": "button",
-      "refersTo": "button-approve",
-      "description": "Primary decision action; Market Green, enabled only for a recommended SKU and a viewer with approval permission.",
-      "html": "<button type=\"button\" class=\"ds-btn ds-btn-approve\">อนุมัติ</button> <button type=\"button\" class=\"ds-btn ds-btn-approve\" disabled>อนุมัติ</button>",
-      "css": ".ds-btn { padding: 10px 8px; min-width: 112px; border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink); font-family: var(--font-figure); font-weight: 700; font-size: 13.5px; line-height: 1.25; border-radius: 0; cursor: pointer; transition: background-color 160ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-approve { background: var(--st-recommended); border-color: var(--st-recommended); color: #fff; } .ds-btn-approve:hover:not(:disabled) { background: #0f5c33; } .ds-btn:focus-visible { outline: 2px solid var(--slate); outline-offset: 2px; } .ds-btn:disabled { opacity: 0.45; cursor: not-allowed; }"
+      "refersTo": "button-primary",
+      "description": "Decision actions: System Blue Approve (enabled only for a recommended SKU with approval permission), Fill secondaries.",
+      "html": "<div class=\"ds-row\"><button type=\"button\" class=\"ds-btn\">Request more data</button> <button type=\"button\" class=\"ds-btn\" disabled>Reject</button> <button type=\"button\" class=\"ds-btn ds-btn-primary\">Approve</button></div>",
+      "css": ".ds-btn { height: 40px; padding: 0 16px; border: 0; border-radius: 12px; background: var(--fill); font: 600 14px/1.4 inherit; font-family: inherit; color: var(--text); cursor: pointer; transition: background-color 180ms cubic-bezier(0.22, 1, 0.36, 1), transform 120ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn:hover:not(:disabled) { background: var(--fill-strong); } .ds-btn:active:not(:disabled) { transform: scale(0.98); } .ds-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; } .ds-btn:disabled { opacity: 0.4; cursor: not-allowed; } .ds-btn-primary { background: var(--accent); color: var(--on-accent); } .ds-btn-primary:hover:not(:disabled) { background: var(--accent-deep); } .ds-row { display: flex; gap: 8px; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, 'Noto Sans Thai Variable', sans-serif; }"
     },
     {
-      "name": "Secondary Button",
-      "kind": "button",
-      "refersTo": "button-secondary",
-      "description": "Reject and Request more data: white with a 1.5px ink outline, selection-gray hover.",
-      "html": "<button type=\"button\" class=\"ds-btn\">ปฏิเสธ</button> <button type=\"button\" class=\"ds-btn\">ขอข้อมูลเพิ่ม</button>",
-      "css": ".ds-btn { padding: 10px 8px; min-width: 112px; border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink); font-family: var(--font-figure); font-weight: 700; font-size: 13.5px; line-height: 1.25; border-radius: 0; cursor: pointer; transition: background-color 160ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn:hover:not(:disabled) { background: var(--select); } .ds-btn:focus-visible { outline: 2px solid var(--slate); outline-offset: 2px; }"
+      "name": "Glass Decision Bar",
+      "kind": "custom",
+      "refersTo": "glass-bar",
+      "description": "Floating Liquid Glass bar over the wallpaper: what is being decided, the state line, and the three actions.",
+      "html": "<div class=\"ds-wall\"><div class=\"ds-glass ds-dbar\"><div class=\"ds-what\"><span class=\"ds-muted\">Decide on</span> <strong>SYN-AX25-55</strong><span class=\"ds-muted ds-why\">Approve/reject is off (demo controls)</span></div><div class=\"ds-row\"><button type=\"button\" class=\"ds-btn\">Request more data</button><button type=\"button\" class=\"ds-btn\" disabled>Reject</button><button type=\"button\" class=\"ds-btn ds-btn-primary\" disabled>Approve</button></div></div></div>",
+      "css": ".ds-wall { padding: 20px; border-radius: 16px; background: #eef1f6; font-family: -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", Roboto, \"Noto Sans Thai Variable\", \"Noto Sans Thai\", sans-serif; color: var(--text); font-size: 14px; line-height: 1.5; } .ds-glass { background: var(--glass-bg); -webkit-backdrop-filter: blur(28px) saturate(175%); backdrop-filter: blur(28px) saturate(175%); border: 1px solid var(--glass-stroke); border-radius: 22px; box-shadow: var(--glass-shadow); } .ds-btn { height: 40px; padding: 0 16px; border: 0; border-radius: 12px; background: var(--fill); font: 600 14px/1.4 inherit; font-family: inherit; color: var(--text); cursor: pointer; transition: background-color 180ms cubic-bezier(0.22, 1, 0.36, 1), transform 120ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn:hover:not(:disabled) { background: var(--fill-strong); } .ds-btn:active:not(:disabled) { transform: scale(0.98); } .ds-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; } .ds-btn:disabled { opacity: 0.4; cursor: not-allowed; } .ds-btn-primary { background: var(--accent); color: var(--on-accent); } .ds-btn-primary:hover:not(:disabled) { background: var(--accent-deep); } .ds-dbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 10px 10px 10px 18px; } .ds-what { display: flex; flex-wrap: wrap; gap: 2px 10px; align-items: baseline; } .ds-what strong { font-size: 15px; } .ds-why { flex-basis: 100%; } .ds-muted { color: var(--text-3); font-size: 12.5px; } .ds-row { display: flex; gap: 8px; }"
     },
     {
-      "name": "Language Switch",
-      "kind": "chip",
-      "refersTo": "segmented-on",
-      "description": "TH/EN segmented control: square ink frame, pressed segment filled ink.",
-      "html": "<div class=\"ds-seg\" role=\"group\" aria-label=\"Language\"><button type=\"button\" aria-pressed=\"true\">TH</button><button type=\"button\" aria-pressed=\"false\">EN</button></div>",
-      "css": ".ds-seg { display: inline-flex; border: 1.5px solid var(--ink); } .ds-seg button { border: 0; background: transparent; color: var(--ink); padding: 5px 12px; font-family: var(--font-figure); font-weight: 600; font-size: 12px; line-height: 1.2; cursor: pointer; } .ds-seg button[aria-pressed=\"true\"] { background: var(--ink); color: var(--ground); } .ds-seg button[aria-pressed=\"false\"]:hover { background: var(--select); } .ds-seg button:focus-visible { outline: 2px solid var(--slate); outline-offset: 2px; }"
-    },
-    {
-      "name": "Navigation Rail",
+      "name": "Glass Sidebar Navigation",
       "kind": "nav",
-      "refersTo": "rail",
-      "description": "Solid slate field; active item raised slate, unbuilt surfaces shown disabled with a sublabel.",
-      "html": "<nav class=\"ds-rail\"><a class=\"ds-nav ds-on\" href=\"#\" aria-current=\"page\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z\"/><path d=\"M7 11h10\"/><path d=\"M7 15h6\"/><path d=\"M7 7h8\"/></svg><span>ถามคำถาม</span></a><span class=\"ds-nav ds-off\" aria-disabled=\"true\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z\"/><path d=\"M7 11h10\"/><path d=\"M7 15h6\"/><path d=\"M7 7h8\"/></svg><span>ประวัติการตัดสินใจ</span><small>ยังไม่เปิดใช้</small></span></nav>",
-      "css": ".ds-rail { background: var(--slate); color: var(--on-slate-2); padding: 24px 12px; width: 232px; display: flex; flex-direction: column; gap: 2px; } .ds-nav { display: grid; grid-template-columns: 18px 1fr; column-gap: 12px; align-items: center; padding: 9px 12px; font-family: var(--font-figure); font-weight: 500; font-size: 14px; line-height: 1.35; color: var(--on-slate-2); text-decoration: none; border-radius: 4px; } .ds-nav small { grid-column: 2; font-family: var(--font-body); font-size: 11.5px; line-height: 1.3; color: #93a3ae; } .ds-nav.ds-on { background: var(--slate-2); color: var(--on-slate); font-weight: 600; } .ds-nav:not(.ds-off):hover { background: var(--slate-2); color: var(--on-slate); } .ds-nav.ds-off { opacity: 0.85; cursor: not-allowed; } .ds-nav.ds-off svg { opacity: 0.45; } .ds-nav:focus-visible { outline: 2px solid var(--slate); outline-offset: 2px; }"
+      "refersTo": "nav-item-on",
+      "description": "Glass sidebar: current page in Blue Wash, disabled future surfaces with a 'not built yet' sub-label, data freshness at the foot.",
+      "html": "<div class=\"ds-wall\"><nav class=\"ds-glass ds-side\"><a class=\"ds-nav ds-on\" href=\"#\">Product dashboard</a><a class=\"ds-nav\" href=\"#\">Chat &amp; Advisor</a><span class=\"ds-nav ds-off\" aria-disabled=\"true\"><span>Data Health<small>Not built yet</small></span></span><div class=\"ds-fresh\"><h3>Data freshness</h3><p><span class=\"ds-dot ds-live\"></span>Synthetic ERP export</p><p class=\"ds-m\"><span class=\"ds-dot ds-idle\"></span>External sources: not connected</p></div></nav></div>",
+      "css": ".ds-wall { padding: 20px; border-radius: 16px; background: #eef1f6; font-family: -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", Roboto, \"Noto Sans Thai Variable\", \"Noto Sans Thai\", sans-serif; color: var(--text); font-size: 14px; line-height: 1.5; } .ds-glass { background: var(--glass-bg); -webkit-backdrop-filter: blur(28px) saturate(175%); backdrop-filter: blur(28px) saturate(175%); border: 1px solid var(--glass-stroke); border-radius: 22px; box-shadow: var(--glass-shadow); } .ds-side { width: 232px; padding: 18px 12px; display: flex; flex-direction: column; gap: 2px; } .ds-nav { display: flex; padding: 9px 10px; border-radius: 12px; color: var(--text-2); text-decoration: none; font-weight: 500; } .ds-nav:hover { background: var(--fill); } .ds-nav:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; } .ds-on { background: var(--accent-tint); color: var(--accent); font-weight: 600; } .ds-off { color: var(--text-3); } .ds-off span { display: flex; flex-direction: column; } .ds-off small { font-size: 11.5px; } .ds-fresh { margin-top: 20px; padding: 12px 8px 0; border-top: 1px solid var(--hairline); font-size: 12.5px; } .ds-fresh h3 { margin: 0 0 8px; font: 600 12px/1.4 inherit; color: var(--text-3); } .ds-fresh p { margin: 0 0 6px; display: flex; gap: 8px; align-items: center; } .ds-m { color: var(--text-3); } .ds-dot { width: 8px; height: 8px; border-radius: 50%; flex: none; } .ds-live { background: var(--live); } .ds-idle { background: var(--idle); }"
     },
     {
-      "name": "Status Flag",
-      "kind": "custom",
-      "refersTo": "status-recommended",
-      "description": "The one fixed status ramp: icon plus word in the status hue, identical in listing, sheet and rules. Redaction always carries the lock.",
-      "html": "<div class=\"ds-flags\"><span class=\"ds-flag ds-st-rec\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m16 9-5.5 5.5L8 12\"/></svg>แนะนำ</span><span class=\"ds-flag ds-st-rev\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3\"/><path d=\"M12 9v4\"/><path d=\"M12 17h.01\"/></svg>ต้องทบทวน</span><span class=\"ds-flag ds-st-ins\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3\"/><path d=\"M12 17h.01\"/></svg>ข้อมูลไม่พอ</span><span class=\"ds-flag ds-st-blk\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M4.929 4.929 19.07 19.071\"/></svg>ถูกกฎกัน</span><span class=\"ds-flag ds-st-red\"><svg width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect width=\"18\" height=\"11\" x=\"3\" y=\"11\" rx=\"2\" ry=\"2\"/><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"/></svg>ปิดบัง</span></div>",
-      "css": ".ds-flags { display: flex; flex-wrap: wrap; gap: 16px; } .ds-flag { display: inline-flex; align-items: center; gap: 5px; font-family: var(--font-figure); font-weight: 600; font-size: 12.5px; line-height: 1.35; white-space: nowrap; } .ds-st-rec { color: var(--st-recommended); } .ds-st-rev { color: var(--st-review); } .ds-st-ins { color: var(--st-insufficient); } .ds-st-blk { color: var(--st-blocked); } .ds-st-red { color: var(--st-redacted); }"
-    },
-    {
-      "name": "Sector Bar + Listing Rows",
-      "kind": "custom",
-      "refersTo": "sector-bar",
-      "description": "Reverse slate sector bar heading an action group, over dense tabular rows; hover and selected row states. Figures are placeholders.",
-      "html": "<table class=\"ds-listing\"><thead><tr><th>อันดับ</th><th>สินค้า / SKU</th><th>สถานะ</th><th class=\"ds-num\">ตัวเลข</th></tr></thead><tbody><tr class=\"ds-sector\"><th colspan=\"4\"><span>ชื่อกลุ่ม</span><span class=\"ds-fit\">ผ่านเกณฑ์ n จาก m</span></th></tr><tr class=\"ds-sel\"><td><span class=\"ds-rank\">1</span></td><td><b class=\"ds-sku\">SYN-0000</b><span class=\"ds-model\">Synthetic · Model</span></td><td><span class=\"ds-flag ds-st-rec\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m16 9-5.5 5.5L8 12\"/></svg>แนะนำ</span></td><td class=\"ds-num\">000<a class=\"ds-mark\" href=\"#\">1</a></td></tr><tr><td><span class=\"ds-rank\">2</span></td><td><b class=\"ds-sku\">SYN-0001</b><span class=\"ds-model\">Synthetic · Model</span></td><td><span class=\"ds-flag ds-st-rev\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3\"/><path d=\"M12 9v4\"/><path d=\"M12 17h.01\"/></svg>ต้องทบทวน</span></td><td class=\"ds-num\">000<a class=\"ds-mark\" href=\"#\">2</a></td></tr></tbody></table>",
-      "css": ".ds-listing { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums lining-nums; background: var(--ground); } .ds-listing thead th { font-family: var(--font-figure); font-weight: 600; font-size: 11.5px; line-height: 1.35; color: var(--ink-3); text-align: left; padding: 8px; border-bottom: 1.5px solid var(--ink); } .ds-listing td { padding: 9px 8px; border-bottom: 1px solid var(--rule); font-family: var(--font-figure); font-weight: 500; font-size: 15px; line-height: 1.35; } .ds-listing tbody tr:not(.ds-sector) { cursor: pointer; } .ds-listing tbody tr:not(.ds-sector):hover td { background: #e9e9e3; } .ds-listing tr.ds-sel td { background: var(--select); border-bottom-color: var(--ink); } .ds-num { text-align: right !important; white-space: nowrap; } .ds-sector th { background: var(--slate); color: var(--on-slate); text-align: left; padding: 7px 8px; font-family: var(--font-figure); font-weight: 700; font-size: 13px; line-height: 1.4; } .ds-sector th > span { margin-right: 16px; } .ds-fit { font-weight: 500; color: var(--on-slate-2); } .ds-rank { font-family: var(--font-figure); font-weight: 700; font-size: 22px; line-height: 1; } .ds-sku { display: block; font-family: var(--font-figure); font-weight: 700; font-size: 15px; line-height: 1.3; } .ds-model { display: block; font-family: var(--font-body); font-size: 12.5px; line-height: 1.4; color: var(--ink-3); } .ds-flag { display: inline-flex; align-items: center; gap: 5px; font-weight: 600; font-size: 12.5px; } .ds-st-rec { color: var(--st-recommended); } .ds-st-rev { color: var(--st-review); } .ds-mark { display: inline-block; min-width: 1.15em; margin-left: 2px; padding: 0 2px; vertical-align: super; font-weight: 700; font-size: 10px; line-height: 1; color: var(--mark); text-decoration: none; border-radius: 2px; transition: background-color 160ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-mark:hover, .ds-mark:focus-visible { background: var(--mark-lit); color: var(--ink); outline: none; }"
-    },
-    {
-      "name": "Footnote Mark + Source Strip",
-      "kind": "custom",
-      "refersTo": "footnote-mark",
-      "description": "Signature move: every figure carries an amber mark linked to a numbered source line; mark and line light together on hover/focus, both directions (shown here with the .ds-lit state on source 1). Values are placeholders.",
-      "html": "<div class=\"ds-fn-demo\"><p class=\"ds-figline\"><span class=\"ds-fig\">000<a class=\"ds-mark ds-lit\" href=\"#ds-fn-1\">1</a><a class=\"ds-mark\" href=\"#ds-fn-2\">2</a></span></p><section class=\"ds-footnotes\"><h2>แหล่งข้อมูล</h2><ol><li id=\"ds-fn-1\" class=\"ds-lit\" tabindex=\"0\"><span class=\"ds-fn-n\">1</span><span>Synthetic source · file.csv · n lines · ingested time</span></li><li id=\"ds-fn-2\" tabindex=\"0\"><span class=\"ds-fn-n\">2</span><span>Synthetic source · file.csv · n lines · ingested time</span></li></ol></section></div>",
-      "css": ".ds-fn-demo { background: var(--ground); padding: 16px; } .ds-fig { font-family: var(--font-figure); font-weight: 500; font-size: 15px; font-variant-numeric: tabular-nums lining-nums; white-space: nowrap; } .ds-mark { display: inline-block; min-width: 1.15em; margin-left: 2px; padding: 0 2px; vertical-align: super; font-family: var(--font-figure); font-weight: 700; font-size: 10px; line-height: 1; color: var(--mark); text-decoration: none; border-radius: 2px; transition: background-color 160ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-mark:hover, .ds-mark.ds-lit, .ds-mark:focus-visible { background: var(--mark-lit); color: var(--ink); } .ds-footnotes { border-top: 1.5px solid var(--ink); padding-top: 24px; margin-top: 16px; } .ds-footnotes h2 { margin: 0 0 8px; font-family: var(--font-figure); font-weight: 600; font-size: 12px; line-height: 1.35; color: var(--ink-3); } .ds-footnotes ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; } .ds-footnotes li { display: flex; gap: 8px; font-family: var(--font-body); font-size: 12.5px; line-height: 1.5; color: var(--ink-2); padding: 1px 4px; border-radius: 2px; transition: background-color 160ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-footnotes li.ds-lit, .ds-footnotes li:hover, .ds-footnotes li:target { background: var(--mark-lit); color: var(--ink); } .ds-footnotes li:focus-visible { outline: 2px solid var(--slate); outline-offset: 1px; } .ds-fn-n { font-family: var(--font-figure); font-weight: 700; font-size: 11px; line-height: 1.6; color: var(--mark); min-width: 1.2em; }"
-    },
-    {
-      "name": "Sheet Fact Block",
-      "kind": "card",
-      "refersTo": "sku-sheet",
-      "description": "No card shell: a white sheet block headed by a muted label over a 1px ink rule; tabular facts with marks and as-of notes on hairline rows. Values are placeholders.",
-      "html": "<div class=\"ds-sheet\"><section><h3>ข้อเท็จจริง</h3><table class=\"ds-facts\"><tbody><tr><th>ตัวชี้วัด</th><td class=\"ds-num\">000<a class=\"ds-mark\" href=\"#\">1</a></td><td class=\"ds-asof\">ณ วันที่ · สูตร v1</td></tr><tr><th>ตัวชี้วัด</th><td class=\"ds-num\">000<a class=\"ds-mark\" href=\"#\">2</a></td><td class=\"ds-asof\">ณ วันที่ · สูตร v1</td></tr></tbody></table></section></div>",
-      "css": ".ds-sheet { background: var(--paper); border-left: 1px solid var(--ink); padding: 32px 24px; max-width: 420px; } .ds-sheet h3 { margin: 0 0 8px; font-family: var(--font-figure); font-weight: 600; font-size: 12px; line-height: 1.35; color: var(--ink-3); padding-bottom: 4px; border-bottom: 1px solid var(--ink); } .ds-facts { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums lining-nums; } .ds-facts th { text-align: left; font-family: var(--font-body); font-weight: 400; font-size: 13px; line-height: 1.4; color: var(--ink-2); padding: 6px 0; border-bottom: 1px solid var(--rule-soft); } .ds-facts td { padding: 6px 0 6px 12px; border-bottom: 1px solid var(--rule-soft); font-family: var(--font-figure); font-weight: 600; font-size: 14.5px; line-height: 1.35; } .ds-num { text-align: right; white-space: nowrap; } .ds-asof { font-family: var(--font-body); font-weight: 400 !important; font-size: 11.5px !important; color: var(--ink-3); white-space: nowrap; } .ds-mark { display: inline-block; min-width: 1.15em; margin-left: 2px; padding: 0 2px; vertical-align: super; font-weight: 700; font-size: 10px; line-height: 1; color: var(--mark); text-decoration: none; border-radius: 2px; transition: background-color 160ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-mark:hover, .ds-mark:focus-visible { background: var(--mark-lit); color: var(--ink); outline: none; }"
-    },
-    {
-      "name": "Rationale Field",
+      "name": "Toolbar Controls",
       "kind": "input",
-      "refersTo": "textarea",
-      "description": "Decision rationale textarea: white, 1px ink-muted outline, 2px corners, slate focus ring.",
-      "html": "<label class=\"ds-rationale\">เหตุผล (จำเป็น)<textarea rows=\"3\" placeholder=\"เช่น สอดคล้องกับแผนการตลาดเดือนนี้\"></textarea></label>",
-      "css": ".ds-rationale { display: grid; gap: 4px; font-family: var(--font-figure); font-weight: 600; font-size: 12px; line-height: 1.35; color: var(--ink-2); max-width: 360px; } .ds-rationale textarea { resize: vertical; min-height: 52px; padding: 8px; border: 1px solid var(--ink-3); border-radius: 2px; background: var(--paper); color: var(--ink); caret-color: var(--slate); font-family: var(--font-body); font-weight: 400; font-size: 14px; line-height: 1.5; } .ds-rationale textarea::placeholder { color: #6b7680; } .ds-rationale textarea:focus-visible { outline: 2px solid var(--slate); outline-offset: 2px; }"
+      "refersTo": "searchbox",
+      "description": "Glass toolbar: Fill search field with accent focus ring, window chip, TH/EN segmented control.",
+      "html": "<div class=\"ds-wall\"><div class=\"ds-glass ds-tb\"><label class=\"ds-search\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"8\"/><path d=\"m21 21-4.3-4.3\"/></svg><input type=\"search\" placeholder=\"Search model, SKU or alias\"></label><span class=\"ds-wchip\">1 Sept 2026 – 30 Sept 2026</span><div class=\"ds-seg\"><button type=\"button\" aria-pressed=\"false\">TH</button><button type=\"button\" aria-pressed=\"true\">EN</button></div></div></div>",
+      "css": ".ds-wall { padding: 20px; border-radius: 16px; background: #eef1f6; font-family: -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", Roboto, \"Noto Sans Thai Variable\", \"Noto Sans Thai\", sans-serif; color: var(--text); font-size: 14px; line-height: 1.5; } .ds-glass { background: var(--glass-bg); -webkit-backdrop-filter: blur(28px) saturate(175%); backdrop-filter: blur(28px) saturate(175%); border: 1px solid var(--glass-stroke); border-radius: 22px; box-shadow: var(--glass-shadow); } .ds-tb { display: flex; align-items: center; gap: 10px; padding: 8px; } .ds-search { flex: 1; display: flex; align-items: center; gap: 8px; height: 38px; padding: 0 12px; border-radius: 12px; background: var(--fill); color: var(--text-3); } .ds-search:focus-within { box-shadow: 0 0 0 2px var(--accent); } .ds-search input { flex: 1; border: 0; background: transparent; outline: none; font: inherit; color: var(--text); } .ds-search input::placeholder { color: var(--text-3); } .ds-wchip { height: 38px; padding: 0 12px; display: inline-flex; align-items: center; border-radius: 12px; background: var(--fill); font: 500 13px/1.4 inherit; white-space: nowrap; } .ds-seg { display: inline-flex; padding: 3px; border-radius: 12px; background: var(--fill); } .ds-seg button { border: 0; background: transparent; height: 32px; padding: 0 12px; border-radius: 9px; font: 600 12.5px/1.4 inherit; font-family: inherit; color: var(--text-2); cursor: pointer; transition: background-color 180ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-seg button[aria-pressed=\"true\"] { background: var(--surface); color: var(--text); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12); } .ds-seg button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }"
     },
     {
-      "name": "Synthetic Data Label",
+      "name": "Status Chips",
       "kind": "chip",
-      "refersTo": "synthetic-label",
-      "description": "Provenance statement under the header metadata: a small slate block declaring the data synthetic.",
-      "html": "<p class=\"ds-synthetic\">ข้อมูลสังเคราะห์ — ไม่ใช่ข้อมูลจริง</p>",
-      "css": ".ds-synthetic { display: inline-block; margin: 0; padding: 2px 8px; background: var(--slate); color: var(--on-slate); font-family: var(--font-figure); font-weight: 600; font-size: 12px; line-height: 1.5; }"
+      "refersTo": "status-chip-recommended",
+      "description": "The four statuses, each with its fixed icon; hue on text and icon, tint only as the chip background.",
+      "html": "<div class=\"ds-row\"><span class=\"ds-chip ds-st-recommended\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m9 12 2 2 4-4\"/></svg>Recommended</span><span class=\"ds-chip ds-st-review\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3\"/><path d=\"M12 9v4\"/><path d=\"M12 17h.01\"/></svg>Review required</span><span class=\"ds-chip ds-st-insufficient\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3\"/><path d=\"M12 17h.01\"/></svg>Insufficient data</span><span class=\"ds-chip ds-st-blocked\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m4.9 4.9 14.2 14.2\"/></svg>Blocked</span></div>",
+      "css": ".ds-chip { display: inline-flex; align-items: center; gap: 5px; height: 28px; padding: 0 11px; border-radius: 999px; font-weight: 600; font-size: 13px; line-height: 1.4; white-space: nowrap; } .ds-st-recommended { color: var(--st-recommended); background: var(--st-recommended-tint); } .ds-st-review { color: var(--st-review); background: var(--st-review-tint); } .ds-st-insufficient { color: var(--st-insufficient); background: var(--st-insufficient-tint); } .ds-st-blocked { color: var(--st-blocked); background: var(--st-blocked-tint); } .ds-row { display: flex; flex-wrap: wrap; gap: 8px; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, 'Noto Sans Thai Variable', sans-serif; }"
+    },
+    {
+      "name": "Status Filters with Counts",
+      "kind": "chip",
+      "refersTo": "filter",
+      "description": "Status counts are the only aggregate figures; each status stays visible as a filter, disabled at 0.",
+      "html": "<div class=\"ds-row\"><button type=\"button\" class=\"ds-f ds-on\" aria-pressed=\"true\">All <span class=\"ds-c\">5</span></button><button type=\"button\" class=\"ds-f ds-t-rec\">Recommended <span class=\"ds-c\">1</span></button><button type=\"button\" class=\"ds-f ds-t-rev\">Review required <span class=\"ds-c\">1</span></button><button type=\"button\" class=\"ds-f ds-t-ins\">Insufficient data <span class=\"ds-c\">2</span></button><button type=\"button\" class=\"ds-f ds-t-blk\">Blocked <span class=\"ds-c\">1</span></button></div>",
+      "css": ".ds-row { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px; background: #eef1f6; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, 'Noto Sans Thai Variable', sans-serif; } .ds-f { display: inline-flex; align-items: center; gap: 8px; height: 34px; padding: 0 14px; border: 0; border-radius: 999px; background: var(--surface); box-shadow: 0 1px 2px rgba(16, 24, 40, 0.06); font: 500 13px/1.4 inherit; font-family: inherit; color: var(--text-2); cursor: pointer; transition: background-color 180ms cubic-bezier(0.22, 1, 0.36, 1), color 180ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-f:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; } .ds-c { min-width: 20px; padding: 0 6px; border-radius: 999px; background: var(--fill); font: 600 12px/1.6 inherit; text-align: center; font-variant-numeric: tabular-nums; } .ds-on { background: var(--text); color: var(--surface); } .ds-on .ds-c { background: rgba(255, 255, 255, 0.22); } .ds-t-rec { color: var(--st-recommended); } .ds-t-rev { color: var(--st-review); } .ds-t-ins { color: var(--st-insufficient); } .ds-t-blk { color: var(--st-blocked); }"
+    },
+    {
+      "name": "Product Card",
+      "kind": "card",
+      "refersTo": "product-card",
+      "description": "Solid white card in the rail: rank or withheld-rank lock, status chip, decorative size-true TV, SKU, reason, two figures (redacted shows a lock).",
+      "html": "<div class=\"ds-bg\"><article class=\"ds-card ds-sel\"><div class=\"ds-top\"><span class=\"ds-wh\" role=\"img\" aria-label=\"Rank withheld\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect width=\"18\" height=\"11\" x=\"3\" y=\"11\" rx=\"2\" ry=\"2\"/><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"/></svg></span><span class=\"ds-chip ds-st-recommended\" style=\"height:24px;padding:0 8px;font-size:12px\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m9 12 2 2 4-4\"/></svg>Recommended</span></div><div class=\"ds-media\"><svg xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" width=\"150\" height=\"88\" viewBox=\"0 0 150 88.0\"><defs><linearGradient id=\"ds-scr-55\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\"><stop offset=\"0\" stop-color=\"hsl(235 38% 22%)\"/><stop offset=\"0.55\" stop-color=\"hsl(235 52% 46%)\"/><stop offset=\"1\" stop-color=\"hsl(253 70% 78%)\"/></linearGradient></defs><g transform=\"translate(11.5 0)\"><rect width=\"126.9\" height=\"75.4\" rx=\"3\" fill=\"#1d1d1f\"/><rect x=\"2.0\" y=\"2.0\" width=\"122.9\" height=\"71.4\" rx=\"2\" fill=\"url(#ds-scr-55)\"/><path d=\"M11.6 75.4 l-3.8 7.1 M115.3 75.4 l3.8 7.1\" stroke=\"#2c2c2e\" stroke-width=\"2.3\" stroke-linecap=\"round\"/></g></svg></div><button type=\"button\" class=\"ds-title\">SYN-AX25-55</button><p class=\"ds-sub\">Advertise only</p><dl class=\"ds-facts\"><div><dt>Stock cover</dt><dd><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect width=\"18\" height=\"11\" x=\"3\" y=\"11\" rx=\"2\" ry=\"2\"/><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"/></svg></dd></div><div><dt>Realized margin</dt><dd><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect width=\"18\" height=\"11\" x=\"3\" y=\"11\" rx=\"2\" ry=\"2\"/><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"/></svg></dd></div></dl></article></div>",
+      "css": ".ds-chip { display: inline-flex; align-items: center; gap: 5px; height: 28px; padding: 0 11px; border-radius: 999px; font-weight: 600; font-size: 13px; line-height: 1.4; white-space: nowrap; } .ds-st-recommended { color: var(--st-recommended); background: var(--st-recommended-tint); } .ds-st-review { color: var(--st-review); background: var(--st-review-tint); } .ds-st-insufficient { color: var(--st-insufficient); background: var(--st-insufficient-tint); } .ds-st-blocked { color: var(--st-blocked); background: var(--st-blocked-tint); } .ds-bg { padding: 16px; background: #eef1f6; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, 'Noto Sans Thai Variable', sans-serif; } .ds-card { width: 186px; padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 6px; background: var(--surface); border-radius: 18px; box-shadow: var(--surface-shadow); cursor: pointer; transition: transform 200ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 200ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-card:hover { transform: translateY(-2px); box-shadow: 0 2px 4px rgba(16, 24, 40, 0.06), 0 14px 32px rgba(16, 24, 40, 0.1); } .ds-sel { box-shadow: 0 0 0 2px var(--accent), var(--surface-shadow); } .ds-top { display: flex; justify-content: space-between; align-items: center; min-height: 26px; } .ds-wh { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 7px; background: var(--fill); color: var(--st-redacted); } .ds-media { height: 104px; display: flex; align-items: flex-end; justify-content: center; } .ds-title { all: unset; cursor: pointer; font: 650 15px/1.4 inherit; } .ds-title:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; } .ds-sub { margin: 0; font-size: 12.5px; line-height: 1.45; color: var(--text-2); } .ds-facts { margin: 4px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding-top: 8px; border-top: 1px solid var(--hairline); } .ds-facts dt { font-size: 11.5px; color: var(--text-3); } .ds-facts dd { margin: 0; color: var(--st-redacted); }"
+    },
+    {
+      "name": "Focus Verdict, Callout and Key Facts",
+      "kind": "card",
+      "refersTo": "key-fact-tile",
+      "description": "Focus panel head: verdict, a status-tinted callout with a blue next step, and Fill key-fact tiles (redacted values show lock + word).",
+      "html": "<section class=\"ds-focus\"><h2>SYN-E4-43</h2><div class=\"ds-verdict\"><span class=\"ds-chip ds-st-review\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3\"/><path d=\"M12 9v4\"/><path d=\"M12 17h.01\"/></svg>Review required</span></div><div class=\"ds-callout\">Sales from more than one source<p class=\"ds-next\">→ Confirm which source is authoritative</p></div><dl class=\"ds-kf\"><div><dt>Units sold</dt><dd><span class=\"ds-red\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect width=\"18\" height=\"11\" x=\"3\" y=\"11\" rx=\"2\" ry=\"2\"/><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"/></svg>Redacted</span></dd></div><div><dt>Realized margin</dt><dd><span class=\"ds-nd\">No data</span></dd></div></dl></section>",
+      "css": ".ds-chip { display: inline-flex; align-items: center; gap: 5px; height: 28px; padding: 0 11px; border-radius: 999px; font-weight: 600; font-size: 13px; line-height: 1.4; white-space: nowrap; } .ds-st-recommended { color: var(--st-recommended); background: var(--st-recommended-tint); } .ds-st-review { color: var(--st-review); background: var(--st-review-tint); } .ds-st-insufficient { color: var(--st-insufficient); background: var(--st-insufficient-tint); } .ds-st-blocked { color: var(--st-blocked); background: var(--st-blocked-tint); } .ds-focus { padding: 24px; display: flex; flex-direction: column; gap: 14px; background: var(--surface); border-radius: 18px; box-shadow: var(--surface-shadow); font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, 'Noto Sans Thai Variable', sans-serif; color: var(--text); } .ds-focus h2 { margin: 0; font: 700 28px/1.2 inherit; letter-spacing: -0.015em; } .ds-callout { padding: 12px 14px; border-radius: 14px; background: var(--st-review-tint); font-size: 13.5px; line-height: 1.5; } .ds-next { margin: 4px 0 0; color: var(--accent); font-weight: 600; } .ds-kf { margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } .ds-kf div { padding: 10px 12px; border-radius: 14px; background: var(--fill); } .ds-kf dt { font-size: 12px; color: var(--text-3); } .ds-kf dd { margin: 2px 0 0; font: 650 20px/1.4 inherit; font-variant-numeric: tabular-nums; } .ds-nd { font: 600 13px/1.45 inherit; color: var(--st-insufficient); } .ds-red { display: inline-flex; align-items: center; gap: 4px; font: 600 13px/1.45 inherit; color: var(--st-redacted); }"
+    },
+    {
+      "name": "Provenance Mark",
+      "kind": "custom",
+      "refersTo": "provenance-mark",
+      "description": "Overview-table figures only: blue numeral; hover/focus fills it and shows the source in place; click opens the Evidence tab.",
+      "html": "<p class=\"ds-p\">Sample figure <span class=\"ds-fig\">1,000<button type=\"button\" class=\"ds-mark\" data-src=\"1 · Synthetic ERP export · stock.csv\" aria-label=\"1: Synthetic ERP export · stock.csv\">1</button></span></p>",
+      "css": ".ds-p { padding: 40px 16px 12px; margin: 0; background: var(--surface); font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif; font-size: 14px; } .ds-fig { font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; } .ds-mark { position: relative; display: inline-grid; place-items: center; min-width: 15px; height: 15px; margin-left: 3px; padding: 0 3px; border: 0; border-radius: 5px; vertical-align: super; background: var(--accent-tint); color: var(--accent); font: 700 10px/1 inherit; font-family: inherit; cursor: pointer; } .ds-mark:hover, .ds-mark:focus-visible { background: var(--accent); color: var(--on-accent); outline: none; } .ds-mark:hover::after, .ds-mark:focus-visible::after { content: attr(data-src); position: absolute; left: 0; bottom: calc(100% + 6px); white-space: nowrap; padding: 5px 9px; border-radius: 8px; background: var(--tooltip); color: var(--on-accent); font: 500 12px/1.45 inherit; pointer-events: none; }"
+    },
+    {
+      "name": "Chat Bubbles and Follow-up Composer",
+      "kind": "custom",
+      "refersTo": "bubble-answer",
+      "description": "Blue question bubble, white answer bubble with avatar, internal-only badge; glass composer with preset chips (no free text).",
+      "html": "<div class=\"ds-wall\"><p class=\"ds-q\">Which in-stock TVs should we promote this month?</p><div class=\"ds-a\"><span class=\"ds-av\"></span><p>From internal data: <strong>3 to promote</strong> · 1 hold</p><span class=\"ds-badge\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\"/><path d=\"M3 5V19A9 3 0 0 0 21 19V5\"/><path d=\"M3 12A9 3 0 0 0 21 12\"/></svg>Internal data only</span></div><div class=\"ds-glass ds-comp\"><span class=\"ds-lbl\">Follow up</span><div><button type=\"button\" class=\"ds-cb\">Which sources?</button></div><span class=\"ds-hint\">No free-text questions yet (no LLM connected).</span></div></div>",
+      "css": ".ds-wall { padding: 20px; border-radius: 16px; background: #eef1f6; font-family: -apple-system, BlinkMacSystemFont, \"SF Pro Text\", \"Segoe UI\", Roboto, \"Noto Sans Thai Variable\", \"Noto Sans Thai\", sans-serif; color: var(--text); font-size: 14px; line-height: 1.5; } .ds-glass { background: var(--glass-bg); -webkit-backdrop-filter: blur(28px) saturate(175%); backdrop-filter: blur(28px) saturate(175%); border: 1px solid var(--glass-stroke); border-radius: 22px; box-shadow: var(--glass-shadow); } .ds-wall { display: grid; gap: 14px; } .ds-q { justify-self: end; margin: 0; max-width: 80%; padding: 11px 16px; border-radius: 20px 20px 6px 20px; background: var(--accent); color: var(--on-accent); font-size: 15px; } .ds-a { position: relative; padding: 16px 18px 16px 58px; display: grid; gap: 10px; border-radius: 20px 20px 20px 6px; background: var(--surface); box-shadow: var(--surface-shadow); font-size: 15px; line-height: 1.55; } .ds-a p { margin: 0; } .ds-av { position: absolute; left: 16px; top: 16px; width: 28px; height: 28px; border-radius: 9px; background: var(--accent); } .ds-badge { justify-self: start; display: inline-flex; align-items: center; gap: 5px; height: 24px; padding: 0 9px; border-radius: 999px; background: var(--accent-tint); color: var(--accent); font: 600 12px/1.4 inherit; } .ds-comp { padding: 14px 16px; display: grid; gap: 10px; } .ds-lbl { font: 600 12.5px/1.4 inherit; color: var(--text-3); } .ds-cb { height: 36px; padding: 0 15px; border: 0; border-radius: 999px; background: var(--surface); box-shadow: 0 1px 2px rgba(16, 24, 40, 0.08); font: 500 13.5px/1.4 inherit; font-family: inherit; color: var(--accent); cursor: pointer; transition: background-color 180ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-cb:hover { background: var(--accent-tint); } .ds-cb:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; } .ds-hint { font-size: 12px; color: var(--text-3); }"
     }
   ],
   "narrative": {
-    "northStar": "The Market Page",
-    "overview": "The workspace reads like the market-listing page of a Thai business daily. Dense tabular figures sit on a cool newsprint-gray ground, grouped under solid slate sector bars. Every figure carries a small amber footnote mark that points to a numbered source strip below the table. The page answers one fixed question. It shows which SKUs are recommended for which promotion action and why, and what is blocked, unknown or redacted. A white SKU sheet on the right is where the decision gets recorded. The page sits in the evidence-first tradition of print finance listings. It rejects the dark KPI-card dashboard with a chat sidebar.\n\nThe page is dense and calm. It does not use cards, score tiles, gradients, illustrations or decorative imagery. Hierarchy comes from type-scale contrast (a 28px question over 15px figures over 11.5px column heads) and from a ladder of ink rules of different weights. Colour works at two scales only. Slate fills whole regions: the rail and the sector bars. The status hues appear only at word scale, on a flag, a verdict or a rule outcome. Thai is the primary language and English is switchable, so the line-heights leave room for Thai stacked vowel and tone marks.\n\nAll data in the built workspace is synthetic and labelled as synthetic on the page. This document describes the visual system only. No figure seen in the build is a business fact.",
+    "northStar": "Daylight Glass",
+    "overview": "A calm, light workspace in Apple's Liquid Glass idiom. One flat, cool daylight ground (Wallpaper) sits behind everything: gutters, page and scroll-edge fades are the same colour, so no band or seam ever shows. Frosted glass carries only the controls and navigation (the sidebar, the toolbar, the chat composer and the floating decision bar). The content sits on solid white surfaces below that layer, so the product and its verdict lead and the evidence waits one click away. The world rejects two things. One is the dense ledger table of the superseded \"Market Page\" direction. The other is the dark KPI-tile dashboard full of invented numbers.\n\nTwo pages share one shell. **Chat & Advisor** (`/`) is a centred conversation. The fixed north-star question appears as a blue bubble. The answer is a white bubble holding one composed sentence, the ranking basis and ranked rows with a small TV thumbnail. A glass composer offers preset follow-up chips, and there is no free-text input because no LLM exists. **Product dashboard** (`/dashboard`) has a title and meta line, status filters with counts, a horizontal rail of product cards, a focus panel for the selected SKU, and a floating glass decision bar.\n\nThai is the primary language and English is switchable. The system UI typeface carries Latin, and self-hosted Noto Sans Thai carries Thai. Line-heights leave room for stacked Thai vowel and tone marks. All data is synthetic and says so on the page.",
     "keyCharacteristics": [
-      "Newsprint-gray ground, a white decision sheet, press-black ink.",
-      "Slate as region-scale colour: the rail and the reverse sector bars.",
-      "One fixed five-step status ramp, the same in the listing, the sheet and the rules.",
-      "A footnote mark on every figure, linked both ways to a numbered source strip.",
-      "No cards and no KPI tiles. Hierarchy comes from type scale and ink-rule weight.",
-      "Tabular lining numerals in every figure table.",
-      "Almost no motion: a 160ms background change on marks, footnotes and buttons."
+      "Liquid Glass control layer floating over solid white content; never glass on glass.",
+      "Size-true synthetic TV illustrations: plain SVG geometry scaled from the real screen diagonal.",
+      "Progressive disclosure: verdict and four key facts first; rules, alternatives and evidence behind one-click tabs.",
+      "iOS status hues used only for status, always with the same icon on every surface.",
+      "Status counts are the only aggregate figures; there is no score and no KPI tile.",
+      "Redaction is always visible as a lock, never as a silent gap."
     ],
     "rules": [
       {
-        "name": "The Region-Scale Rule",
-        "body": "Slate is laid down only as a whole field: the rail, a full-width sector bar, or a label block. It is never a thin accent, a border tint, or a background behind a single figure.",
-        "section": "colors"
+        "name": "The Control Layer Rule",
+        "body": "Glass is reserved for the sidebar, the toolbar, the chat composer and the decision bar. Every piece of content (cards, the focus panel, answer bubbles, popovers) sits on a solid surface.",
+        "section": "overview"
       },
       {
         "name": "The One Ramp Rule",
-        "body": "The five status hues mean the same thing in the listing, the sheet, and the rule lines. They are used only for status words, status icons, rule outcomes, and the Approve action that a recommended status enables. They are never decoration, and they never fill a region.",
+        "body": "A status hue means the same thing on every surface: chip, filter, callout, rule outcome, verdict tag and data state. Hues colour text and icons only. A tint appears only as the background of a status chip or a callout. Status colour never marks a region, a brand element or a provenance mark.",
         "section": "colors"
+      },
+      {
+        "name": "The Blue Means Act Rule",
+        "body": "System Blue marks what is selected, what can be done next, and where a figure came from. It never encodes a status.",
+        "section": "colors"
+      },
+      {
+        "name": "The Thai Headroom Rule",
+        "body": "Anything that can carry Thai keeps a line-height of 1.4 or more. Only digit-only or Latin-only elements go tighter: the rank, the mark, the SKU code display, and the English headline.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Figures Rule",
+        "body": "Every figure, rank, count and key fact uses `font-variant-numeric: tabular-nums`. Figures do not wrap.",
+        "section": "typography"
+      },
+      {
+        "name": "The One-Click Evidence Rule",
+        "body": "The first view shows the verdict and four key facts. Rules, alternatives and evidence sit one tab away, and they are never two clicks deep.",
+        "section": "layout"
+      },
+      {
+        "name": "The No Glass on Glass Rule",
+        "body": "Anything that opens from a glass bar (the demo popover, the decision popover) is a solid surface. Glass never stacks on glass.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Solid Fallback Rule",
+        "body": "Without `backdrop-filter` support, glass becomes near-opaque white (rgba(250, 251, 253, 0.97)). Under `prefers-reduced-transparency: reduce` it becomes solid #f6f7f9 with no blur. The control layer must stay legible with no frost at all.",
+        "section": "elevation"
+      },
+      {
+        "name": "The No Refraction Rule",
+        "body": "There is no SVG displacement or refraction filter. The frost, the specular top edge and the inner stroke carry the material.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Size-True Rule",
+        "body": "A TV illustration's width always comes from its real screen size, so a 65″ set reads as larger than a 43″ set. It is decorative (`aria-hidden`) in cards and chat rows. It is labeled as synthetic, with a caption, on the focus panel. It must never look like a product photo.",
+        "section": "components"
       },
       {
         "name": "The Lock Rule",
-        "body": "Redaction is always shown as Redaction Gray plus a lock icon, with the word \"redacted\" or an aria-label. When every cell in a column is redacted, the column head says so once and the cells show only the lock (nothing labelled twice).",
-        "section": "colors"
+        "body": "Every redaction shows a lock: a redacted value is a lock plus \"Redacted\" (lock alone in compact cells), a withheld rank is a lock tile, a redacted rule outcome carries a lock, and the demo button shows a lock at internal clearance. Redaction is never an empty cell.",
+        "section": "components"
       },
       {
-        "name": "The Stacked-Vowel Rule",
-        "body": "Thai text uses a line-height of at least 1.35 so that stacked vowel and tone marks never collide or clip. Only Latin-only settings go tighter: the English H1 at 1.2 and the SKU title at 1.2.",
-        "section": "typography"
-      },
-      {
-        "name": "The Tabular Figure Rule",
-        "body": "Every figure table (the listing and the sheet's fact table) sets `font-variant-numeric: tabular-nums lining-nums`. Figures are right-aligned and do not wrap.",
-        "section": "typography"
-      },
-      {
-        "name": "The Scale-Contrast Rule",
-        "body": "Hierarchy comes from size and weight steps and from ink rules. It never comes from boxes, tinted panels or decorative colour.",
-        "section": "typography"
-      },
-      {
-        "name": "The Ink-Rule Ladder",
-        "body": "Structure is drawn with rules of fixed weights, from heaviest to lightest:\n- **3px ink** under the page head, and as the top edge of the stacked sheet.\n- **1.5px ink** under the listing column heads and above the source strip.\n- **1px ink** under sheet block heads, on the sheet's left edge, under the selected row, and above the decision bar.\n- **1px column-rule** between listing rows.\n- **1px hairline** between rows inside the sheet.",
-        "section": "elevation"
+        "name": "The Counts-Only Rule",
+        "body": "Status counts (on the filters and in the chat breakdown) are the only aggregate figures on any page. Per-SKU key facts are shown, but there are no aggregate KPI tiles, no score, no \"potential\" label and no discount percentage.",
+        "section": "components"
       }
     ],
     "dos": [
-      "**Do** put a footnote mark on every figure and link it to a numbered source line. Light the mark and its line together on hover and focus, in both directions.",
-      "**Do** use the fixed five-step status ramp, with the same hue and icon for the same status on every surface. Pair redaction with a lock icon every time.",
-      "**Do** lay slate down as a whole region (rail, sector bar). Use the status hues only at word scale.",
-      "**Do** build hierarchy from type-scale contrast and the ink-rule ladder (3px, 1.5px, 1px ink; 1px column-rule and hairline).",
-      "**Do** keep Thai line-height at 1.35 or more. Tighten only Latin-only settings.",
-      "**Do** set every figure table in Anuphan with tabular lining numerals, right-aligned and not wrapping.",
-      "**Do** keep motion to the 160ms background-color transition on marks, source lines and buttons. Remove it under `prefers-reduced-motion`.",
-      "**Do** label synthetic data and provisional demo controls on the page."
+      "**Do** keep glass on the control layer only (the sidebar, toolbar, composer and decision bar), and keep every popover and piece of content solid.",
+      "**Do** ship both glass fallbacks: `@supports not (backdrop-filter)` and `prefers-reduced-transparency`.",
+      "**Do** use the four status hues with their fixed icons on every surface, with tints only behind chips and callouts.",
+      "**Do** show every status as a filter with its count, even when the count is 0, and show \"Internal data only\" on every answer.",
+      "**Do** show a lock wherever something is redacted.",
+      "**Do** scale TV illustrations from the real screen size, and label the large one as synthetic.",
+      "**Do** keep line-height at 1.4 or more on anything that can carry Thai.",
+      "**Do** keep motion to the shared ease (cubic-bezier(0.22, 1, 0.36, 1)): 180ms background changes, a 200ms card lift, a 120ms press. Remove all of it under `prefers-reduced-motion`.",
+      "**Do** keep Ink 3 as the lightest text colour."
     ],
     "donts": [
-      "**Don't** wrap content in cards, tinted panels or drop-shadowed containers. The scroll seam on the sticky decision bar is the only shadow.",
-      "**Don't** show score tiles, KPI blocks, success probabilities or \"top/potential\" badges. A rank is an order, not a score.",
-      "**Don't** use status hues for decoration, region fills or brand accents.",
-      "**Don't** let a figure appear without its source mark, or let missing, stale or redacted evidence disappear from view.",
-      "**Don't** label the same thing twice. A fully redacted column says \"redacted\" once, in its head.",
-      "**Don't** add Sarabun at 700. It is not loaded."
+      "**Don't** put glass on glass, or glass behind content (cards, the focus panel, bubbles, tables).",
+      "**Don't** use SVG refraction or displacement filters.",
+      "**Don't** show aggregate KPI tiles, scores, success probabilities, \"top/potential\" badges, discount percentages or placeholder market signals. External sources read \"not connected\".",
+      "**Don't** use status hues for decoration, brand accents or provenance marks. Don't use System Blue to mean a status.",
+      "**Don't** add a free-text chat input or imply generated answers while no LLM exists.",
+      "**Don't** let a TV illustration look like a product photo, or carry a brand mark.",
+      "**Don't** hide insufficient, review or blocked SKUs behind a click, or let redacted data disappear without a lock."
     ]
   }
 }

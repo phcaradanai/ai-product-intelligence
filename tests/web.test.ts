@@ -67,3 +67,35 @@ test("the view lists only current decisions for this set", () => {
   const view = workspaceView(inputs(), "internal", second.log);
   assert.deepEqual(view.decisions.map((d) => d.rationale), ["b"]);
 });
+
+// ---------- edge scenario: every status and fact state is reachable (STEP 7 review) ----------
+
+import { edgeFiles, edgeRegistryDataset } from "./fixtures/edge/registry.ts";
+const readEdge = (f: string) => readFileSync(new URL(`./fixtures/edge/${f}`, import.meta.url), "utf8");
+const edgeInputs = (): SampleInputs => ({
+  ...inputs(),
+  registry: edgeRegistryDataset(),
+  files: edgeFiles.map((f) => ({ ...f, content: readEdge(f.file) })),
+  recommendationPolicy: JSON.parse(readEdge("recommendation-policy.synthetic.json")),
+});
+
+test("edge scenario reaches recommended, insufficient_data, review_required and blocked", () => {
+  const recs = buildFullSet(edgeInputs()).set.recommendations;
+  const by = (sku: string) => recs.find((r) => r.identity.merchantSku === sku)!;
+  assert.deepEqual(["SYN-E1-50", "SYN-E2-55", "SYN-E3-65", "SYN-E4-43", "SYN-E5-58"].map((s) => [s, by(s).status, by(s).action]), [
+    ["SYN-E1-50", "insufficient_data", null],
+    ["SYN-E2-55", "insufficient_data", null],
+    ["SYN-E3-65", "blocked", null],
+    ["SYN-E4-43", "review_required", null],
+    ["SYN-E5-58", "recommended", "advertise_only"],
+  ]);
+  assert.deepEqual(by("SYN-E1-50").missing[0]!.nextSteps, ["import_sales_for_window"]);
+  assert.deepEqual(by("SYN-E2-55").missing[0]!.reasons, ["missing_cost"]);
+  assert.ok(by("SYN-E4-43").statusReasons.includes("multiple_sales_sources"));
+});
+test("edge scenario reaches the no_data and insufficient_data fact states", () => {
+  const recs = buildFullSet(edgeInputs()).set.recommendations;
+  const fact = (sku: string, metric: string) => recs.find((r) => r.identity.merchantSku === sku)!.facts.find((f) => f.metric === metric)!;
+  assert.equal(fact("SYN-E1-50", "units_sold").status, "no_data");
+  assert.equal(fact("SYN-E4-43", "units_sold").status, "insufficient_data");
+});

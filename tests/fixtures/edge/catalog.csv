@@ -1,0 +1,7 @@
+brand_id,brand_name,category_id,category_name,family_id,model_name,model_code,variant_id,attr:screenSizeInches,attr:modelYear,attr:panelType,sku_id,merchant_sku,gtin,status,alias_th,alias_en,alias_verified
+brand_syn_demo,DemoVision (synthetic),cat_tv,Televisions (synthetic),fam_syn_edge,DemoVision Edge (synthetic),SYN-EDGE,var_syn_e1,50,2026,LED,sku_syn_e1,SYN-E1-50,,active,,,
+brand_syn_demo,DemoVision (synthetic),cat_tv,Televisions (synthetic),fam_syn_edge,DemoVision Edge (synthetic),SYN-EDGE,var_syn_e2,55,2026,LED,sku_syn_e2,SYN-E2-55,,active,,,
+brand_syn_demo,DemoVision (synthetic),cat_tv,Televisions (synthetic),fam_syn_edge,DemoVision Edge (synthetic),SYN-EDGE,var_syn_e3,65,2026,LED,sku_syn_e3,SYN-E3-65,,active,,,
+brand_syn_demo,DemoVision (synthetic),cat_tv,Televisions (synthetic),fam_syn_edge,DemoVision Edge (synthetic),SYN-EDGE,var_syn_e4,43,2026,LED,sku_syn_e4,SYN-E4-43,,active,,,
+brand_syn_demo,DemoVision (synthetic),cat_tv,Televisions (synthetic),fam_syn_edge,DemoVision Edge (synthetic),SYN-EDGE,var_syn_e5,58,2026,LED,sku_syn_e5,SYN-E5-58,,active,,,
+brand_syn_bright,BrightLab (synthetic),cat_tv,Televisions (synthetic),fam_syn_bz,BrightLab BZ (synthetic),SYN-BZ,var_syn_e6,40,2024,LED,sku_syn_e6,SYN-E6-40,,discontinued,,,
